@@ -5,5 +5,17 @@
     "paragraph2": "We believe that caring for the planet starts on the plate, which is why great ideas are born in our \"kitchen\", new recipes are tested, customer feedback is gathered, and brilliant new products are created. Through our products, we want to bring diversity, innovation, and the art of healthy eating to our offering.",
     "paragraph3": "All our products have a recognizable taste, made according to authentic recipes and traditional methods. We want to show that diverse and quality plant-based nutrition is not just a matter of taste but also a way to improve our health.",
     "paragraph4": "Our products are intended for vegans, vegetarians, meat lovers, plant lovers, skeptics, and plant-based food enthusiasts – everyone who wants to enjoy healthy and delicious food."
+  },
+  "header": {
+    "nav": {
+      "about": "Genie Food",
+      "products": "Products",
+      "gallery": "Gallery",
+      "contact": "Contact"
+    },
+    "languages": {
+      "en": "eng",
+      "sr": "srp"
+    }
   }
 }

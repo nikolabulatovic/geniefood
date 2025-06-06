@@ -1,6 +1,6 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
-import { blugie } from '../fonts';
+import Header from '@/components/Header';
 import '../globals.css';
 
 export function generateStaticParams() {
@@ -27,12 +27,9 @@ export default async function LocaleLayout({
   console.log('locale', locale);
 
   return (
-    <html lang={locale}>
-      <body className={blugie.variable}>
-        <NextIntlClientProvider locale={locale} messages={messages.default}>
-          <main className='min-h-screen bg-white'>{children}</main>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider locale={locale} messages={messages.default}>
+      <Header />
+      <main className='min-h-screen bg-white'>{children}</main>
+    </NextIntlClientProvider>
   );
 }
