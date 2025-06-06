@@ -1,10 +1,12 @@
-import type { NextConfig } from 'next';
+import { NextConfig } from 'next';
+import createNextIntlPlugin from 'next-intl/plugin';
 
-const nextConfig: NextConfig = {
+const config: NextConfig = {
   /* config options here */
   images: {
     domains: ['geniefood.rs'],
   },
 };
 
-export default nextConfig;
+const withNextIntl = createNextIntlPlugin();
+export default withNextIntl(config);
