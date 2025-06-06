@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 
@@ -10,30 +9,35 @@ const About = () => {
   return (
     <section id='about' className='min-h-screen bg-primary py-20'>
       <div className='container mx-auto px-4'>
-        <div className='flex flex-row lg:flex-col items-center'>
+        <div className='flex flex-col lg:flex-row items-center gap-28'>
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
-            className='space-y-6'>
+            className='space-y-6 w-1/2'>
             <motion.h2
-              className='text-2xl font-bold text-center my-6 flex items-center justify-center gap-4'
+              className='text-6xl text-secondary uppercase my-6 flex items-center group font-intro font-bold'
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}>
-              <Image
-                src='/images/sprout.png'
-                alt='Sprout'
-                width={40}
-                height={40}
-                className='w-8 h-8 md:w-10 md:h-10'
-              />
-              <span className='inline-block px-6 py-2'>{t('title')}</span>
+              transition={{ duration: 0.1 }}>
+              <motion.span
+                className='inline-block py-2 transition-all duration-100 our-heading tracking-wide not-hover:transition-none'
+                whileHover={{
+                  scale: 1.15,
+                }}
+                transition={{
+                  type: 'spring',
+                  stiffness: 400,
+                  damping: 10,
+                  duration: 0.1,
+                }}>
+                {t('title')}
+              </motion.span>
             </motion.h2>
             <motion.div
-              className='space-y-4 text-secondary/90 text-lg'
+              className='font-poppins space-y-4 text-secondary text-xl text-shadow-[0_3px_5px_rgb(0_0_0_/_0.15)]'
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -43,22 +47,6 @@ const About = () => {
               <p>{t('paragraph3')}</p>
               <p>{t('paragraph4')}</p>
             </motion.div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
-            className='relative w-full aspect-[4/3] overflow-hidden shadow-2xl'>
-            <Image
-              src='https://geniefood.rs/var/site/storage/images/_aliases/w800/9/6/3/0/369-17-ser-SR/e33331c4e287-4.jpg'
-              alt={t('title')}
-              fill
-              className='object-cover hover:scale-105 transition-transform duration-700'
-              sizes='(max-width: 768px) 100vw, 50vw'
-              priority
-            />
           </motion.div>
         </div>
       </div>

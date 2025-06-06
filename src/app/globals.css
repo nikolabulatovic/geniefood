@@ -3,8 +3,13 @@
 @theme {
   --color-primary: #f1dbaa;
   --color-secondary: #412303;
+  --color-tertiary: #ffd367;
+  --color-genie-green: #a7c499;
 
   --font-blugie: 'blugie', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-intro: 'Intro', sans-serif;
 }
 
 :root {
@@ -23,4 +28,20 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.our-heading::before {
+  content: 'O nama';
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  color: #be9a36;
+  width: 0%;
+  overflow: hidden;
+  transition: all 0.5s;
+  white-space: nowrap;
+}
+
+.our-heading:hover::before {
+  width: 100%;
 }

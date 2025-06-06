@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import NavLink from './NavLink';
+import LanguageLink from './LanguageLink';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -52,33 +54,25 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className='hidden md:flex items-center space-x-8'>
             {navItems.map((item) => (
-              <Link
+              <NavLink
                 key={item.href}
                 href={item.href}
-                className='text-primary hover:text-white transition-colors duration-300 font-medium'>
-                {item.label}
-              </Link>
+                label={item.label}
+                className='text-lg'
+              />
             ))}
             <div className='flex items-center space-x-2 ml-4'>
-              <Link
+              <LanguageLink
                 href='/en'
-                className={`px-2 py-1 rounded-md transition-colors duration-300 ${
-                  currentLocale === 'en'
-                    ? 'bg-primary text-secondary'
-                    : 'text-primary hover:bg-primary/20'
-                }`}>
-                {t('languages.en')}
-              </Link>
+                label={t('languages.en')}
+                isActive={currentLocale === 'en'}
+              />
               <span className='text-primary'>|</span>
-              <Link
+              <LanguageLink
                 href='/sr'
-                className={`px-2 py-1 rounded-md transition-colors duration-300 ${
-                  currentLocale === 'sr'
-                    ? 'bg-primary text-secondary'
-                    : 'text-primary hover:bg-primary/20'
-                }`}>
-                {t('languages.sr')}
-              </Link>
+                label={t('languages.sr')}
+                isActive={currentLocale === 'sr'}
+              />
             </div>
           </nav>
 
@@ -119,36 +113,28 @@ const Header = () => {
             <div className='container mx-auto px-4 py-20'>
               <nav className='flex flex-col space-y-6'>
                 {navItems.map((item) => (
-                  <Link
+                  <NavLink
                     key={item.href}
                     href={item.href}
+                    label={item.label}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className='text-primary hover:text-white transition-colors duration-300 text-lg font-medium'>
-                    {item.label}
-                  </Link>
+                    className='text-lg'
+                  />
                 ))}
                 <div className='flex items-center space-x-4 pt-4 border-t border-primary/20'>
-                  <Link
-                    href='/en'
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className={`px-3 py-1 rounded-md transition-colors duration-300 ${
-                      currentLocale === 'en'
-                        ? 'bg-primary text-secondary'
-                        : 'text-primary hover:bg-primary/20'
-                    }`}>
-                    {t('languages.en')}
-                  </Link>
-                  <span className='text-primary'>|</span>
-                  <Link
+                  <LanguageLink
                     href='/sr'
+                    label={t('languages.sr')}
+                    isActive={currentLocale === 'sr'}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className={`px-3 py-1 rounded-md transition-colors duration-300 ${
-                      currentLocale === 'sr'
-                        ? 'bg-primary text-secondary'
-                        : 'text-primary hover:bg-primary/20'
-                    }`}>
-                    {t('languages.sr')}
-                  </Link>
+                  />
+                  <span className='text-primary'>|</span>
+                  <LanguageLink
+                    href='/en'
+                    label={t('languages.en')}
+                    isActive={currentLocale === 'en'}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  />
                 </div>
               </nav>
             </div>
