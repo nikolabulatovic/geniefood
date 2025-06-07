@@ -9,9 +9,9 @@ const Products = () => {
 
   const products = [
     {
+      id: 'nutritivni_kvasac',
       filter: '57',
-      imageSrc:
-        'https://geniefood.rs/var/site/storage/images/_aliases/w500/2/7/0/0/30072-1-ser-SR/18259ed84c98-nutritivni-kvasac.jpg',
+      imageSrc: '/images/nutritivni-kvasac.png',
       imageAlt: 'Nutritivni kvasac u ljuspicama - 200g',
       title: 'Nutritivni kvasac u ljuspicama - 200g',
       description:
@@ -19,9 +19,9 @@ const Products = () => {
       position: { left: '0px', top: '0px' },
     },
     {
+      id: 'tempeh_przeni',
       filter: '63',
-      imageSrc:
-        'https://geniefood.rs/var/site/storage/images/_aliases/w500/4/8/7/9/29784-1-ser-SR/706ac4b05330-1.jpg',
+      imageSrc: '/images/tempeh-przeni.png',
       imageAlt: 'Prženi tempeh – 200g',
       title: 'Prženi tempeh – 200g',
       description:
@@ -29,25 +29,25 @@ const Products = () => {
       position: { left: '496px', top: '0px' },
     },
     {
+      id: 'seitan_przeni',
       filter: '63',
-      imageSrc:
-        'https://geniefood.rs/var/site/storage/images/_aliases/w500/7/3/8/9/29837-1-ser-SR/b039f0514187-10.jpg',
+      imageSrc: '/images/seitan-przeni.png',
       imageAlt: 'Seitan prženi – 180g',
       title: 'Seitan prženi – 180g',
       description:
         '<p style="text-align:justify;">Seitan je jelo od pšeničnog proteina bogato kalcijumom, vitaminima B grupe i proteinima (33%). Radi se o pšeničnom glutenu koji u prehrani gotovo u celosti može nadomestiti potrebu za mesom. Jela sa sejtanom se pripremaju na isti način kao i jela s mesom. Može se koristiti kao dodatak jelima od povrća ili zamena za šnicle od mesa.</p><p style="text-align:justify;"><strong>Sastav</strong>: Voda, pšenični gluten, pšenično brašno, morska so, mešavina začina, nehidrogenizovano biljno ulje (suncokret)</p><table><tbody><tr><td>Nutritivne vrednosti:</td><td>Na 100g</td></tr><tr><td>Energija</td><td>221kcal (928kJ)</td></tr><tr><td>Masti</td><td>4,8g</td></tr><tr><td><ul><li>Zasićene masne kiseline</li></ul></td><td>0,2g</td></tr><tr><td>Ugljeni hidrati</td><td>13,1g</td></tr><tr><td><ul><li>Šećeri</li></ul></td><td>0,3g</td></tr><tr><td>Vlakna</td><td>0,9g</td></tr><tr><td>Proteini</td><td>33,4g</td></tr><tr><td>So</td><td>0,9g</td></tr></tbody></table>',
       position: { left: '993px', top: '0px' },
     },
-    {
-      filter: '63',
-      imageSrc:
-        'https://geniefood.rs/var/site/storage/images/_aliases/w500/7/4/8/9/29847-1-ser-SR/cac83b5b74ab-12.jpg',
-      imageAlt: 'Tempeh 200g',
-      title: 'Tempeh 200g',
-      description:
-        '<p style="text-align:justify;">Tempeh јe izuzetno hranljiv i ukusan proteinski proizvod od fermentisanih sojinih zrna koji brzo daje osećaj sitosti. Odličan izbor za osobe koje nameravaju da smanje ili prekinu unos namirnica životinjskog porekla. Služi se uz povrće i žitarice ili kao dodatak sendvičima. Može se pržiti ili dodavati jelima koja se kuvaju ili dinstaju. Jedan od retkih proizvoda biljnog porekla koji sadrži vitamin B12.</p><p style="text-align:justify;"><strong>Sastav</strong>: soja 98%, starter kultura (Rhizopus Oligosporus).</p><table><tbody><tr><td>Nutritivne vrednosti:</td><td>Na 100g</td></tr><tr><td>Energija</td><td>203kcal (852kJ)</td></tr><tr><td>Masti</td><td>9,2g</td></tr><tr><td><ul><li>Zasićene masne kiseline</li></ul></td><td>0,6g</td></tr><tr><td>Ugljeni hidrati</td><td>11,9g</td></tr><tr><td><ul><li>Šećeri</li></ul></td><td>2,1g</td></tr><tr><td>Vlakna</td><td>3,3g</td></tr><tr><td>Proteini</td><td>18,4g</td></tr><tr><td>So</td><td>0,1g</td></tr></tbody></table>',
-      position: { left: '1490px', top: '0px' },
-    },
+    // {
+    //   id: 'tempeh_sirovi',
+    //   filter: '63',
+    //   imageSrc: '/images/tempeh-sirovi.png',
+    //   imageAlt: 'Tempeh 200g',
+    //   title: 'Tempeh 200g',
+    //   description:
+    //     '<p style="text-align:justify;">Tempeh јe izuzetno hranljiv i ukusan proteinski proizvod od fermentisanih sojinih zrna koji brzo daje osećaj sitosti. Odličan izbor za osobe koje nameravaju da smanje ili prekinu unos namirnica životinjskog porekla. Služi se uz povrće i žitarice ili kao dodatak sendvičima. Može se pržiti ili dodavati jelima koja se kuvaju ili dinstaju. Jedan od retkih proizvoda biljnog porekla koji sadrži vitamin B12.</p><p style="text-align:justify;"><strong>Sastav</strong>: soja 98%, starter kultura (Rhizopus Oligosporus).</p><table><tbody><tr><td>Nutritivne vrednosti:</td><td>Na 100g</td></tr><tr><td>Energija</td><td>203kcal (852kJ)</td></tr><tr><td>Masti</td><td>9,2g</td></tr><tr><td><ul><li>Zasićene masne kiseline</li></ul></td><td>0,6g</td></tr><tr><td>Ugljeni hidrati</td><td>11,9g</td></tr><tr><td><ul><li>Šećeri</li></ul></td><td>2,1g</td></tr><tr><td>Vlakna</td><td>3,3g</td></tr><tr><td>Proteini</td><td>18,4g</td></tr><tr><td>So</td><td>0,1g</td></tr></tbody></table>',
+    //   position: { left: '1490px', top: '0px' },
+    // },
   ];
 
   return (
@@ -89,7 +89,7 @@ const Products = () => {
 
         <ProductCarousel products={products} />
       </div>
-      <div className='container px-4 border-b border-secondary/30 mx-auto' />
+      <div className='container w-128 border-b border-secondary/30 mx-auto' />
     </div>
   );
 };

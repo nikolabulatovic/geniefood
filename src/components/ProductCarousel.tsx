@@ -13,8 +13,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
+import useWindowWidth from '@/hooks/useWindowWidth';
 
 interface Product {
+  id: string;
   filter: string;
   imageSrc: string;
   imageAlt: string;
@@ -30,7 +32,38 @@ interface ProductCarouselProps {
   products: Product[];
 }
 
+const getSlidesPerView = (windowWidth: number) => {
+  if (windowWidth < 320) {
+    return 1;
+  }
+  if (windowWidth < 768) {
+    return 2;
+  }
+  if (windowWidth < 1024) {
+    return 3;
+  }
+  if (windowWidth < 1540) {
+    return 4;
+  }
+  return 4;
+};
+
 const ProductCarousel = ({ products }: ProductCarouselProps) => {
+  const windowWidth = useWindowWidth();
+
+  const slidesPerView = Math.min(
+    products.length,
+    getSlidesPerView(windowWidth) - 1,
+  );
+
+  const navigation = slidesPerView - 1 > products.length;
+  const pagination =
+    slidesPerView - 1 > products.length
+      ? {
+          clickable: true,
+        }
+      : false;
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -44,9 +77,9 @@ const ProductCarousel = ({ products }: ProductCarouselProps) => {
         effect='coverflow'
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={1}
+        slidesPerView={slidesPerView}
         slidesPerGroup={1}
-        initialSlide={1}
+        initialSlide={0}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -54,33 +87,14 @@ const ProductCarousel = ({ products }: ProductCarouselProps) => {
           modifier: 1.5,
           slideShadows: false,
         }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
+        pagination={pagination}
+        navigation={navigation}
         loop={true}
         autoplay={{
-          delay: 5000,
+          delay: 500000,
           disableOnInteraction: false,
         }}
-        breakpoints={{
-          // Mobile (default)
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 40,
-          },
-          // Tablet
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 60,
-          },
-          // Laptop
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 80,
-          },
-        }}
-        className='w-full h-[600px] !pb-16'>
+        className='w-full h-full !pb-16'>
         {products.map((product, index) => (
           <SwiperSlide
             key={index}
@@ -90,7 +104,7 @@ const ProductCarousel = ({ products }: ProductCarouselProps) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className='w-full h-full transform transition-all duration-500 hover:scale-105 hover:shadow-2xl rounded-xl overflow-hidden bg-white'>
+              className='w-full h-full transform transition-all duration-500 rounded-xl overflow-hidden'>
               <ProductCard {...product} />
             </motion.div>
           </SwiperSlide>
@@ -117,7 +131,6 @@ const ProductCarousel = ({ products }: ProductCarouselProps) => {
           font-weight: bold;
           width: 12px;
           height: 12px;
-          background: white;
           border-radius: 50%;
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
           transition: all 0.3s ease;
