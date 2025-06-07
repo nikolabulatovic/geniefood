@@ -22,7 +22,7 @@ const ProductFilters = () => {
       transition={{ duration: 0.5 }}
       className='site-filters clearfix center m-b40 filter-dark wow fadeIn'>
       <ul
-        className='filters flex flex-wrap justify-center gap-4'
+        className='filters flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-8'
         data-toggle='buttons'>
         {categories.map((category, index) => (
           <motion.li
@@ -32,20 +32,32 @@ const ProductFilters = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
             data-filter={category.id}
-            className='btn group'>
+            className='group'>
             <input type='radio' className='hidden' />
             <motion.a
               href='#'
-              className='block px-6 py-3 rounded-full bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1'
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}>
-              <span className='text-gray-700 group-hover:text-primary font-medium transition-colors duration-300'>
+              className='relative block px-8 py-3 font-intro text-lg font-bold hover:shadow-[0_0_7px_2px_rgba(0,0,0,0.1)] transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-genie-green/30 active:scale-95 overflow-hidden'
+              whileHover={{ scale: 1.12, rotate: -3 }}
+              whileTap={{ scale: 0.98, rotate: 2 }}>
+              <span className='relative z-10 text-white transition-colors duration-300'>
                 {t(category.label)}
               </span>
+              <span className='absolute inset-0 z-0 rounded-full bg-genie-green scale-0 group-hover:scale-100 transition-transform duration-300 ease-out'></span>
             </motion.a>
           </motion.li>
         ))}
       </ul>
+      <style jsx>{`
+        .filters li .group:hover .z-10 {
+          color: white !important;
+        }
+        .filters li .group:hover .bg-genie-green {
+          opacity: 1;
+        }
+        .filters li .bg-genie-green {
+          opacity: 0.9;
+        }
+      `}</style>
     </motion.div>
   );
 };

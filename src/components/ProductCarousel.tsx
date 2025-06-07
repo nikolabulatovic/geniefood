@@ -58,6 +58,7 @@ const ProductCarousel = ({ products }: ProductCarouselProps) => {
           clickable: true,
         }}
         navigation={true}
+        loop={true}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,

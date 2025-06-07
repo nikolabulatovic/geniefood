@@ -52,15 +52,19 @@ const Products = () => {
 
   return (
     <div
-      className='section-full content-inner bg-genie-green creative-work py-20'
+      className='section-full content-inner bg-gradient-to-b from-genie-green via-genie-green to-primary'
+      style={{
+        backgroundImage:
+          'linear-gradient(to bottom, var(--color-genie-green) 0%, var(--color-genie-green) 80%, var(--color-primary) 100%)',
+      }}
       id='products'>
-      <div className='container-fluid px-4'>
+      <div className='container-fluid px-4 py-20'>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className='section-head text-black text-center mb-16'>
+          className='flex flex-col justify-center items-center section-head text-black mb-16'>
           <SectionHeading title={t('title')} />
           <motion.div
             className='dez-separator bg-primary mx-auto mb-8'
@@ -70,7 +74,7 @@ const Products = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           />
           <motion.div
-            className='ezrichtext-field max-w-3xl mx-auto'
+            className='max-w-3xl mx-auto'
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -85,6 +89,7 @@ const Products = () => {
 
         <ProductCarousel products={products} />
       </div>
+      <div className='container px-4 border-b border-secondary/30 mx-auto' />
     </div>
   );
 };

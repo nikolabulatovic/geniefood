@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <>
-      <div className='flex items-center bg-tertiary relative shadow-2xl h-screen'>
+      <div className='flex items-center bg-tertiary relative shadow-2xl min-h-screen'>
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
