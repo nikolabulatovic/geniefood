@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import SectionHeading from './SectionHeading';
 
 const About = () => {
   const t = useTranslations('about');
@@ -16,26 +17,7 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
             className='space-y-6 w-1/2'>
-            <motion.h2
-              className='text-6xl text-secondary uppercase my-6 flex items-center group font-intro font-bold'
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.1 }}>
-              <motion.span
-                className='inline-block py-2 transition-all duration-100 our-heading tracking-wide not-hover:transition-none'
-                whileHover={{
-                  scale: 1.15,
-                }}
-                transition={{
-                  type: 'spring',
-                  stiffness: 400,
-                  damping: 10,
-                  duration: 0.1,
-                }}>
-                {t('title')}
-              </motion.span>
-            </motion.h2>
+            <SectionHeading title={t('title')} />
             <motion.div
               className='font-poppins space-y-4 text-secondary text-xl text-shadow-[0_3px_5px_rgb(0_0_0_/_0.15)]'
               initial={{ opacity: 0 }}
