@@ -81,14 +81,10 @@ const Products = () => {
   ];
 
   return (
-    <div
-      className='section-full content-inner bg-gradient-to-b from-genie-green via-genie-green to-primary'
-      style={{
-        backgroundImage:
-          'linear-gradient(to bottom, var(--color-genie-green) 0%, var(--color-genie-green) 80%, var(--color-primary) 100%)',
-      }}
+    <section
+      className='section-full content-inner bg-genie-green'
       id='products'>
-      <div className='container-fluid px-4 py-20'>
+      <div className='container-fluid px-4 pt-2 pb-32'>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -119,8 +115,8 @@ const Products = () => {
 
         <ProductCarousel products={products} />
       </div>
-      <div className='container w-128 border-b border-secondary/30 mx-auto' />
-    </div>
+      {/* <div className='container w-128 border-b border-secondary/30 mx-auto' /> */}
+    </section>
   );
 };
 

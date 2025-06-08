@@ -11,7 +11,7 @@ const About = () => {
   return (
     <section
       id='about'
-      className='flex flex-col md:flex-row items-center gap-20 bg-primary py-20 px-10'>
+      className='flex flex-col md:flex-row items-center gap-20 bg-primary pt-2 pb-32 px-10'>
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
