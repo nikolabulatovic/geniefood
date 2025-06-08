@@ -1,19 +1,14 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {
-  Navigation,
-  Pagination,
-  Autoplay,
-  EffectCoverflow,
-} from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { motion } from 'framer-motion';
+import useWindowWidth from '@/hooks/useWindowWidth';
+
 import ProductCard from './ProductCard';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
-import useWindowWidth from '@/hooks/useWindowWidth';
 
 interface Product {
   id: string;
@@ -51,18 +46,21 @@ const getSlidesPerView = (windowWidth: number) => {
 const ProductCarousel = ({ products }: ProductCarouselProps) => {
   const windowWidth = useWindowWidth();
 
-  const slidesPerView = Math.min(
-    products.length,
-    getSlidesPerView(windowWidth) - 1,
-  );
+  let slidesPerView = Math.min(products.length, getSlidesPerView(windowWidth));
 
-  const navigation = slidesPerView - 1 > products.length;
-  const pagination =
-    slidesPerView - 1 > products.length
-      ? {
-          clickable: true,
-        }
-      : false;
+  if (products.length === slidesPerView + 1) {
+    slidesPerView -= 1;
+  }
+
+  const isSliderNecessary = products.length > slidesPerView;
+
+  const navigation = isSliderNecessary;
+  const pagination = isSliderNecessary
+    ? {
+        clickable: true,
+      }
+    : false;
+  const centeredSlides = isSliderNecessary;
 
   return (
     <motion.div
@@ -73,10 +71,10 @@ const ProductCarousel = ({ products }: ProductCarouselProps) => {
       className='w-full py-12 relative'>
       {/* Custom navigation buttons */}
       <Swiper
-        modules={[Navigation, Pagination, Autoplay, EffectCoverflow]}
+        modules={[Navigation, Pagination, Autoplay]}
         effect='coverflow'
         grabCursor={true}
-        centeredSlides={true}
+        centeredSlides={centeredSlides}
         slidesPerView={slidesPerView}
         slidesPerGroup={1}
         initialSlide={0}

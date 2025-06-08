@@ -72,7 +72,6 @@ const ProductCard = ({
         </motion.a>
       </div>
       <div className='p-4'>
-        <motion.h5 whileHover={{ scale: 1.05 }}>{title}</motion.h5>
         <h6></h6>
       </div>
     </motion.li>
