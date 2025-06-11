@@ -1,18 +1,22 @@
+import React, { useState } from 'react';
 import Image from 'next/image';
 import SectionHeading from './SectionHeading';
 import { motion } from 'framer-motion';
 
 const galleryImages = [
-  '/images/tempeh-sirovi-sa-oblakom.png',
-  '/images/tempeh-przeni-sa-oblakom.png',
-  '/images/seitan-przeni-sa-oblakom.png',
-  '/images/nutritivni-kvasac-sa-oblakom.png',
-  '/images/tofu-dimljeni.png',
-  '/images/humus-u-crevu.png',
-  '/images/badem-puter.png',
+  '/images/galerija-1.jpg',
+  '/images/galerija-2.jpg',
+  '/images/galerija-3.jpg',
+  '/images/galerija-4.jpg',
+  '/images/galerija-5.jpg',
+  '/images/galerija-6.jpg',
+  '/images/galerija-7.jpg',
+  '/images/galerija-8.jpg',
 ];
 
 const Gallery = () => {
+  const [hoveredIdx, setHoveredIdx] = useState<number | null>(null);
+
   return (
     <section
       className='section-full content-inner bg-genie-salmon pt-2 pb-32'
@@ -41,18 +45,30 @@ const Gallery = () => {
             </p>
           </motion.div>
         </div>
-        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
+        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 relative z-40'>
+          <div
+            className={`fixed inset-0 bg-genie-salmon/80 z-30 pointer-events-none transition-opacity duration-1000 ease-in-out ${
+              hoveredIdx !== null ? 'opacity-100' : 'opacity-0'
+            }`}
+          />
           {galleryImages.map((src, idx) => (
             <div
               key={idx}
-              className='rounded-lg overflow-hidden shadow-lg bg-white'>
-              <a href={src} target='_blank' rel='noopener noreferrer'>
+              className='relative rounded-[10rem] hover:rounded-lg hover:scale-125 transition-[scale,border-radius] duration-600 overflow-hidden shadow-lg bg-white group aspect-[1/1]'
+              onMouseEnter={() => setHoveredIdx(idx)}
+              onMouseLeave={() => setHoveredIdx(null)}
+              style={{ zIndex: hoveredIdx === idx ? 50 : -1 }}>
+              <a
+                href={src}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='relative'>
                 <Image
                   src={src}
                   alt={`Gallery image ${idx + 1}`}
                   width={428}
                   height={338}
-                  className='object-cover w-full h-56 hover:scale-105 transition-transform duration-300'
+                  className='object-cover w-full h-full hover:scale-105 transition-transform duration-300'
                 />
               </a>
             </div>
