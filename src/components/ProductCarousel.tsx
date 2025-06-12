@@ -89,7 +89,7 @@ const ProductCarousel = ({ products }: ProductCarouselProps) => {
         navigation={navigation}
         loop={true}
         autoplay={{
-          delay: 5000,
+          delay: 500000,
           disableOnInteraction: false,
         }}
         className='w-full h-full !pb-16'>
