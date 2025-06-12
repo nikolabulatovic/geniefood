@@ -15,7 +15,6 @@ const About = () => {
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
         transition={{ duration: 1.2, delay: 0.8, ease: 'easeOut' }}
         className='w-full aspect-[7/3]'>
         <Image
@@ -31,7 +30,6 @@ const About = () => {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
             className='space-y-6'>
             <SectionHeading title={t('title')} />
@@ -39,7 +37,6 @@ const About = () => {
               className='font-poppins space-y-4 text-secondary text-xl text-shadow-[0_3px_5px_rgb(0_0_0_/_0.15)]'
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.4 }}>
               <p>{t('paragraph1')}</p>
               <p>{t('paragraph2')}</p>
