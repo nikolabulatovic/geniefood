@@ -68,22 +68,7 @@ const ProductCarousel = ({ products }: ProductCarouselProps) => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className='w-full py-12 relative overflow-hidden conveyor-belt-bg rounded-2xl'
-      style={{
-        background: `
-          repeating-linear-gradient(
-            90deg,
-            #aaaaaa 0px,
-            #aaaaaa 197px,
-            #bdbdbd 197px,
-            #bdbdbd 200px
-          )
-        `,
-      }}>
-      {/* Conveyor belt borders */}
-      <div className='absolute left-0 right-0 top-0 h-3 bg-[#444] rounded-t-2xl z-10 shadow-md pointer-events-none' />
-      <div className='absolute left-0 right-0 bottom-0 h-3 bg-[#444] rounded-b-2xl z-10 shadow-md pointer-events-none' />
-
+      className='w-full py-12 relative'>
       {/* Custom navigation buttons */}
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
@@ -153,18 +138,6 @@ const ProductCarousel = ({ products }: ProductCarouselProps) => {
         .swiper-button-next:after {
           font-size: 1.2rem;
           font-weight: bold;
-        }
-
-        @keyframes conveyorMove {
-          0% {
-            background-position-x: 0;
-          }
-          100% {
-            background-position-x: 200px;
-          }
-        }
-        .conveyor-belt-bg {
-          animation: conveyorMove 4s linear infinite;
         }
       `}</style>
     </motion.div>

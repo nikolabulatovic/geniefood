@@ -39,12 +39,12 @@ const ProductCard = ({
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
       data-filter={filter}
-      // style={{
-      //   backgroundImage: "url('/images/vertical-thought-bubble.png')",
-      //   backgroundSize: 'contain',
-      //   backgroundPosition: 'center',
-      //   backgroundRepeat: 'no-repeat',
-      // }}
+      style={{
+        backgroundImage: "url('/images/vertical-thought-bubble.png')",
+        backgroundSize: 'contain',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
       className='max-w-[600px] mx-auto'>
       <div className='w-full h-full aspect-[4/4]'>
         <a

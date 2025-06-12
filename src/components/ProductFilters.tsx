@@ -20,7 +20,7 @@ const ProductFilters = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className='site-filters clearfix center m-b40 filter-dark wow fadeIn mb-12'>
+      className='site-filters clearfix center m-b40 filter-dark wow fadeIn'>
       <ul
         className='filters flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-8'
         data-toggle='buttons'>
