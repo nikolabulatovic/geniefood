@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import ProductFilters from './ProductFilters';
@@ -6,6 +7,7 @@ import ProductCarousel from './ProductCarousel';
 
 const Products = () => {
   const t = useTranslations('products');
+  const [activeFilter, setActiveFilter] = useState('');
 
   const products = [
     {
@@ -126,9 +128,12 @@ const Products = () => {
           </motion.div>
         </motion.div>
 
-        <ProductFilters />
+        <ProductFilters
+          activeFilter={activeFilter}
+          onFilterChange={setActiveFilter}
+        />
 
-        <ProductCarousel products={products} />
+        <ProductCarousel products={products} activeFilter={activeFilter} />
       </div>
       {/* <div className='container w-128 border-b border-secondary/30 mx-auto' /> */}
     </section>

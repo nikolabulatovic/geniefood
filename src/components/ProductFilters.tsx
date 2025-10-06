@@ -1,7 +1,15 @@
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 
-const ProductFilters = () => {
+type ProductFiltersProps = {
+  activeFilter: string;
+  onFilterChange: (filter: string) => void;
+};
+
+const ProductFilters = ({
+  activeFilter,
+  onFilterChange,
+}: ProductFiltersProps) => {
   const t = useTranslations('products');
 
   const categories = [
@@ -34,16 +42,18 @@ const ProductFilters = () => {
             data-filter={category.id}
             className='group'>
             <input type='radio' className='hidden' />
-            <motion.a
-              href='#'
-              className='relative block px-8 py-3 font-intro text-xl font-bold hover:shadow-[0_0_7px_2px_rgba(0,0,0,0.1)] transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-genie-green/30 active:scale-95 overflow-hidden'
+            <motion.button
+              onClick={() => onFilterChange(category.id)}
+              className={`relative block px-8 py-3 font-intro text-xl font-bold hover:shadow-[0_0_7px_2px_rgba(0,0,0,0.1)] transition-all duration-300 transform rounded-md hover:-translate-y-1 hover:scale-105 focus:outline-none active:scale-95 overflow-hidden ${
+                activeFilter === category.id ? 'bg-genie-green text-white' : ''
+              }`}
               whileHover={{ scale: 1.12, rotate: -3 }}
               whileTap={{ scale: 0.98, rotate: 2 }}>
               <span className='relative z-10 text-white transition-colors duration-300'>
                 {t(category.label)}
               </span>
-              <span className='absolute inset-0 z-0 rounded-full bg-genie-green scale-0 group-hover:scale-100 transition-transform duration-300 ease-out'></span>
-            </motion.a>
+              <span className='absolute inset-0 z-0 bg-genie-green scale-0 group-hover:scale-100 transition-transform duration-300 ease-out'></span>
+            </motion.button>
           </motion.li>
         ))}
       </ul>

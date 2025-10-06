@@ -25,6 +25,7 @@ interface Product {
 
 interface ProductCarouselProps {
   products: Product[];
+  activeFilter: string;
 }
 
 const getSlidesPerView = (windowWidth: number) => {
@@ -43,16 +44,23 @@ const getSlidesPerView = (windowWidth: number) => {
   return 4;
 };
 
-const ProductCarousel = ({ products }: ProductCarouselProps) => {
+const ProductCarousel = ({ products, activeFilter }: ProductCarouselProps) => {
   const windowWidth = useWindowWidth();
 
-  let slidesPerView = Math.min(products.length, getSlidesPerView(windowWidth));
+  const filteredProducts = activeFilter
+    ? products.filter((product) => product.filter === activeFilter)
+    : products;
 
-  if (products.length === slidesPerView + 1) {
+  let slidesPerView = Math.min(
+    filteredProducts.length,
+    getSlidesPerView(windowWidth),
+  );
+
+  if (filteredProducts.length === slidesPerView + 1) {
     slidesPerView -= 1;
   }
 
-  const isSliderNecessary = products.length > slidesPerView;
+  const isSliderNecessary = filteredProducts.length > slidesPerView;
 
   const navigation = isSliderNecessary;
   const pagination = isSliderNecessary
@@ -93,9 +101,9 @@ const ProductCarousel = ({ products }: ProductCarouselProps) => {
           disableOnInteraction: false,
         }}
         className='w-full h-full !pb-16'>
-        {products.map((product, index) => (
+        {filteredProducts.map((product, index) => (
           <SwiperSlide
-            key={index}
+            key={product.id}
             className='w-full h-[400px] !flex items-center justify-center'>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
