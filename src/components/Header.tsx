@@ -64,15 +64,15 @@ const Header = () => {
               ))}
               <div className='flex items-center space-x-2 ml-4'>
                 <LanguageLink
-                  href='/en'
-                  label={t('languages.en')}
-                  isActive={currentLocale === 'en'}
-                />
-                <span className='text-primary'>|</span>
-                <LanguageLink
                   href='/sr'
                   label={t('languages.sr')}
                   isActive={currentLocale === 'sr'}
+                />
+                <span className='text-primary'>|</span>
+                <LanguageLink
+                  href='/en'
+                  label={t('languages.en')}
+                  isActive={currentLocale === 'en'}
                 />
               </div>
             </nav>
