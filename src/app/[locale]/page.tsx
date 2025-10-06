@@ -52,7 +52,7 @@ function HomeContent() {
         </div>
       </div>
       <div
-        className='h-16 absolute bg-genie-light-blue relative z-1'
+        className='h-16 absolute bg-genie-light-blue relative z-1 top-[-1px]'
         style={{
           clipPath: 'polygon(100% 0, 0 100%, 0 0)',
         }}></div>
@@ -65,7 +65,7 @@ function HomeContent() {
           }}></div>
         <Products />
         <div
-          className='h-16 absolute bg-genie-green relative z-1'
+          className='h-16 absolute bg-genie-green relative z-1 top-[-1px]'
           style={{
             clipPath: 'polygon(100% 0, 0 0, 100% 100%)',
           }}></div>
@@ -79,7 +79,7 @@ function HomeContent() {
           }}></div>
         <About />
         <div
-          className='h-16 absolute bg-primary relative z-1'
+          className='h-16 absolute bg-primary relative z-1 top-[-1px]'
           style={{
             clipPath: 'polygon(100% 0, 0 100%, 0 0)',
           }}></div>
