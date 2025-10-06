@@ -7,9 +7,15 @@ import About from '@/components/About';
 import Products from '@/components/Products';
 import Gallery from '@/components/Gallery';
 import { useTranslations } from 'next-intl';
+import ProductModal from '@/components/ProductModal';
+import {
+  ProductModalProvider,
+  useProductModal,
+} from '@/contexts/ProductModalContext';
 
-export default function Home() {
+function HomeContent() {
   const t = useTranslations('about');
+  const { selectedProduct, isModalOpen, closeModal } = useProductModal();
 
   return (
     <>
@@ -53,7 +59,7 @@ export default function Home() {
       <div className='relative -mt-12'>
         <div className='absolute -mt-4 h-20 w-full bg-secondary' />
         <div
-          className='h-16 absolute bg-genie-green relative'
+          className='h-16 absolute bg-[#93b184] relative'
           style={{
             clipPath: 'polygon(100% 0, 0 101%, 101% 101%)',
           }}></div>
@@ -87,6 +93,12 @@ export default function Home() {
           }}></div>
         <About />
       </div>
+
+      <ProductModal
+        product={selectedProduct}
+        isOpen={isModalOpen}
+        onClose={closeModal}
+      />
       {/* <style jsx>{`
         .genie-green-diagonal::before,
         .primary-diagonal::before {
@@ -109,5 +121,13 @@ export default function Home() {
         }
       `}</style> */}
     </>
+  );
+}
+
+export default function Home() {
+  return (
+    <ProductModalProvider>
+      <HomeContent />
+    </ProductModalProvider>
   );
 }
