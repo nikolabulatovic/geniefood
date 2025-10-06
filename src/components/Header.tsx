@@ -44,7 +44,7 @@ const Header = () => {
             {/* Logo */}
             <Link href='/' className='relative z-10'>
               <Image
-                src='/assets/genie/images/logo-y.png'
+                src='/images/logo.png'
                 alt='Genie'
                 width={120}
                 height={40}
