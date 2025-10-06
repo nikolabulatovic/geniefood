@@ -102,7 +102,7 @@ const Products = () => {
         background:
           'linear-gradient(180deg, #93b184 0%, var(--color-genie-green) 100%)',
       }}>
-      <div className='container-fluid px-4 pt-2 pb-32'>
+      <div className='container-fluid pt-2 pb-32'>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
