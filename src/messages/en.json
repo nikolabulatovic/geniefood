@@ -30,5 +30,14 @@
       "spreads": "Spreads",
       "butters": "Butters"
     }
+  },
+  "contact": {
+    "title": "Contact",
+    "address": "Address",
+    "addressValue": "Kružni put 1a, Beograd, Leštane",
+    "email": "Email",
+    "emailValue": "office@macrobiotic.co.rs",
+    "phone": "Phone",
+    "phoneValue": "011/243-99-43"
   }
 }

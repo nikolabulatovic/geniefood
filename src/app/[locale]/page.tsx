@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 import About from '@/components/About';
 import Products from '@/components/Products';
-import Gallery from '@/components/Gallery';
+import Contact from '@/components/Contact';
 import { useTranslations } from 'next-intl';
 import ProductModal from '@/components/ProductModal';
 import {
@@ -73,13 +73,13 @@ function HomeContent() {
       <div className='relative -mt-12'>
         <div className='absolute -mt-4 h-20 w-full bg-secondary' />
         <div
-          className='h-16 absolute bg-genie-salmon relative'
+          className='h-16 absolute bg-primary relative'
           style={{
             clipPath: 'polygon(0 101%, 0 0, 101% 101%)',
           }}></div>
-        <Gallery />
+        <About />
         <div
-          className='h-16 absolute bg-genie-salmon relative z-1'
+          className='h-16 absolute bg-primary relative z-1'
           style={{
             clipPath: 'polygon(100% 0, 0 100%, 0 0)',
           }}></div>
@@ -87,11 +87,11 @@ function HomeContent() {
       <div className='relative -mt-12'>
         <div className='absolute -mt-4 h-20 w-full bg-secondary' />
         <div
-          className='h-16 w-full relative bg-primary'
+          className='h-16 w-full bg-genie-salmon relative'
           style={{
             clipPath: 'polygon(100% 0, 0 101%, 101% 101%)',
           }}></div>
-        <About />
+        <Contact />
       </div>
 
       <ProductModal
