@@ -57,8 +57,10 @@ const ProductCard = ({
       transition={{ duration: 0.5 }}
       data-filter={filter}>
       <div className='w-full h-full relative aspect-[4/4] px-8 group'>
-        <div className='mask-[url(/images/cloud.png)] mask-contain mask-no-repeat mask-center bg-black/50 h-full max-w-[600px] mx-auto'>
-          <div className='w-full h-full bg-contain bg-center bg-no-repeat bg-[url(/images/galerija-1.jpg)] opacity-0 group-hover:opacity-100 transition-opacity duration-500'></div>
+        <div className='w-full h-full bg-[url(/images/rectangle-curved-stroke.png)] bg-contain bg-center bg-no-repeat max-w-[600px] p-[5.5%]'>
+          <div className='mask-[url(/images/rectangle.png)] mask-contain mask-no-repeat mask-center bg-black/50 w-full h-full'>
+            <div className='w-full h-full bg-size-[115%] bg-center bg-no-repeat bg-[url(/images/galerija-1.jpg)] opacity-0 group-hover:opacity-100 transition-opacity duration-500'></div>
+          </div>
         </div>
         <button
           onClick={handleProductClick}
