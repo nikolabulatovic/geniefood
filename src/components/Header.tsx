@@ -20,14 +20,14 @@ const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const navItems = [
-    { href: '#about', label: t('nav.about') },
     { href: '#products', label: t('nav.products') },
-    { href: '#gallery', label: t('nav.gallery') },
+    { href: '#about', label: t('nav.about') },
     { href: '#contact', label: t('nav.contact') },
   ];
 
