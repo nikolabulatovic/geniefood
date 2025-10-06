@@ -108,6 +108,7 @@ const Products = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className='flex flex-col justify-center items-center section-head text-black mb-16'>
           <SectionHeading title={t('title')} />
@@ -115,12 +116,14 @@ const Products = () => {
             className='bg-primary mx-auto mb-8'
             initial={{ width: 0 }}
             whileInView={{ width: '100px' }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           />
           <motion.div
             className='max-w-6xl mx-auto'
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 }}>
             <p className='text-2xl text-gray-700 text-center leading-relaxed text-shadow-[0_0.1px_0.1px_#2a2a2ac2]'>
               {t('description')}

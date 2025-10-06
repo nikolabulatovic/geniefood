@@ -51,20 +51,16 @@ const ProductCarousel = ({ products, activeFilter }: ProductCarouselProps) => {
     ? products.filter((product) => product.filter === activeFilter)
     : products;
 
-  let slidesPerView = Math.min(
-    filteredProducts.length,
-    getSlidesPerView(windowWidth),
-  );
+  const maxSlidesPerView = getSlidesPerView(windowWidth);
+  const slidesPerView = Math.min(filteredProducts.length, maxSlidesPerView);
 
-  if (filteredProducts.length === slidesPerView + 1) {
-    slidesPerView -= 1;
-  }
-
-  const isSliderNecessary = filteredProducts.length > slidesPerView;
+  const isSliderNecessary = filteredProducts.length > maxSlidesPerView;
 
   const navigation = isSliderNecessary;
   const pagination = isSliderNecessary
     ? {
+        dynamicBullets: true,
+        dynamicMainBullets: 5,
         clickable: true,
       }
     : false;
@@ -77,55 +73,75 @@ const ProductCarousel = ({ products, activeFilter }: ProductCarouselProps) => {
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
       className='w-full py-12 relative'>
-      {/* Custom navigation buttons */}
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        effect='coverflow'
-        grabCursor={true}
-        centeredSlides={centeredSlides}
-        slidesPerView={slidesPerView}
-        slidesPerGroup={1}
-        initialSlide={0}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 1.5,
-          slideShadows: false,
-        }}
-        pagination={pagination}
-        navigation={navigation}
-        loop={true}
-        autoplay={{
-          delay: 500000,
-          disableOnInteraction: false,
-        }}
-        className='w-full h-full !pb-16'>
-        {filteredProducts.map((product, index) => (
-          <SwiperSlide
-            key={product.id}
-            className='w-full h-[400px] !flex items-center justify-center'>
+      {isSliderNecessary ? (
+        /* Swiper for multiple products */
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          effect='coverflow'
+          grabCursor={true}
+          centeredSlides={centeredSlides}
+          slidesPerView={slidesPerView}
+          spaceBetween={30}
+          slidesPerGroup={1}
+          initialSlide={0}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 1.5,
+            slideShadows: false,
+          }}
+          pagination={pagination}
+          navigation={navigation}
+          loop={true}
+          autoplay={{
+            delay: 500000,
+            disableOnInteraction: false,
+          }}
+          className='w-full h-full !pb-16'>
+          {filteredProducts.map((product) => (
+            <SwiperSlide
+              key={product.id}
+              className='!flex items-center justify-center'>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className='w-full h-full transform transition-all duration-500 rounded-xl overflow-hidden'>
+                <ProductCard {...product} />
+              </motion.div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      ) : (
+        /* Simple flex container for few products */
+        <div className='flex justify-center items-center gap-8 flex-wrap'>
+          {filteredProducts.map((product, index) => (
             <motion.div
+              key={product.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className='w-full h-full transform transition-all duration-500 rounded-xl overflow-hidden'>
+              className='w-[300px] h-[400px] transform transition-all duration-500 rounded-xl overflow-hidden list-none'>
               <ProductCard {...product} />
             </motion.div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+          ))}
+        </div>
+      )}
 
       {/* Custom styles for Swiper */}
       <style jsx global>{`
         .swiper-pagination {
-          bottom: 0;
+          bottom: 21px !important;
         }
+
         .swiper-pagination-bullet-active {
-          background: theme('colors.genie-green');
+          background: var(--color-primary);
           transform: scale(1.2);
         }
+
         .swiper-button-disabled {
           opacity: 0.5;
           cursor: not-allowed;
@@ -133,13 +149,26 @@ const ProductCarousel = ({ products, activeFilter }: ProductCarouselProps) => {
 
         .swiper-button-prev,
         .swiper-button-next {
+          background: #41230388;
+          color: var(--color-primary);
           font-size: 1.2rem;
           font-weight: bold;
-          width: 12px;
-          height: 12px;
-          border-radius: 50%;
+          width: 2rem;
+          height: 2rem;
+          border-radius: 15%;
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
           transition: all 0.3s ease;
+          position: absolute;
+          top: 95%;
+          z-index: 11;
+        }
+
+        .swiper-button-prev {
+          left: 50px;
+        }
+
+        .swiper-button-next {
+          right: 50px;
         }
 
         .swiper-button-prev:after,
