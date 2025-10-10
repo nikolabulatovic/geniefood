@@ -1,7 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useEffect } from 'react';
 
 import About from '@/components/About';
 import Products from '@/components/Products';
@@ -14,8 +15,33 @@ import {
 } from '@/contexts/ProductModalContext';
 
 function HomeContent() {
-  const t = useTranslations('about');
+  const t = useTranslations('cover');
   const { selectedProduct, isModalOpen, closeModal } = useProductModal();
+  const [showScrollButton, setShowScrollButton] = useState(true);
+
+  const scrollToProducts = () => {
+    const productsSection = document.getElementById('products');
+    if (productsSection) {
+      productsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      setShowScrollButton(scrollTop <= 100);
+    };
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Check initial scroll position
+    handleScroll();
+
+    // Cleanup
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <>
@@ -50,6 +76,48 @@ function HomeContent() {
             />
           </motion.div>
         </div>
+
+        {/* Scroll to Products Button */}
+        <AnimatePresence>
+          {showScrollButton && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.5, delay: 1 }}
+              className='absolute bottom-32 left-1/2 transform -translate-x-1/2'>
+              <motion.button
+                onClick={scrollToProducts}
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className='cursor-pointer bg-primary/90 backdrop-blur-sm text-secondary px-5 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 font-intro font-bold text-lg border-2 border-genie-green/20 hover:border-genie-green/40'>
+                <div className='flex flex-col text-xl text-secondary text-center -mt-4'>
+                  <motion.div
+                    animate={{ y: [0, 4, 0] }}
+                    transition={{
+                      duration: 1.5,
+                      repeat: Infinity,
+                      ease: 'easeInOut',
+                    }}
+                    className='text-4xl'>
+                    ⌄
+                  </motion.div>
+                  <motion.div
+                    animate={{ y: [0, 4, 0] }}
+                    transition={{
+                      duration: 1.5,
+                      repeat: Infinity,
+                      ease: 'easeInOut',
+                      delay: 0.2,
+                    }}
+                    className='text-4xl -mt-7'>
+                    ⌄
+                  </motion.div>
+                </div>
+              </motion.button>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
       <div
         className='h-16 absolute bg-genie-light-blue relative z-1 top-[-1px]'
