@@ -29,7 +29,7 @@ interface ProductCarouselProps {
 }
 
 const getSlidesPerView = (windowWidth: number) => {
-  if (windowWidth < 320) {
+  if (windowWidth < 500) {
     return 1;
   }
   if (windowWidth < 768) {
