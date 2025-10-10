@@ -17,6 +17,21 @@ interface ProductCardProps {
 
 const DEFAULT_SCALE = 75;
 
+const breakTitle = (title: string) => {
+  const lines = [];
+
+  if (title.length > 32) {
+    const lastSpace = title.lastIndexOf(' ', 24);
+
+    lines.push(title.slice(0, lastSpace));
+    lines.push(title.slice(lastSpace + 1));
+  } else {
+    lines.push(title);
+  }
+
+  return lines.map((line, index) => <div key={index}>{line}</div>);
+};
+
 const productScaleMap = {
   // nutritivni_kvasac: 175,
 };
@@ -55,7 +70,11 @@ const ProductCard = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      data-filter={filter}>
+      data-filter={filter}
+      className='pt-4 relative'>
+      <div className='text-lg text-secondary font-poppins font-semibold text-center absolute px-4 py-2 rounded-lg w-full -mt-4 mb-4'>
+        {breakTitle(title)}
+      </div>
       <div className='w-full h-full relative aspect-[4/4] px-8 group'>
         <div className='w-full h-full bg-[url(/images/rectangle-curved-stroke.png)] bg-contain bg-center bg-no-repeat max-w-[600px] p-[5.5%]'>
           <div className='mask-[url(/images/rectangle.png)] mask-contain mask-no-repeat mask-center bg-black/50 w-full h-full'>
@@ -77,14 +96,6 @@ const ProductCard = ({
             />
           </span>
         </button>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileHover={{ opacity: 1 }}
-          className='absolute bottom-4 left-1/2 transform -translate-x-1/2'>
-          <span className='text-lg font-semibold text-white bg-black/50 px-4 py-2 rounded-lg'>
-            {title}
-          </span>
-        </motion.div>
       </div>
       <div className='p-4'>
         <h6></h6>
