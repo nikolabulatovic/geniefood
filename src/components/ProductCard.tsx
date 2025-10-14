@@ -82,7 +82,7 @@ const ProductCard = ({
               src={imageSrc}
               alt={imageAlt}
               fill
-              className={`transform group-hover:translate-y-35 group-hover:scale-${
+              className={`transform group-hover:translate-y-1/2 group-hover:scale-${
                 productScaleMap[id as keyof typeof productScaleMap] ??
                 DEFAULT_SCALE
               } transition-transform duration-500 mx-auto`}
