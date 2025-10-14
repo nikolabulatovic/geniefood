@@ -3,7 +3,7 @@
     {
       "id": "nutritivni_kvasac",
       "productType": "dodaci",
-      "imageSrc": "/images/nutritivni-kvasac.png",
+      "imageSrc": "/images/products/nutritivni-kvasac.png",
       "imageAlt": "Nutritivni kvasac u ljuspicama – 200g",
       "title": "Nutritivni kvasac u ljuspicama",
       "weight": "200g",
@@ -15,12 +15,30 @@
         "Veoma bogat vlaknima",
         "Izvor svih esencijalnih aminokiselina",
         "Spreman za konzumaciju"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "1081kJ / 428 kcal",
+        "fats": "4,2g",
+        "saturatedFats": "0,6g",
+        "carbohydrates": "40,2g",
+        "sugars": "15,6g",
+        "fiber": "27,1g",
+        "proteins": "46,5g",
+        "salt": "0,036g",
+        "vitaminB1": "37,1mg",
+        "vitaminB2": "27,1mg",
+        "vitaminB3": "339,6mg",
+        "vitaminB5": "185,3mg",
+        "vitaminB6": "49,2mg",
+        "vitaminB7": "273,5mcg",
+        "vitaminB9": "6,3mg",
+        "vitaminB12": "36mcg"
+      }
     },
     {
       "id": "mileram",
       "productType": "dodaci",
-      "imageSrc": "/images/mileram.png",
+      "imageSrc": "/images/products/mileram.png",
       "imageAlt": "Mileram – 400g",
       "title": "Mileram",
       "weight": "400g",
@@ -35,7 +53,7 @@
     {
       "id": "tempeh",
       "productType": "makrobiotika",
-      "imageSrc": "/images/tempeh-sirovi.png",
+      "imageSrc": "/images/products/tempeh-sirovi.png",
       "imageAlt": "Tempeh – 200g",
       "title": "Tempeh",
       "weight": "200g",
@@ -46,12 +64,22 @@
         "Bez holesterola, kazeina i laktoze",
         "Pogodan za marinade",
         "Pruža dugotrajan osećaj sitosti"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "203kcal (852kJ)",
+        "fats": "9,2g",
+        "saturatedFats": "0,6g",
+        "carbohydrates": "11,9g",
+        "sugars": "2,1g",
+        "fiber": "3,3g",
+        "proteins": "18,4g",
+        "salt": "0,1g"
+      }
     },
     {
       "id": "tempeh_przeni",
       "productType": "makrobiotika",
-      "imageSrc": "/images/tempeh-przeni.png",
+      "imageSrc": "/images/products/tempeh-przeni.png",
       "imageAlt": "Prženi tempeh – 200g",
       "title": "Prženi tempeh",
       "weight": "200g",
@@ -63,12 +91,21 @@
         "Spreman za konzumaciju",
         "Pruža dugotrajan osećaj sitosti"
       ],
-      "position": { "left": "496px", "top": "0px" }
+      "nutritionalData": {
+        "energy": "185kcal (774kJ)",
+        "fats": "8.0g",
+        "saturatedFats": "0.9g",
+        "carbohydrates": "25.7g",
+        "sugars": "<0.5g",
+        "fiber": "1.2g",
+        "proteins": "19.7g",
+        "salt": "0.74g"
+      }
     },
     {
       "id": "seitan_przeni",
       "productType": "makrobiotika",
-      "imageSrc": "/images/seitan-przeni.png",
+      "imageSrc": "/images/products/seitan-przeni.png",
       "imageAlt": "Seitan prženi – 180g",
       "title": "Seitan prženi",
       "weight": "180g",
@@ -78,12 +115,21 @@
         "Bez holesterola, kazeina i laktoze",
         "Spreman za konzumaciju"
       ],
-      "position": { "left": "993px", "top": "0px" }
+      "nutritionalData": {
+        "energy": "221kcal (928kJ)",
+        "fats": "4,8g",
+        "saturatedFats": "0,2g",
+        "carbohydrates": "13,1g",
+        "sugars": "0,3g",
+        "fiber": "0,9g",
+        "proteini": "33,4g",
+        "salt": "0,9g"
+      }
     },
     {
       "id": "tofu_dimljeni",
       "productType": "makrobiotika",
-      "imageSrc": "/images/tofu-dimljeni.png",
+      "imageSrc": "/images/products/tofu-dimljeni.png",
       "imageAlt": "Tofu dimljeni - 200g",
       "title": "Tofu dimljeni",
       "weight": "200g",
@@ -93,12 +139,22 @@
         "Pogodan za dane posta na vodi",
         "Bez holesterola, kazeina i laktoze",
         "Nizak sadržaj ugljenih hidrata"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "181kcal (757kJ)",
+        "fats": "5g",
+        "saturatedFats": "0,9g",
+        "carbohydrates": "3,1g",
+        "sugars": "<0,5g",
+        "fiber": "1g",
+        "proteins": "30,9g",
+        "salt": "2,65g"
+      }
     },
     {
       "id": "tofu_przeni",
       "productType": "makrobiotika",
-      "imageSrc": "/images/tofu-przeni.png",
+      "imageSrc": "/images/products/tofu-przeni.png",
       "imageAlt": "Tofu prženi – 170g",
       "title": "Tofu prženi",
       "weight": "170g",
@@ -107,12 +163,22 @@
         "Nizak sadržaj ugljenih hidrata",
         "Bez holesterola, kazeina i laktoze",
         "Spreman za konzumaciju"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "142kcal (594kJ)",
+        "fats": "6,9g",
+        "saturatedFats": "1,2g",
+        "carbohydrates": "2,9g",
+        "sugars": "<0,5g",
+        "fiber": "0,9g",
+        "proteins": "16,6g",
+        "salt": "1,64g"
+      }
     },
     {
       "id": "tofu_sirovi",
       "productType": "makrobiotika",
-      "imageSrc": "/images/tofu-sirovi.png",
+      "imageSrc": "/images/products/tofu-sirovi.png",
       "imageAlt": "Tofu sirovi – 200g",
       "title": "Tofu sirovi",
       "weight": "200g",
@@ -124,12 +190,22 @@
         "Bez holesterola, kazeina i laktoze",
         "Lako svarljiva namirnica",
         "Pogodan za marinade"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "114kcal (477kJ)",
+        "fats": "3,2g",
+        "saturatedFats": "0,5g",
+        "carbohydrates": "2,6g",
+        "sugars": "<0,5g",
+        "fiber": "0,6g",
+        "proteins": "18,4g",
+        "salt": "0,57g"
+      }
     },
     {
       "id": "badem_puter",
       "productType": "puteri",
-      "imageSrc": "/images/badem-puter.png",
+      "imageSrc": "/images/products/badem-puter.png",
       "imageAlt": "Badem puter – 170g",
       "title": "Badem puter",
       "weight": "170g",
@@ -142,12 +218,22 @@
         "Bez veštačkih dodataka",
         "Izvor gvožđa i vlakana",
         "Spreman za konzumaciju"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "607kcal (2536kJ)",
+        "fats": "",
+        "saturatedFats": "4,28g",
+        "carbohydrates": "16,68g",
+        "sugars": "4,55g",
+        "fiber": "10,50g",
+        "proteins": "21,23g",
+        "salt": "0,05g"
+      }
     },
     {
       "id": "kikiriki_puter",
       "productType": "puteri",
-      "imageSrc": "/images/kikiriki-puter.png",
+      "imageSrc": "/images/products/kikiriki-puter.png",
       "imageAlt": "Kikiriki puter 99,5% – 360g",
       "title": "Kikiriki puter 99,5%",
       "weight": "360g",
@@ -160,12 +246,22 @@
         "Bez veštačkih dodataka",
         "Izvor gvožđa i vlakana",
         "Spreman za konzumaciju"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "624kcal (2620kJ)",
+        "fats": "49,3g",
+        "saturatedFats": "6,3g",
+        "carbohydrates": "19,6g",
+        "sugars": "4,0g",
+        "fiber": "8,6g",
+        "proteins": "25,6g",
+        "salt": "1,0g"
+      }
     },
     {
       "id": "tahini",
       "productType": "puteri",
-      "imageSrc": "/images/tahini.png",
+      "imageSrc": "/images/products/tahini.png",
       "imageAlt": "Tahini – susamov puter – 360g",
       "title": "Tahini – susamov puter",
       "weight": "360g",
@@ -177,12 +273,22 @@
         "Bez veštačkih dodataka",
         "Izvor kalcijuma, gvožđa i vlakana",
         "Spreman za konzumaciju"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "634kcal (2662kJ)",
+        "fats": "52,6g",
+        "saturatedFats": "6,2g",
+        "carbohydrates": "22,2g",
+        "sugars": "0,5g",
+        "fiber": "8,2g",
+        "proteins": "18,1g",
+        "salt": "0,1g"
+      }
     },
     {
       "id": "bundevin_puter",
       "productType": "puteri",
-      "imageSrc": "/images/bundevin-puter.png",
+      "imageSrc": "/images/products/bundevin-puter.png",
       "imageAlt": "Bundevin puter – 330g",
       "title": "Bundevin puter",
       "weight": "330g",
@@ -193,12 +299,22 @@
         "Bez veštačkih dodataka",
         "Izvor cinka, gvožđa i vlakana",
         "Spreman za konzumaciju"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "559kcal (22347kJ)",
+        "fats": "42,6g",
+        "saturatedFats": "5,8g",
+        "carbohydrates": "15,3g",
+        "sugars": "3,7g",
+        "fiber": "6,0g",
+        "proteins": "28,7g",
+        "salt": "0,2g"
+      }
     },
     {
       "id": "lesnik_puter",
       "productType": "puteri",
-      "imageSrc": "/images/lesnik-puter.png",
+      "imageSrc": "/images/products/lesnik-puter.png",
       "imageAlt": "Lešnik puter – 170g",
       "title": "Lešnik puter",
       "weight": "170g",
@@ -211,12 +327,22 @@
         "Bez veštačkih dodataka",
         "Izvor mnogih mikronutritijenata i vlakana",
         "Spreman za konzumaciju"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "668kcal (2805kJ)",
+        "fats": "60,4g",
+        "saturatedFats": "4,3g",
+        "carbohydrates": "16,5g",
+        "sugars": "4,4g",
+        "fiber": "9,8g",
+        "proteins": "14,6g",
+        "salt": "0,1g"
+      }
     },
     {
       "id": "dimljena_pecenica",
       "productType": "delikatesi",
-      "imageSrc": "/images/dimljena-pecenica.png",
+      "imageSrc": "/images/products/dimljena-pecenica.png",
       "imageAlt": "Dimljena pečenica – 250g",
       "title": "Dimljena pečenica",
       "weight": "250g",
@@ -232,7 +358,7 @@
     {
       "id": "vege_burger",
       "productType": "delikatesi",
-      "imageSrc": "/images/vege-burger.png",
+      "imageSrc": "/images/products/vege-burger.png",
       "imageAlt": "Vege burger – 240g",
       "title": "Vege burger",
       "weight": "240g",
@@ -241,12 +367,22 @@
         "Sadrži 15,2g proteina na 100g proizvoda",
         "Dobar izvor vlakana",
         "Bez holesterola, kazeina i laktoze"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "251kcal (1054kJ)",
+        "fats": "17,4g",
+        "saturatedFats": "2,9g",
+        "carbohydrates": "8,5g",
+        "sugars": "1,2g",
+        "fiber": "12,5g",
+        "proteins": "15,2g",
+        "salt": "1,3g"
+      }
     },
     {
       "id": "soja_kobasice_classic",
       "productType": "delikatesi",
-      "imageSrc": "/images/soja-kobasice-classic.png",
+      "imageSrc": "/images/products/soja-kobasice-classic.png",
       "imageAlt": "Soja kobasice classic – 200g",
       "title": "Soja kobasice classic",
       "weight": "200g",
@@ -257,12 +393,22 @@
         "Bez holesterola, kazeina i laktoze",
         "Lako svarljive i zasitne",
         "Spremne za konzumaciju"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "256kcal (1071kJ)",
+        "fats": "9,2g",
+        "saturatedFats": "1,0g",
+        "carbohydrates": "25,7g",
+        "sugars": "5,5g",
+        "fiber": "1,1g",
+        "proteins": "16,9g",
+        "salt": "2,25g"
+      }
     },
     {
       "id": "soja_kobasice_ljute",
       "productType": "delikatesi",
-      "imageSrc": "/images/soja-kobasice-ljute.png",
+      "imageSrc": "/images/products/soja-kobasice-ljute.png",
       "imageAlt": "Soja kobasice ljute – 200g",
       "title": "Soja kobasice ljute",
       "weight": "200g",
@@ -274,12 +420,22 @@
         "Bez holesterola, kazeina i laktoze",
         "Lako svarljive i zasitne",
         "Spremne za konzumaciju"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "256kcal (1071kJ)",
+        "fats": "9,2g",
+        "saturatedFats": "1,0g",
+        "carbohydrates": "25,7g",
+        "sugars": "5,5g",
+        "fiber": "1,1g",
+        "proteins": "16,9g",
+        "salt": "2,25g"
+      }
     },
     {
       "id": "soja_kobasice_posne",
       "productType": "delikatesi",
-      "imageSrc": "/images/soja-kobasice-posne.png",
+      "imageSrc": "/images/products/soja-kobasice-posne.png",
       "imageAlt": "Sojine kobasice posne na vodi – 200g",
       "title": "Sojine kobasice posne na vodi",
       "weight": "200g",
@@ -296,7 +452,7 @@
     {
       "id": "hot_dog",
       "productType": "delikatesi",
-      "imageSrc": "/images/hot-dog.png",
+      "imageSrc": "/images/products/hot-dog.png",
       "imageAlt": "Hot-dog – 200g",
       "title": "Hot-dog",
       "weight": "200g",
@@ -305,12 +461,22 @@
         "Bogat vlaknima",
         "Manje zasićenih masnih kiselina u poređenju s mesnim proizvodima",
         "Bez holesterola, kazeina i laktoze"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "238kcal (957kJ)",
+        "fats": "22,1g",
+        "saturatedFats": "2,3g",
+        "carbohydrates": "2,4g",
+        "sugars": "0,3g",
+        "fiber": "7,0g",
+        "proteins": "4,8g",
+        "salt": "1,4g"
+      }
     },
     {
       "id": "grill_kobasice",
       "productType": "delikatesi",
-      "imageSrc": "/images/grill-kobasice.png",
+      "imageSrc": "/images/products/grill-kobasice.png",
       "imageAlt": "Grill kobasice – 200g",
       "title": "Grill kobasice",
       "weight": "200g",
@@ -324,7 +490,7 @@
     {
       "id": "salama_classic",
       "productType": "delikatesi",
-      "imageSrc": "/images/salama-classic.png",
+      "imageSrc": "/images/products/salama-classic.png",
       "imageAlt": "Salama Classic – 250g",
       "title": "Salama Classic",
       "weight": "250g",
@@ -338,7 +504,7 @@
     {
       "id": "tofu_namaz_natural",
       "productType": "namazi",
-      "imageSrc": "/images/tofu-namaz-natural.png",
+      "imageSrc": "/images/products/tofu-namaz-natural.png",
       "imageAlt": "Tofu namaz natural – 170g",
       "title": "Tofu namaz natural",
       "weight": "170g",
@@ -349,12 +515,22 @@
         "Bez holesterola, kazeina i laktoze",
         "Lako svarljiv proizvod",
         "Spreman za konzumaciju"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "257kcal (1079kJ)",
+        "fats": "24,7g",
+        "saturatedFats": "0,8g",
+        "carbohydrates": "1g",
+        "sugars": "0,2g",
+        "fiber": "3,2g",
+        "proteins": "7,8g",
+        "salt": "1,1g"
+      }
     },
     {
       "id": "tofu_namaz_susam",
       "productType": "namazi",
-      "imageSrc": "/images/tofu-namaz-susam.png",
+      "imageSrc": "/images/products/tofu-namaz-susam.png",
       "imageAlt": "Tofu namaz sa susamom – 170g",
       "title": "Tofu namaz sa susamom",
       "weight": "170g",
@@ -365,12 +541,22 @@
         "Bez holesterola, kazeina i laktoze",
         "Lako svarljiv proizvod",
         "Spreman za konzumaciju"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "263kcal (1105kJ)",
+        "fats": "25,2g",
+        "saturatedFats": "0,9g",
+        "carbohydrates": "1,3g",
+        "sugars": "0,2g",
+        "fiber": "3,4g",
+        "proteins": "7,9g",
+        "salt": "1,1g"
+      }
     },
     {
       "id": "tofu_namaz_kikiriki",
       "productType": "namazi",
-      "imageSrc": "/images/tofu-namaz-kikiriki.png",
+      "imageSrc": "/images/products/tofu-namaz-kikiriki.png",
       "imageAlt": "Tofu namaz sa kikiriki puterom – 170g",
       "title": "Tofu namaz sa kikiriki puterom",
       "weight": "170g",
@@ -381,12 +567,22 @@
         "Bez holesterola, kazeina i laktoze",
         "Lako svarljiv proizvod",
         "Spreman za konzumaciju"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "319kcal (1430kJ)",
+        "fats": "28,9g",
+        "saturatedFats": "1,9g",
+        "carbohydrates": "4,3g",
+        "sugars": "0,9g",
+        "fiber": "4,1g",
+        "proteins": "10,5g",
+        "salt": "1,1g"
+      }
     },
     {
       "id": "tofu_namaz_mirodija",
       "productType": "namazi",
-      "imageSrc": "/images/tofu-namaz-mirodija.png",
+      "imageSrc": "/images/products/tofu-namaz-mirodija.png",
       "imageAlt": "Tofu namaz sa mirođijom – 170g",
       "title": "Tofu namaz sa mirođijom",
       "weight": "170g",
@@ -397,12 +593,22 @@
         "Bez holesterola, kazeina i laktoze",
         "Lako svarljiv proizvod",
         "Spreman za konzumaciju"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "257kcal (1079kJ)",
+        "fats": "24,5g",
+        "saturatedFats": "0,6g",
+        "carbohydrates": "1,2g",
+        "sugars": "0,2g",
+        "fiber": "3,5g",
+        "proteins": "8g",
+        "salt": "1,1g"
+      }
     },
     {
       "id": "tofu_namaz_paprika",
       "productType": "namazi",
-      "imageSrc": "/images/tofu-namaz-paprika.png",
+      "imageSrc": "/images/products/tofu-namaz-paprika.png",
       "imageAlt": "Tofu namaz sa paprikom – 170g",
       "title": "Tofu namaz sa paprikom",
       "weight": "170g",
@@ -413,12 +619,22 @@
         "Bez holesterola, kazeina i laktoze",
         "Lako svarljiv proizvod",
         "Spreman za konzumaciju"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "258kcal (1083kJ)",
+        "fats": "24,6g",
+        "saturatedFats": "0,7g",
+        "carbohydrates": "1,2g",
+        "sugars": "0,2g",
+        "fiber": "3,3g",
+        "proteins": "8g",
+        "salt": "1,1g"
+      }
     },
     {
       "id": "tofu_namaz_posan",
       "productType": "namazi",
-      "imageSrc": "/images/tofu-namaz-posan.png",
+      "imageSrc": "/images/products/tofu-namaz-posan.png",
       "imageAlt": "Tofu namaz posan na vodi – 170g",
       "title": "Tofu namaz posan na vodi",
       "weight": "170g",
@@ -430,12 +646,22 @@
         "Bez holesterola, kazeina i laktoze",
         "Lako svarljiv proizvod",
         "Spreman za konzumaciju"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "83kcal (348kJ)",
+        "fats": "3,2g",
+        "saturatedFats": "0,1g",
+        "carbohydrates": "2,3g",
+        "sugars": "0,2g",
+        "fiber": "3,2g",
+        "proteins": "11,4g",
+        "salt": "1,1g"
+      }
     },
     {
       "id": "humus_u_crevu",
       "productType": "namazi",
-      "imageSrc": "/images/humus-u-crevu.png",
+      "imageSrc": "/images/products/humus-u-crevu.png",
       "imageAlt": "Humus u crevu – 200g",
       "title": "Humus u crevu",
       "weight": "200g",
@@ -446,7 +672,17 @@
         "Bez holesterola, kazeina i laktoze",
         "Lako svarljiv proizvod",
         "Spreman za konzumaciju"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "216kcal (907kJ)",
+        "fats": "17,2g",
+        "saturatedFats": "2,2g",
+        "carbohydrates": "6,9g",
+        "sugars": "0,8g",
+        "fiber": "3,6g",
+        "proteins": "8,6g",
+        "salt": "1,4g"
+      }
     }
   ]
 }

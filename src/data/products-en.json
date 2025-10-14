@@ -15,7 +15,25 @@
         "Very rich in fiber",
         "Source of all essential amino acids",
         "Ready to consume"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "1081kJ / 428kcal",
+        "fats": "4.2g",
+        "saturatedFats": "0.6g",
+        "carbohydrates": "40.2g",
+        "sugars": "15.6g",
+        "fiber": "27.1g",
+        "proteins": "46.5g",
+        "salt": "0.036g",
+        "vitaminB1": "37.1mg",
+        "vitaminB2": "27.1mg",
+        "vitaminB3": "339.6mg",
+        "vitaminB5": "185.3mg",
+        "vitaminB6": "49.2mg",
+        "vitaminB7": "273.5mcg",
+        "vitaminB9": "6.3mg",
+        "vitaminB12": "36mcg"
+      }
     },
     {
       "id": "mileram",
@@ -46,7 +64,17 @@
         "Cholesterol, casein, and lactose-free",
         "Suitable for marinating",
         "Provides long-lasting satiety"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "203kcal (852kJ)",
+        "fats": "9.2g",
+        "saturatedFats": "0.6g",
+        "carbohydrates": "11.9g",
+        "sugars": "2.1g",
+        "fiber": "3.3g",
+        "proteins": "18.4g",
+        "salt": "0.1g"
+      }
     },
     {
       "id": "tempeh_przeni",
@@ -63,7 +91,16 @@
         "Ready to consume",
         "Provides long-lasting satiety"
       ],
-      "position": { "left": "496px", "top": "0px" }
+      "nutritionalData": {
+        "energija": "185kcal (774kJ)",
+        "masti": "8,0g",
+        "zasiceneMasneKiseline": "0,9g",
+        "ugljeniHidrati": "25,7g",
+        "seceri": "<0,5g",
+        "vlakna": "1,2g",
+        "proteini": "19,7g",
+        "so": "0,74g"
+      }
     },
     {
       "id": "seitan_przeni",
@@ -78,7 +115,16 @@
         "Cholesterol, casein, and lactose-free",
         "Ready to consume"
       ],
-      "position": { "left": "993px", "top": "0px" }
+      "nutritionalData": {
+        "energy": "221kcal (928kJ)",
+        "fats": "4.8g",
+        "saturatedFats": "0.2g",
+        "carbohydrates": "13.1g",
+        "sugars": "0.3g",
+        "fiber": "0.9g",
+        "proteins": "33.4g",
+        "salt": "0.9g"
+      }
     },
     {
       "id": "tofu_dimljeni",
@@ -93,7 +139,17 @@
         "Suitable for water fasting days",
         "Cholesterol, casein, and lactose-free",
         "Low carbohydrate content"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "181kcal (757kJ)",
+        "fats": "5g",
+        "saturatedFats": "0.9g",
+        "carbohydrates": "3.1g",
+        "sugars": "<0.5g",
+        "fiber": "1g",
+        "proteins": "30.9g",
+        "salt": "2.65g"
+      }
     },
     {
       "id": "tofu_przeni",
@@ -107,7 +163,17 @@
         "Low carbohydrate content",
         "Cholesterol, casein, and lactose-free",
         "Ready to consume"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "142kcal (594kJ)",
+        "fats": "6.9g",
+        "saturatedFats": "1.2g",
+        "carbohydrates": "2.9g",
+        "sugars": "<0.5g",
+        "fiber": "0.9g",
+        "proteins": "16.6g",
+        "salt": "1.64g"
+      }
     },
     {
       "id": "tofu_sirovi",
@@ -124,7 +190,17 @@
         "Cholesterol, casein, and lactose-free",
         "Easily digestible food",
         "Suitable for marinating"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "114kcal (477kJ)",
+        "fats": "3.2g",
+        "saturatedFats": "0.5g",
+        "carbohydrates": "2.6g",
+        "sugars": "<0.5g",
+        "fiber": "0.6g",
+        "proteins": "18.4g",
+        "salt": "0.57g"
+      }
     },
     {
       "id": "badem_puter",
@@ -160,7 +236,17 @@
         "No artificial additives",
         "Source of iron and fiber",
         "Ready to consume"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "624kcal (2620kJ)",
+        "fats": "49.3g",
+        "saturatedFats": "6.3g",
+        "carbohydrates": "19.6g",
+        "sugars": "4.0g",
+        "fiber": "8.6g",
+        "proteins": "25.6g",
+        "salt": "1.0g"
+      }
     },
     {
       "id": "tahini",
@@ -177,7 +263,17 @@
         "No artificial additives",
         "Source of calcium, iron, and fiber",
         "Ready to consume"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "634kcal (2662kJ)",
+        "fats": "52.6g",
+        "saturatedFats": "6.2g",
+        "carbohydrates": "22.2g",
+        "sugars": "0.5g",
+        "fiber": "8.2g",
+        "proteins": "18.1g",
+        "salt": "0.1g"
+      }
     },
     {
       "id": "bundevin_puter",
@@ -193,7 +289,17 @@
         "No artificial additives",
         "Source of zinc, iron, and fiber",
         "Ready to consume"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "559kcal (22347kJ)",
+        "fats": "42.6g",
+        "saturatedFats": "5.8g",
+        "carbohydrates": "15.3g",
+        "sugars": "3.7g",
+        "fiber": "6.0g",
+        "proteins": "28.7g",
+        "salt": "0.2g"
+      }
     },
     {
       "id": "lesnik_puter",
@@ -211,7 +317,17 @@
         "No artificial additives",
         "Source of many micronutrients and fiber",
         "Ready to consume"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "668kcal (2805kJ)",
+        "fats": "60.4g",
+        "saturatedFats": "4.3g",
+        "carbohydrates": "16.5g",
+        "sugars": "4.4g",
+        "fiber": "9.8g",
+        "proteins": "14.6g",
+        "salt": "0.1g"
+      }
     },
     {
       "id": "dimljena_pecenica",
@@ -241,7 +357,17 @@
         "Contains 15.2g protein per 100g product",
         "Good source of fiber",
         "Cholesterol, casein, and lactose-free"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "251kcal (1054kJ)",
+        "fats": "17.4g",
+        "saturatedFats": "2.9g",
+        "carbohydrates": "8.5g",
+        "sugars": "1.2g",
+        "fiber": "12.5g",
+        "proteins": "15.2g",
+        "salt": "1.3g"
+      }
     },
     {
       "id": "soja_kobasice_classic",
@@ -257,7 +383,17 @@
         "Cholesterol, casein, and lactose-free",
         "Easily digestible and satisfying",
         "Ready to consume"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "256kcal (1071kJ)",
+        "fats": "9.2g",
+        "saturatedFats": "1.0g",
+        "carbohydrates": "25.7g",
+        "sugars": "5.5g",
+        "fiber": "1.1g",
+        "proteins": "16.9g",
+        "salt": "2.25g"
+      }
     },
     {
       "id": "soja_kobasice_ljute",
@@ -274,7 +410,17 @@
         "Cholesterol, casein, and lactose-free",
         "Easily digestible and satisfying",
         "Ready to consume"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "256kcal (1071kJ)",
+        "fats": "9.2g",
+        "saturatedFats": "1.0g",
+        "carbohydrates": "25.7g",
+        "sugars": "5.5g",
+        "fiber": "1.1g",
+        "proteins": "16.9g",
+        "salt": "2.25g"
+      }
     },
     {
       "id": "soja_kobasice_posne",
@@ -305,7 +451,17 @@
         "Rich in fiber",
         "Less saturated fatty acids compared to meat products",
         "Cholesterol, casein, and lactose-free"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "238kcal (957kJ)",
+        "fats": "22.1g",
+        "saturatedFats": "2.3g",
+        "carbohydrates": "2.4g",
+        "sugars": "0.3g",
+        "fiber": "7.0g",
+        "proteins": "4.8g",
+        "salt": "1.4g"
+      }
     },
     {
       "id": "grill_kobasice",
@@ -349,7 +505,17 @@
         "Cholesterol, casein, and lactose-free",
         "Easily digestible product",
         "Ready to consume"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "257kcal (1079kJ)",
+        "fats": "24.7g",
+        "saturatedFats": "0.8g",
+        "carbohydrates": "1g",
+        "sugars": "0.2g",
+        "fiber": "3.2g",
+        "proteins": "7.8g",
+        "salt": "1.1g"
+      }
     },
     {
       "id": "tofu_namaz_susam",
@@ -365,7 +531,17 @@
         "Cholesterol, casein, and lactose-free",
         "Easily digestible product",
         "Ready to consume"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "263kcal (1105kJ)",
+        "fats": "25.2g",
+        "saturatedFats": "0.9g",
+        "carbohydrates": "1.3g",
+        "sugars": "0.2g",
+        "fiber": "3.4g",
+        "proteins": "7.9g",
+        "salt": "1.1g"
+      }
     },
     {
       "id": "tofu_namaz_kikiriki",
@@ -381,7 +557,17 @@
         "Cholesterol, casein, and lactose-free",
         "Easily digestible product",
         "Ready to consume"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "319kcal (1430kJ)",
+        "fats": "28.9g",
+        "saturatedFats": "1.9g",
+        "carbohydrates": "4.3g",
+        "sugars": "0.9g",
+        "fiber": "4.1g",
+        "proteins": "10.5g",
+        "salt": "1.1g"
+      }
     },
     {
       "id": "tofu_namaz_mirodija",
@@ -397,7 +583,17 @@
         "Cholesterol, casein, and lactose-free",
         "Easily digestible product",
         "Ready to consume"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "257kcal (1079kJ)",
+        "fats": "24.5g",
+        "saturatedFats": "0.6g",
+        "carbohydrates": "1.2g",
+        "sugars": "0.2g",
+        "fiber": "3.5g",
+        "proteins": "8g",
+        "salt": "1.1g"
+      }
     },
     {
       "id": "tofu_namaz_paprika",
@@ -413,7 +609,17 @@
         "Cholesterol, casein, and lactose-free",
         "Easily digestible product",
         "Ready to consume"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "258kcal (1083kJ)",
+        "fats": "24.6g",
+        "saturatedFats": "0.7g",
+        "carbohydrates": "1.2g",
+        "sugars": "0.2g",
+        "fiber": "3.3g",
+        "proteins": "8g",
+        "salt": "1.1g"
+      }
     },
     {
       "id": "tofu_namaz_posan",
@@ -430,7 +636,17 @@
         "Cholesterol, casein, and lactose-free",
         "Easily digestible product",
         "Ready to consume"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "83kcal (348kJ)",
+        "fats": "3.2g",
+        "saturatedFats": "0.1g",
+        "carbohydrates": "2.3g",
+        "sugars": "0.2g",
+        "fiber": "3.2g",
+        "proteins": "11.4g",
+        "salt": "1.1g"
+      }
     },
     {
       "id": "humus_u_crevu",
@@ -446,7 +662,17 @@
         "Cholesterol, casein, and lactose-free",
         "Easily digestible product",
         "Ready to consume"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "216kcal (907kJ)",
+        "fats": "17.2g",
+        "saturatedFats": "2.2g",
+        "carbohydrates": "6.9g",
+        "sugars": "0.8g",
+        "fiber": "3.6g",
+        "proteins": "8.6g",
+        "salt": "1.4g"
+      }
     }
   ]
 }
