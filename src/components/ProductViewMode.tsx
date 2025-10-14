@@ -24,8 +24,8 @@ const ProductViewMode = ({
         onClick={() => onViewModeChange('list')}
         className={`cursor-pointer px-3 py-2 font-intro text-lg font-bold transition-all duration-300 transform rounded-md hover:shadow-[0_0_7px_2px_rgba(0,0,0,0.1)] hover:-translate-y-1 hover:scale-105 focus:outline-none active:scale-95 ${
           viewMode === 'list'
-            ? 'bg-primary text-secondary'
-            : 'bg-white/20 text-gray-700 hover:bg-white/30'
+            ? 'bg-white/25 text-white'
+            : 'text-white hover:bg-genie-green'
         }`}>
         {t('viewModeList')}
       </button>
@@ -33,8 +33,8 @@ const ProductViewMode = ({
         onClick={() => onViewModeChange('grid')}
         className={`cursor-pointer px-3 py-2 font-intro text-lg font-bold transition-all duration-300 transform rounded-md hover:shadow-[0_0_7px_2px_rgba(0,0,0,0.1)] hover:-translate-y-1 hover:scale-105 focus:outline-none active:scale-95 ${
           viewMode === 'grid'
-            ? 'bg-primary text-secondary'
-            : 'bg-white/40 text-gray-700 hover:bg-white/50'
+            ? 'bg-white/25 text-white'
+            : 'text-white hover:bg-genie-green'
         }`}>
         {t('viewModeGrid')}
       </button>
