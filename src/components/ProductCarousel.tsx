@@ -14,6 +14,7 @@ import 'swiper/css/effect-coverflow';
 interface ProductCarouselProps {
   products: Product[];
   activeFilter: string;
+  viewMode: 'grid' | 'list';
 }
 
 const getSlidesPerView = (windowWidth: number) => {
@@ -32,7 +33,11 @@ const getSlidesPerView = (windowWidth: number) => {
   return 4;
 };
 
-const ProductCarousel = ({ products, activeFilter }: ProductCarouselProps) => {
+const ProductCarousel = ({
+  products,
+  activeFilter,
+  viewMode,
+}: ProductCarouselProps) => {
   const windowWidth = useWindowWidth();
 
   const filteredProducts = activeFilter
@@ -43,7 +48,6 @@ const ProductCarousel = ({ products, activeFilter }: ProductCarouselProps) => {
   const slidesPerView = Math.min(filteredProducts.length, maxSlidesPerView);
 
   const isSliderNecessary = filteredProducts.length > maxSlidesPerView;
-  const isAllFilter = !activeFilter; // When activeFilter is empty, show all products
 
   const navigation = isSliderNecessary;
   const pagination = isSliderNecessary
@@ -62,8 +66,8 @@ const ProductCarousel = ({ products, activeFilter }: ProductCarouselProps) => {
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
       className='w-full py-12 relative'>
-      {isAllFilter ? (
-        /* Grid layout for "All" filter */
+      {viewMode === 'grid' ? (
+        /* Grid layout */
         <div className='grid gap-8 justify-items-center max-w-7xl mx-auto px-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {filteredProducts.map((product, index) => (
             <motion.div
@@ -77,7 +81,7 @@ const ProductCarousel = ({ products, activeFilter }: ProductCarouselProps) => {
             </motion.div>
           ))}
         </div>
-      ) : isSliderNecessary ? (
+      ) : viewMode === 'list' && isSliderNecessary ? (
         /* Swiper for multiple products */
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
@@ -119,7 +123,7 @@ const ProductCarousel = ({ products, activeFilter }: ProductCarouselProps) => {
           ))}
         </Swiper>
       ) : (
-        /* Simple flex container for few products */
+        /* Simple flex container for list view with few products */
         <div className='flex justify-center items-center gap-8 flex-wrap'>
           {filteredProducts.map((product, index) => (
             <motion.div
@@ -128,7 +132,7 @@ const ProductCarousel = ({ products, activeFilter }: ProductCarouselProps) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className='w-full h-full max-w-[25%] transform transition-all duration-500 rounded-xl overflow-hidden list-none'>
+              className='w-[300px] h-[400px] transform transition-all duration-500 rounded-xl overflow-hidden list-none'>
               <ProductCard {...product} />
             </motion.div>
           ))}

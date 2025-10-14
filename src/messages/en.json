@@ -25,6 +25,9 @@
   "products": {
     "title": "Products",
     "description": "We prepare products for you that contain no ingredients of animal origin, representing a smart choice for all those who care about their health and the well-being of all living beings. Step into the gastronomic adventure of plant-based nutrition and discover a completely new world of flavors.",
+    "viewMode": "View",
+    "viewModeList": "List",
+    "viewModeGrid": "Grid",
     "categories": {
       "all": "All",
       "foodAdditives": "Food Additives",

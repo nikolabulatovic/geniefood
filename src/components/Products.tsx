@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import ProductFilters from './ProductFilters';
+import ProductViewMode from './ProductViewMode';
 import SectionHeading from './SectionHeading';
 import ProductCarousel from './ProductCarousel';
 import { Product } from '@/types/Product';
@@ -17,6 +18,7 @@ const Products = () => {
   const t = useTranslations('products');
   const locale = useLocale();
   const [activeFilter, setActiveFilter] = useState('');
+  const [viewMode, setViewMode] = useState<'grid' | 'list'>('list');
 
   const products = getProductsData(locale);
 
@@ -55,12 +57,18 @@ const Products = () => {
           </motion.div>
         </motion.div>
 
+        <ProductViewMode viewMode={viewMode} onViewModeChange={setViewMode} />
+
         <ProductFilters
           activeFilter={activeFilter}
           onFilterChange={setActiveFilter}
         />
 
-        <ProductCarousel products={products} activeFilter={activeFilter} />
+        <ProductCarousel
+          products={products}
+          activeFilter={activeFilter}
+          viewMode={viewMode}
+        />
       </div>
       {/* <div className='container w-128 border-b border-secondary/30 mx-auto' /> */}
     </section>

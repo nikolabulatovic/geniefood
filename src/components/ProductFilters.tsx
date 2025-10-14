@@ -45,7 +45,7 @@ const ProductFilters = ({
             <input type='radio' className='hidden' />
             <motion.button
               onClick={() => onFilterChange(category.id)}
-              className={`relative block px-8 py-3 font-intro text-xl font-bold hover:shadow-[0_0_7px_2px_rgba(0,0,0,0.1)] transition-all duration-300 transform rounded-md hover:-translate-y-1 hover:scale-105 focus:outline-none active:scale-95 overflow-hidden ${
+              className={`relative cursor-pointer block px-8 py-3 font-intro text-xl font-bold hover:shadow-[0_0_7px_2px_rgba(0,0,0,0.1)] transition-all duration-300 transform rounded-md hover:-translate-y-1 hover:scale-105 focus:outline-none active:scale-95 overflow-hidden ${
                 activeFilter === category.id ? 'bg-genie-green text-white' : ''
               }`}
               whileHover={{ scale: 1.12, rotate: -3 }}

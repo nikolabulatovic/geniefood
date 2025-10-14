@@ -25,6 +25,9 @@
   "products": {
     "title": "Proizvodi",
     "description": "Za vas pripremamo proizvode u kojima nema sastojaka životinjskog porekla, a koji predstavljaju pametan izbor za sve koji brinu o svom zdravlju i dobrobiti svih živih bića. Zakoračite u gastronomsku avanturu biljne ishrane i otkrijte potpuno novi svet ukusa.",
+    "viewMode": "Prikaz",
+    "viewModeList": "Lista",
+    "viewModeGrid": "Tabela",
     "categories": {
       "all": "Svi",
       "foodAdditives": "Dodatak jelima",
