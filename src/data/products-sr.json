@@ -358,7 +358,7 @@
     {
       "id": "vege_burger",
       "productType": "delikatesi",
-      "imageSrc": "/images/products/vege-burger.png",
+      "imageSrc": "/images/products/burger.png",
       "imageAlt": "Vege burger – 240g",
       "title": "Vege burger",
       "weight": "240g",
@@ -382,7 +382,7 @@
     {
       "id": "soja_kobasice_classic",
       "productType": "delikatesi",
-      "imageSrc": "/images/products/soja-kobasice-classic.png",
+      "imageSrc": "/images/products/soja-kobasice.png",
       "imageAlt": "Soja kobasice classic – 200g",
       "title": "Soja kobasice classic",
       "weight": "200g",

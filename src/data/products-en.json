@@ -348,7 +348,7 @@
     {
       "id": "vege_burger",
       "productType": "delikatesi",
-      "imageSrc": "/images/vege-burger.png",
+      "imageSrc": "/images/burger.png",
       "imageAlt": "Vege burger – 240g",
       "title": "Vege burger",
       "weight": "240g",
@@ -372,7 +372,7 @@
     {
       "id": "soja_kobasice_classic",
       "productType": "delikatesi",
-      "imageSrc": "/images/soja-kobasice-classic.png",
+      "imageSrc": "/images/soja-kobasice.png",
       "imageAlt": "Soy sausages classic – 200g",
       "title": "Soy sausages classic",
       "weight": "200g",
