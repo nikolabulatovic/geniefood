@@ -128,7 +128,7 @@ const ProductCarousel = ({ products, activeFilter }: ProductCarouselProps) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className='w-[300px] h-[400px] transform transition-all duration-500 rounded-xl overflow-hidden list-none'>
+              className='w-full h-full max-w-[25%] transform transition-all duration-500 rounded-xl overflow-hidden list-none'>
               <ProductCard {...product} />
             </motion.div>
           ))}
