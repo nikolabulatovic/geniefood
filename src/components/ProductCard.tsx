@@ -5,7 +5,8 @@ import { Product } from '@/types/Product';
 
 type ProductCardProps = Product;
 
-const DEFAULT_SCALE = 75;
+// const DEFAULT_SCALE = 75;
+const DEFAULT_SCALE = 125;
 
 const breakTitle = (title: string) => {
   const lines = [];
@@ -28,6 +29,7 @@ const productScaleMap = {
 
 {
   /* tailwind-class: group-hover:scale-75 */
+  /* tailwind-class: group-hover:scale-125 */
 }
 
 const ProductCard = ({
@@ -73,7 +75,8 @@ const ProductCard = ({
       <div className='w-full h-full relative aspect-[4/4] px-8 group'>
         <div className='w-full h-full bg-[url(/images/rectangle-curved-stroke.png)] bg-contain bg-center bg-no-repeat max-w-[600px] p-[5.5%]'>
           <div className='mask-[url(/images/rectangle.png)] mask-contain mask-no-repeat mask-center bg-black/50 w-full h-full'>
-            <div className='w-full h-full bg-size-[115%] bg-center bg-no-repeat bg-[url(/images/galerija-1.jpg)] opacity-0 group-hover:opacity-100 transition-opacity duration-500'></div>
+            {/* <div className='w-full h-full bg-size-[115%] bg-center bg-no-repeat bg-[url(/images/galerija-1.jpg)] opacity-0 group-hover:opacity-100 transition-opacity duration-500'></div> */}
+            <div className='w-full h-full bg-size-[115%] bg-center bg-no-repeat bg-genie-light-blue/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500'></div>
           </div>
         </div>
         <button
@@ -84,7 +87,11 @@ const ProductCard = ({
               src={imageSrc}
               alt={imageAlt}
               fill
-              className={`transform group-hover:translate-y-1/2 group-hover:scale-${
+              // className={`transform group-hover:translate-y-1/2 group-hover:scale-${
+              //   productScaleMap[id as keyof typeof productScaleMap] ??
+              //   DEFAULT_SCALE
+              // } transition-transform duration-500 mx-auto`}
+              className={`transform group-hover:scale-${
                 productScaleMap[id as keyof typeof productScaleMap] ??
                 DEFAULT_SCALE
               } transition-transform duration-500 mx-auto`}
