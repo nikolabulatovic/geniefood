@@ -69,13 +69,13 @@ const ProductCarousel = ({
       {viewMode === 'grid' ? (
         /* Grid layout */
         <div className='grid gap-8 justify-items-center max-w-7xl mx-auto px-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
-          {filteredProducts.map((product, index) => (
+          {filteredProducts.map((product) => (
             <motion.div
               key={product.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
               className='w-full max-w-[300px] transform transition-all duration-500 rounded-xl overflow-hidden list-none'>
               <ProductCard {...product} />
             </motion.div>
