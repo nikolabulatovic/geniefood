@@ -1,0 +1,452 @@
+{
+  "products": [
+    {
+      "id": "nutritivni_kvasac",
+      "productType": "dodaci",
+      "imageSrc": "/images/nutritivni-kvasac.png",
+      "imageAlt": "Nutritivni kvasac u ljuspicama – 200g",
+      "title": "Nutritivni kvasac u ljuspicama",
+      "weight": "200g",
+      "description": "Nutritivni kvasac je prirodan dodatak ishrani koji svakom jelu pruža bogat, blago orašasti i „sirasti“ ukus. Idealan je za posipanje preko testenina, salata, supa ili variva. Potpuno je biljnog porekla, a istovremeno je izuzetno hranljiv i lako svarljiv.",
+      "benefits": [
+        "Izuzetno bogat proteinima (čak 50,4g proteina na 100g proizvoda)",
+        "Bogat izvor vitamina B kompleksa, uključujući i vitamin B12",
+        "Bez holesterola, kazeina i laktoze",
+        "Veoma bogat vlaknima",
+        "Izvor svih esencijalnih aminokiselina",
+        "Spreman za konzumaciju"
+      ]
+    },
+    {
+      "id": "mileram",
+      "productType": "dodaci",
+      "imageSrc": "/images/mileram.png",
+      "imageAlt": "Mileram – 400g",
+      "title": "Mileram",
+      "weight": "400g",
+      "description": "Biljni mileram koji ne pravi kompromise — kremast, lagan i savršeno neutralnog ukusa. Fermentisan proizvod napravljen od biljnih masti, sojinih proteina i vlakana graška, odličan je izbor i za slana i za slatka jela. Bez laktoze, bez holesterola, ali pun ukusa!",
+      "benefits": [
+        "Fermentisan proizvod",
+        "Može se koristiti i za slana i za slatka jela",
+        "Bez holesterola, kazeina i laktoze",
+        "Spreman za konzumaciju"
+      ]
+    },
+    {
+      "id": "tempeh",
+      "productType": "makrobiotika",
+      "imageSrc": "/images/tempeh-sirovi.png",
+      "imageAlt": "Tempeh – 200g",
+      "title": "Tempeh",
+      "weight": "200g",
+      "description": "Tempeh je tradicionalni proizvod od fermentisanih sojinih zrna, poznat po visokom sadržaju proteina i vlakana. Blagog, orašastog ukusa i čvrste strukture, odličan je izbor za pečenje, prženje ili mariniranje. Savršeno se kombinuje sa povrćem i žitaricama kao izuzetno hranljiv i zasitan obrok.",
+      "benefits": [
+        "Bogat biljnim proteinima i vlaknima",
+        "Pogodan za dane posta na vodi",
+        "Bez holesterola, kazeina i laktoze",
+        "Pogodan za marinade",
+        "Pruža dugotrajan osećaj sitosti"
+      ]
+    },
+    {
+      "id": "tempeh_przeni",
+      "productType": "makrobiotika",
+      "imageSrc": "/images/tempeh-przeni.png",
+      "imageAlt": "Prženi tempeh – 200g",
+      "title": "Prženi tempeh",
+      "weight": "200g",
+      "description": "Prženi tempeh je gotov, praktičan i izuzetno hranljiv biljni proizvod. Fermentacijom soje dobija karakterističan pun ukus i čvrstu teksturu. Zahvaljujući svom blago orašastom ukusu i visokom sadržaju proteina, idealan je dodatak jelima od povrća, žitaricama, salatama ili sendvičima.",
+      "benefits": [
+        "Visok sadržaj biljnih proteina",
+        "Pogodan za dane posta na vodi",
+        "Bez holesterola, kazeina i laktoze",
+        "Spreman za konzumaciju",
+        "Pruža dugotrajan osećaj sitosti"
+      ],
+      "position": { "left": "496px", "top": "0px" }
+    },
+    {
+      "id": "seitan_przeni",
+      "productType": "makrobiotika",
+      "imageSrc": "/images/seitan-przeni.png",
+      "imageAlt": "Seitan prženi – 180g",
+      "title": "Seitan prženi",
+      "weight": "180g",
+      "description": "Seitan prženi je visokoproteinski biljni proizvod na bazi pšeničnog glutena, sa teksturom i punoćom ukusa koja podseća na meso. Može se konzumirati samostalno, kao deo obroka ili dodatak jelima od povrća i žitarica. Jednostavan za upotrebu – dovoljno je samo podgrejati i uživati.",
+      "benefits": [
+        "Čak 33,4g proteina na 100g proizvoda",
+        "Bez holesterola, kazeina i laktoze",
+        "Spreman za konzumaciju"
+      ],
+      "position": { "left": "993px", "top": "0px" }
+    },
+    {
+      "id": "tofu_dimljeni",
+      "productType": "makrobiotika",
+      "imageSrc": "/images/tofu-dimljeni.png",
+      "imageAlt": "Tofu dimljeni - 200g",
+      "title": "Tofu dimljeni",
+      "weight": "200g",
+      "description": "Dimljeni tofu je proizvod punog ukusa i prijatne arome, dimljen na bukovom drvetu. Sadrži visoku količinu biljnih proteina i potpuno je bez holesterola. Može se koristiti kao dodatak salatama, sendvičima, testeninama ili jelima od povrća, kao i kao zamena za dimljeni sir.",
+      "benefits": [
+        "Sadrži 30,9g proteina na 100g proizvoda",
+        "Pogodan za dane posta na vodi",
+        "Bez holesterola, kazeina i laktoze",
+        "Nizak sadržaj ugljenih hidrata"
+      ]
+    },
+    {
+      "id": "tofu_przeni",
+      "productType": "makrobiotika",
+      "imageSrc": "/images/tofu-przeni.png",
+      "imageAlt": "Tofu prženi – 170g",
+      "title": "Tofu prženi",
+      "weight": "170g",
+      "description": "Prženi tofu je savršeno rešenje za brz, ukusan i hranljiv obrok. Već je termički obrađen, pa je spreman za upotrebu – samo ga dodajte u salate, tople obroke ili azijska jela. Blagog je ukusa i prijatne teksture, a odličan je izvor biljnih proteina za svaki dan.",
+      "benefits": [
+        "Nizak sadržaj ugljenih hidrata",
+        "Bez holesterola, kazeina i laktoze",
+        "Spreman za konzumaciju"
+      ]
+    },
+    {
+      "id": "tofu_sirovi",
+      "productType": "makrobiotika",
+      "imageSrc": "/images/tofu-sirovi.png",
+      "imageAlt": "Tofu sirovi – 200g",
+      "title": "Tofu sirovi",
+      "weight": "200g",
+      "description": "Sirovi tofu je osnovni i najprirodniji oblik tofua, idealan za one koji vole da eksperimentišu u kuhinji. Blagog je ukusa, pa lako poprima arome začina i marinada. Može se kuvati, pržiti, peći ili dodavati u supe i variva – uvek zdrav i lagan izvor proteina.",
+      "benefits": [
+        "Proizvod tradicionalno pripremljen sa nigarijem",
+        "Pogodan za dane posta na vodi",
+        "Bogat gvožđem, kalcijumom i magnezijumom",
+        "Bez holesterola, kazeina i laktoze",
+        "Lako svarljiva namirnica",
+        "Pogodan za marinade"
+      ]
+    },
+    {
+      "id": "badem_puter",
+      "productType": "puteri",
+      "imageSrc": "/images/badem-puter.png",
+      "imageAlt": "Badem puter – 170g",
+      "title": "Badem puter",
+      "weight": "170g",
+      "description": "100% prirodan badem puter – bez dodataka, samo pažljivo mleveni bademi. Sadrži zdrave masti i proteine, idealan je za doručak, smoothie ili poslastice.",
+      "benefits": [
+        "Sadrži 21,2g proteina na 100g proizvoda",
+        "Badem mleven na kamenu",
+        "Pogodan za dane posta na vodi",
+        "Bez holesterola, kazeina i laktoze",
+        "Bez veštačkih dodataka",
+        "Izvor gvožđa i vlakana",
+        "Spreman za konzumaciju"
+      ]
+    },
+    {
+      "id": "kikiriki_puter",
+      "productType": "puteri",
+      "imageSrc": "/images/kikiriki-puter.png",
+      "imageAlt": "Kikiriki puter 99,5% – 360g",
+      "title": "Kikiriki puter 99,5%",
+      "weight": "360g",
+      "description": "Savršen balans ukusa i hranljivosti – 99,5% čist kikiriki i prstohvat morske soli. Kremast, ukusan i prirodno bogat proteinima. Sjajan kao namaz ili dodatak jelima i dezertima.",
+      "benefits": [
+        "Sadrži 25,6g proteina na 100g proizvoda",
+        "Pogodan za dane posta na vodi",
+        "Nizak glikemijski indeks",
+        "Bez holesterola, kazeina i laktoze",
+        "Bez veštačkih dodataka",
+        "Izvor gvožđa i vlakana",
+        "Spreman za konzumaciju"
+      ]
+    },
+    {
+      "id": "tahini",
+      "productType": "puteri",
+      "imageSrc": "/images/tahini.png",
+      "imageAlt": "Tahini – susamov puter – 360g",
+      "title": "Tahini – susamov puter",
+      "weight": "360g",
+      "description": "Tradicionalni tahini od pečenog susama, nežne teksture i bogatog ukusa. Osnova mnogih bliskoistočnih jela, savršen kao preliv ili dodatak slanim i slatkim receptima.",
+      "benefits": [
+        "Sadrži 18,1g proteina na 100g proizvoda",
+        "Pogodan za dane posta na vodi",
+        "Bez holesterola, kazeina i laktoze",
+        "Bez veštačkih dodataka",
+        "Izvor kalcijuma, gvožđa i vlakana",
+        "Spreman za konzumaciju"
+      ]
+    },
+    {
+      "id": "bundevin_puter",
+      "productType": "puteri",
+      "imageSrc": "/images/bundevin-puter.png",
+      "imageAlt": "Bundevin puter – 330g",
+      "title": "Bundevin puter",
+      "weight": "330g",
+      "description": "Napravljen od 90% bundevinog semena, ovaj puter je nutritivna bomba. Pun proteina, minerala i zdravih masti, odličan je kao namaz ili dodatak slanim i slatkim jelima.",
+      "benefits": [
+        "Sadrži 28,7g proteina na 100g proizvoda",
+        "Bez holesterola, kazeina i laktoze",
+        "Bez veštačkih dodataka",
+        "Izvor cinka, gvožđa i vlakana",
+        "Spreman za konzumaciju"
+      ]
+    },
+    {
+      "id": "lesnik_puter",
+      "productType": "puteri",
+      "imageSrc": "/images/lesnik-puter.png",
+      "imageAlt": "Lešnik puter – 170g",
+      "title": "Lešnik puter",
+      "weight": "170g",
+      "description": "Delikatan i prirodan ukus lešnika, bez ikakvih dodataka. Savršen u poslasticama, smutijima ili kao ukusan i zdrav namaz.",
+      "benefits": [
+        "Sadrži 14,6g proteina na 100g proizvoda",
+        "Lešnik mleven na kamenu",
+        "Pogodan za dane posta na vodi",
+        "Bez holesterola, kazeina i laktoze",
+        "Bez veštačkih dodataka",
+        "Izvor mnogih mikronutritijenata i vlakana",
+        "Spreman za konzumaciju"
+      ]
+    },
+    {
+      "id": "dimljena_pecenica",
+      "productType": "delikatesi",
+      "imageSrc": "/images/dimljena-pecenica.png",
+      "imageAlt": "Dimljena pečenica – 250g",
+      "title": "Dimljena pečenica",
+      "weight": "250g",
+      "description": "Savršen spoj tradicije i biljaka! Naša dimljena pečenica napravljena je od proteina pšenice, a dimljena je na bukovom drvetu za autentičan miris i ukus. Sočna, aromatična i bogata proteinima — možeš je jesti hladnu, uz hleb i salatu, ili dodati u tople obroke i sendviče.",
+      "benefits": [
+        "Sadrži 33,2g proteina na 100g proizvoda",
+        "Bez holesterola, kazeina i laktoze",
+        "Bez veštačkih dodataka",
+        "Izvor gvožđa i vlakana",
+        "Spremna za konzumaciju"
+      ]
+    },
+    {
+      "id": "vege_burger",
+      "productType": "delikatesi",
+      "imageSrc": "/images/vege-burger.png",
+      "imageAlt": "Vege burger – 240g",
+      "title": "Vege burger",
+      "weight": "240g",
+      "description": "Gen!e Vege burger je zdravija alternativa klasičnom burgeru – sočan, pun proteina i odličnog ukusa. Napravljen je od pažljivo odabranih biljnih sastojaka poput proteina graška i soje, bez veštačkih dodataka. Idealan je za brz obrok kod kuće ili na roštilju.",
+      "benefits": [
+        "Sadrži 15,2g proteina na 100g proizvoda",
+        "Dobar izvor vlakana",
+        "Bez holesterola, kazeina i laktoze"
+      ]
+    },
+    {
+      "id": "soja_kobasice_classic",
+      "productType": "delikatesi",
+      "imageSrc": "/images/soja-kobasice-classic.png",
+      "imageAlt": "Soja kobasice classic – 200g",
+      "title": "Soja kobasice classic",
+      "weight": "200g",
+      "description": "Sojine kobasice classic su jednostavan, ali savršeno ukusan biljni obrok. Sadrže pažljivo izbalansiran spoj soje i pšenice, uz prirodne začine koji daju pun, domaći ukus. Spremne su za jelo, a mogu se i podgrejati, grilovati ili dodati jelima od povrća.",
+      "benefits": [
+        "Izvor visokokvalitetnih biljnih proteina (16,9g proteina na 100g proizvoda)",
+        "Tradicionalni ukus u zdravijem izdanju",
+        "Bez holesterola, kazeina i laktoze",
+        "Lako svarljive i zasitne",
+        "Spremne za konzumaciju"
+      ]
+    },
+    {
+      "id": "soja_kobasice_ljute",
+      "productType": "delikatesi",
+      "imageSrc": "/images/soja-kobasice-ljute.png",
+      "imageAlt": "Soja kobasice ljute – 200g",
+      "title": "Soja kobasice ljute",
+      "weight": "200g",
+      "description": "Za one koji vole pikantne ukuse! Sojine kobasice ljute donose savršen balans soje, pšenice i začina, uz blag, prijatan ljutkast ton. Idealne su kao dodatak jelima od povrća, u tortiljama, salatama ili kao zdravija zamena za klasične kobasice.",
+      "benefits": [
+        "Izvor visokokvalitetnih biljnih proteina (16,9g proteina na 100g proizvoda)",
+        "Pikantne",
+        "Tradicionalni ukus u zdravijem izdanju",
+        "Bez holesterola, kazeina i laktoze",
+        "Lako svarljive i zasitne",
+        "Spremne za konzumaciju"
+      ]
+    },
+    {
+      "id": "soja_kobasice_posne",
+      "productType": "delikatesi",
+      "imageSrc": "/images/soja-kobasice-posne.png",
+      "imageAlt": "Sojine kobasice posne na vodi – 200g",
+      "title": "Sojine kobasice posne na vodi",
+      "weight": "200g",
+      "description": "Lagane, hranljive i potpuno bez ulja, naše soja kobasice posne na vodi dokaz su da i jednostavna jela mogu biti bogatog ukusa. Pravljene od pažljivo odabrane kombinacije soje i pšenice, idealne su za dane posta ili za sve koji žele zdraviji, proteinski obrok bez dodatnih masnoća. Spremne su za konzumaciju – samo ih serviraj uz omiljeno povrće, senf ili svež hleb.",
+      "benefits": [
+        "Izvor visokokvalitetnih biljnih proteina (22,3g proteina na 100g proizvoda)",
+        "Pogodne za dane posta na vodi",
+        "Tradicionalni ukus u zdravijem izdanju",
+        "Bez holesterola, kazeina i laktoze",
+        "Lako svarljive i zasitne",
+        "Spremne za konzumaciju"
+      ]
+    },
+    {
+      "id": "hot_dog",
+      "productType": "delikatesi",
+      "imageSrc": "/images/hot-dog.png",
+      "imageAlt": "Hot-dog – 200g",
+      "title": "Hot-dog",
+      "weight": "200g",
+      "description": "Sojin hot dog je zdrava alternativa klasičnim viršlama – jednako sočan i ukusan, ali napravljen isključivo od biljnih proteina i zdravijih sastojaka. Idealno se uklapa u tople sendviče, tortilje ili obroke na brzinu. Lagan je, hranljiv i jednostavan za pripremu.",
+      "benefits": [
+        "Bogat vlaknima",
+        "Manje zasićenih masnih kiselina u poređenju s mesnim proizvodima",
+        "Bez holesterola, kazeina i laktoze"
+      ]
+    },
+    {
+      "id": "grill_kobasice",
+      "productType": "delikatesi",
+      "imageSrc": "/images/grill-kobasice.png",
+      "imageAlt": "Grill kobasice – 200g",
+      "title": "Grill kobasice",
+      "weight": "200g",
+      "description": "Sočne, aromatične i savršene za svaki roštilj! Naše biljne grill kobasice su bogat izvor proteina iz graška, bez veštačkih dodataka. Zapečene spolja, mekane iznutra – idealne za sve koji vole dobar roštilj, ali biraju biljnu hranu.",
+      "benefits": [
+        "Bogate vlaknima",
+        "Manje zasićenih masnih kiselina u poređenju s mesnim proizvodima",
+        "Bez holesterola, kazeina i laktoze"
+      ]
+    },
+    {
+      "id": "salama_classic",
+      "productType": "delikatesi",
+      "imageSrc": "/images/salama-classic.png",
+      "imageAlt": "Salama Classic – 250g",
+      "title": "Salama Classic",
+      "weight": "250g",
+      "description": "Klasična salama – u biljnoj verziji! Punog ukusa, bogata proteinima i bez aditiva, Gen!e Salama Classic savršena je za sendviče, salate ili brze obroke. Sočna, ukusna i uvek spremna da zameni mesne proizvode — bez ičeg životinjskog, ali sa svim što volimo u dobroj salami.",
+      "benefits": [
+        "Manje zasićenih masnih kiselina u poređenju s mesnim proizvodima",
+        "Bez holesterola, kazeina i laktoze",
+        "Spremna za konzumaciju"
+      ]
+    },
+    {
+      "id": "tofu_namaz_natural",
+      "productType": "namazi",
+      "imageSrc": "/images/tofu-namaz-natural.png",
+      "imageAlt": "Tofu namaz natural – 170g",
+      "title": "Tofu namaz natural",
+      "weight": "170g",
+      "description": "Jednostavan, prirodan i svestran – tofu namaz natural je idealan izbor za sve koji vole blage, kremaste ukuse. Možete ga mazati na hleb, koristiti kao preliv za salate ili bazu za soseve. Savršeno se uklapa i u slana i u slatka jela.",
+      "benefits": [
+        "Visok sadržaj biljnih proteina",
+        "Može da se koristi kao umak, preliv ili dodatak jelima",
+        "Bez holesterola, kazeina i laktoze",
+        "Lako svarljiv proizvod",
+        "Spreman za konzumaciju"
+      ]
+    },
+    {
+      "id": "tofu_namaz_susam",
+      "productType": "namazi",
+      "imageSrc": "/images/tofu-namaz-susam.png",
+      "imageAlt": "Tofu namaz sa susamom – 170g",
+      "title": "Tofu namaz sa susamom",
+      "weight": "170g",
+      "description": "Tofu namaz sa susamom kombinuje nežnu strukturu tofua i aromu prženog susama. Idealan je kao podloga za sendviče, preliv za salate ili dodatak toplim jelima. Obožavaju ga svi koji vole blag, orašast ukus i prirodne sastojke.",
+      "benefits": [
+        "Visok sadržaj biljnih proteina",
+        "Može da se koristi kao umak, preliv ili dodatak jelima",
+        "Bez holesterola, kazeina i laktoze",
+        "Lako svarljiv proizvod",
+        "Spreman za konzumaciju"
+      ]
+    },
+    {
+      "id": "tofu_namaz_kikiriki",
+      "productType": "namazi",
+      "imageSrc": "/images/tofu-namaz-kikiriki.png",
+      "imageAlt": "Tofu namaz sa kikiriki puterom – 170g",
+      "title": "Tofu namaz sa kikiriki puterom",
+      "weight": "170g",
+      "description": "Neodoljiva kombinacija tofua i kikirikija! Ovaj namaz je punog, bogatog ukusa i savršen kao podloga za sendviče ili kao umak uz voće, povrće i krekere. Spoj kremaste teksture i hranljivih sastojaka čini ga idealnim izborom za brz i zdrav obrok.",
+      "benefits": [
+        "Visok sadržaj biljnih proteina",
+        "Može da se koristi kao umak, preliv ili dodatak jelima",
+        "Bez holesterola, kazeina i laktoze",
+        "Lako svarljiv proizvod",
+        "Spreman za konzumaciju"
+      ]
+    },
+    {
+      "id": "tofu_namaz_mirodija",
+      "productType": "namazi",
+      "imageSrc": "/images/tofu-namaz-mirodija.png",
+      "imageAlt": "Tofu namaz sa mirođijom – 170g",
+      "title": "Tofu namaz sa mirođijom",
+      "weight": "170g",
+      "description": "Ovaj osvežavajući biljni namaz spaja nežnu kremastu strukturu tofua i prepoznatljiv ukus sveže mirođije. Lagano aromatičan, a pun proteina – savršen je za sendviče, tople tostirane hlebove ili kao dodatak salatama i povrću. Uživaj u ukusu koji osvežava svako parče hleba!",
+      "benefits": [
+        "Visok sadržaj biljnih proteina",
+        "Može da se koristi kao umak, preliv ili dodatak jelima",
+        "Bez holesterola, kazeina i laktoze",
+        "Lako svarljiv proizvod",
+        "Spreman za konzumaciju"
+      ]
+    },
+    {
+      "id": "tofu_namaz_paprika",
+      "productType": "namazi",
+      "imageSrc": "/images/tofu-namaz-paprika.png",
+      "imageAlt": "Tofu namaz sa paprikom – 170g",
+      "title": "Tofu namaz sa paprikom",
+      "weight": "170g",
+      "description": "Kremast, lagan i blago pikantan – tofu namaz sa paprikom je savršen dodatak svakom obroku. Odličan je kao namaz za doručak, dodatak pastama ili kao umak uz povrće. Pruža savršenu ravnotežu između ukusa i hranljivosti.",
+      "benefits": [
+        "Visok sadržaj biljnih proteina",
+        "Može da se koristi kao umak, preliv ili dodatak jelima",
+        "Bez holesterola, kazeina i laktoze",
+        "Lako svarljiv proizvod",
+        "Spreman za konzumaciju"
+      ]
+    },
+    {
+      "id": "tofu_namaz_posan",
+      "productType": "namazi",
+      "imageSrc": "/images/tofu-namaz-posan.png",
+      "imageAlt": "Tofu namaz posan na vodi – 170g",
+      "title": "Tofu namaz posan na vodi",
+      "weight": "170g",
+      "description": "Za sve koji poste ili izbegavaju ulje, ovaj tofu namaz je savršeno rešenje. Lagane teksture, punog ukusa i bez mleka, ulja i orašastih plodova, odličan je kao dodatak hlebu, salatama ili toplim jelima. Zdrav, jednostavan i praktičan za svaki dan.",
+      "benefits": [
+        "Pogodan za dane posta na vodi",
+        "Visok sadržaj biljnih proteina",
+        "Može da se koristi kao umak, preliv ili dodatak jelima",
+        "Bez holesterola, kazeina i laktoze",
+        "Lako svarljiv proizvod",
+        "Spreman za konzumaciju"
+      ]
+    },
+    {
+      "id": "humus_u_crevu",
+      "productType": "namazi",
+      "imageSrc": "/images/humus-u-crevu.png",
+      "imageAlt": "Humus u crevu – 200g",
+      "title": "Humus u crevu",
+      "weight": "200g",
+      "description": "Humus u praktičnom pakovanju – spreman za svaku priliku. Savršeno kremast i lagan, idealan je za sendviče, prelive i obroke u pokretu.",
+      "benefits": [
+        "Visok sadržaj leblebije",
+        "Može da se koristi kao umak, preliv ili dodatak jelima",
+        "Bez holesterola, kazeina i laktoze",
+        "Lako svarljiv proizvod",
+        "Spreman za konzumaciju"
+      ]
+    }
+  ]
+}

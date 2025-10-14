@@ -1,6 +1,17 @@
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 
+import { ProductType } from '@/types/ProductType';
+
+const categories = [
+  { id: '', label: 'categories.all' },
+  { id: ProductType.DODACI, label: 'categories.foodAdditives' },
+  { id: ProductType.MAKROBIOTIKA, label: 'categories.macrobiotics' },
+  { id: ProductType.DELIKATESI, label: 'categories.delicatessen' },
+  { id: ProductType.NAMAZI, label: 'categories.spreads' },
+  { id: ProductType.PUTERI, label: 'categories.butters' },
+];
+
 type ProductFiltersProps = {
   activeFilter: string;
   onFilterChange: (filter: string) => void;
@@ -11,16 +22,6 @@ const ProductFilters = ({
   onFilterChange,
 }: ProductFiltersProps) => {
   const t = useTranslations('products');
-
-  const categories = [
-    { id: '', label: 'categories.all' },
-    { id: '57', label: 'categories.foodAdditives' },
-    { id: '63', label: 'categories.macrobiotics' },
-    { id: '68', label: 'categories.gourmet' },
-    { id: '3755', label: 'categories.delicatessen' },
-    { id: '3756', label: 'categories.spreads' },
-    { id: '3757', label: 'categories.butters' },
-  ];
 
   return (
     <motion.div

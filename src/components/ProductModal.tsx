@@ -2,19 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import GradientDot from '@/components/GradientDot';
-
-interface Product {
-  id: string;
-  filter: string;
-  imageSrc: string;
-  imageAlt: string;
-  title: string;
-  description: string;
-  position: {
-    left: string;
-    top: string;
-  };
-}
+import { Product } from '@/types/Product';
 
 interface ProductModalProps {
   product: Product | null;
@@ -28,7 +16,6 @@ type NutritionalData = {
   isSubItem?: boolean;
 };
 
-// Sample nutritional data - you can make this dynamic later
 const getNutritionalData = (productId: string): NutritionalData[] => {
   const nutritionalData = {
     'tempeh-sirovi': [
@@ -67,37 +54,6 @@ const getNutritionalData = (productId: string): NutritionalData[] => {
   );
 };
 
-// Sample ingredient data
-const getIngredients = (productId: string) => {
-  const ingredients = {
-    'tempeh-sirovi': ['Soja', 'Voda', 'Kvasac', 'Prirodni konzervans'],
-    'tempeh-przeni': [
-      'Soja',
-      'Voda',
-      'Kvasac',
-      'Prirodni konzervans',
-      'Začini',
-    ],
-    'seitan-przeni': [
-      'Pšenični gluten',
-      'Voda',
-      'Začini',
-      'Prirodni konzervans',
-    ],
-    'nutritivni-kvasac': [
-      'Kvasac',
-      'Prirodni konzervans',
-      'Vitamin B12',
-      'Folna kiselina',
-    ],
-    default: ['Prirodni sastojci', 'Bez konzervansa', 'Organski proizvod'],
-  };
-
-  return (
-    ingredients[productId as keyof typeof ingredients] || ingredients.default
-  );
-};
-
 const ProductModal: React.FC<ProductModalProps> = ({
   product,
   isOpen,
@@ -106,7 +62,6 @@ const ProductModal: React.FC<ProductModalProps> = ({
   if (!product) return null;
 
   const nutritionalData = getNutritionalData(product.id);
-  const ingredients = getIngredients(product.id);
 
   return (
     <AnimatePresence>
@@ -216,10 +171,10 @@ const ProductModal: React.FC<ProductModalProps> = ({
                           toColor='to-tertiary'
                           className='mr-3'
                         />
-                        Sastojci
+                        Nutritivni benefiti
                       </h3>
                       <ul className='space-y-3'>
-                        {ingredients.map((ingredient, index) => (
+                        {product.benefits?.map((benefit, index) => (
                           <motion.li
                             key={index}
                             initial={{ opacity: 0, x: -20 }}
@@ -227,7 +182,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
                             transition={{ delay: index * 0.1 }}
                             className='flex items-center text-gray-700 text-lg'>
                             <span className='w-2 h-2 bg-genie-green rounded-full mr-4 flex-shrink-0'></span>
-                            {ingredient}
+                            {benefit}
                           </motion.li>
                         ))}
                       </ul>

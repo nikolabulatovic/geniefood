@@ -1,0 +1,452 @@
+{
+  "products": [
+    {
+      "id": "nutritivni_kvasac",
+      "productType": "dodaci",
+      "imageSrc": "/images/nutritivni-kvasac.png",
+      "imageAlt": "Nutritional yeast flakes – 200g",
+      "title": "Nutritional yeast flakes",
+      "weight": "200g",
+      "description": "Nutritional yeast is a natural food supplement that gives every dish a rich, mildly nutty and 'cheesy' flavor. Ideal for sprinkling over pasta, salads, soups, or stews. It's completely plant-based, while being extremely nutritious and easily digestible.",
+      "benefits": [
+        "Extremely rich in proteins (up to 50.4g protein per 100g product)",
+        "Rich source of B-complex vitamins, including vitamin B12",
+        "Cholesterol, casein, and lactose-free",
+        "Very rich in fiber",
+        "Source of all essential amino acids",
+        "Ready to consume"
+      ]
+    },
+    {
+      "id": "mileram",
+      "productType": "dodaci",
+      "imageSrc": "/images/mileram.png",
+      "imageAlt": "Mileram – 400g",
+      "title": "Mileram",
+      "weight": "400g",
+      "description": "Plant-based mileram that makes no compromises — creamy, light, and perfectly neutral in taste. Fermented product made from plant fats, soy proteins, and pea fiber, excellent choice for both savory and sweet dishes. No lactose, no cholesterol, but full of flavor!",
+      "benefits": [
+        "Fermented product",
+        "Can be used for both savory and sweet dishes",
+        "Cholesterol, casein, and lactose-free",
+        "Ready to consume"
+      ]
+    },
+    {
+      "id": "tempeh",
+      "productType": "makrobiotika",
+      "imageSrc": "/images/tempeh-sirovi.png",
+      "imageAlt": "Tempeh – 200g",
+      "title": "Tempeh",
+      "weight": "200g",
+      "description": "Tempeh is a traditional product made from fermented soybeans, known for its high protein and fiber content. With a mild, nutty flavor and firm texture, it's an excellent choice for baking, frying, or marinating. It perfectly combines with vegetables and grains as an extremely nutritious and satisfying meal.",
+      "benefits": [
+        "Rich in plant proteins and fiber",
+        "Suitable for water fasting days",
+        "Cholesterol, casein, and lactose-free",
+        "Suitable for marinating",
+        "Provides long-lasting satiety"
+      ]
+    },
+    {
+      "id": "tempeh_przeni",
+      "productType": "makrobiotika",
+      "imageSrc": "/images/tempeh-przeni.png",
+      "imageAlt": "Fried tempeh – 200g",
+      "title": "Fried tempeh",
+      "weight": "200g",
+      "description": "Fried tempeh is a ready-to-eat, practical, and extremely nutritious plant-based product. Through soybean fermentation, it gains a characteristic full flavor and firm texture. Thanks to its mild nutty taste and high protein content, it's an ideal addition to vegetable dishes, grains, salads, or sandwiches.",
+      "benefits": [
+        "High plant protein content",
+        "Suitable for water fasting days",
+        "Cholesterol, casein, and lactose-free",
+        "Ready to consume",
+        "Provides long-lasting satiety"
+      ],
+      "position": { "left": "496px", "top": "0px" }
+    },
+    {
+      "id": "seitan_przeni",
+      "productType": "makrobiotika",
+      "imageSrc": "/images/seitan-przeni.png",
+      "imageAlt": "Fried seitan – 180g",
+      "title": "Fried seitan",
+      "weight": "180g",
+      "description": "Fried seitan is a high-protein plant-based product based on wheat gluten, with texture and flavor richness reminiscent of meat. It can be consumed independently, as part of a meal, or as an addition to vegetable and grain dishes. Simple to use – just heat and enjoy.",
+      "benefits": [
+        "33.4g protein per 100g product",
+        "Cholesterol, casein, and lactose-free",
+        "Ready to consume"
+      ],
+      "position": { "left": "993px", "top": "0px" }
+    },
+    {
+      "id": "tofu_dimljeni",
+      "productType": "makrobiotika",
+      "imageSrc": "/images/tofu-dimljeni.png",
+      "imageAlt": "Smoked tofu - 200g",
+      "title": "Smoked tofu",
+      "weight": "200g",
+      "description": "Smoked tofu is a full-flavored product with pleasant aroma, smoked on beech wood. It contains a high amount of plant proteins and is completely cholesterol-free. Can be used as an addition to salads, sandwiches, pasta, or vegetable dishes, as well as a replacement for smoked cheese.",
+      "benefits": [
+        "Contains 30.9g protein per 100g product",
+        "Suitable for water fasting days",
+        "Cholesterol, casein, and lactose-free",
+        "Low carbohydrate content"
+      ]
+    },
+    {
+      "id": "tofu_przeni",
+      "productType": "makrobiotika",
+      "imageSrc": "/images/tofu-przeni.png",
+      "imageAlt": "Fried tofu – 170g",
+      "title": "Fried tofu",
+      "weight": "170g",
+      "description": "Fried tofu is a perfect solution for a quick, tasty, and nutritious meal. It's already thermally processed, so it's ready to use – just add it to salads, hot meals, or Asian dishes. It has a mild flavor and pleasant texture, and is an excellent source of plant proteins for every day.",
+      "benefits": [
+        "Low carbohydrate content",
+        "Cholesterol, casein, and lactose-free",
+        "Ready to consume"
+      ]
+    },
+    {
+      "id": "tofu_sirovi",
+      "productType": "makrobiotika",
+      "imageSrc": "/images/tofu-sirovi.png",
+      "imageAlt": "Raw tofu – 200g",
+      "title": "Raw tofu",
+      "weight": "200g",
+      "description": "Raw tofu is the basic and most natural form of tofu, ideal for those who love to experiment in the kitchen. It has a mild flavor, so it easily absorbs the aromas of spices and marinades. It can be cooked, fried, baked, or added to soups and stews – always a healthy and light source of protein.",
+      "benefits": [
+        "Traditionally prepared product with nigari",
+        "Suitable for water fasting days",
+        "Rich in iron, calcium, and magnesium",
+        "Cholesterol, casein, and lactose-free",
+        "Easily digestible food",
+        "Suitable for marinating"
+      ]
+    },
+    {
+      "id": "badem_puter",
+      "productType": "puteri",
+      "imageSrc": "/images/badem-puter.png",
+      "imageAlt": "Almond butter – 170g",
+      "title": "Almond butter",
+      "weight": "170g",
+      "description": "100% natural almond butter – no additives, just carefully ground almonds. Contains healthy fats and proteins, ideal for breakfast, smoothies, or desserts.",
+      "benefits": [
+        "Contains 21.2g protein per 100g product",
+        "Almonds ground on stone",
+        "Suitable for water fasting days",
+        "Cholesterol, casein, and lactose-free",
+        "No artificial additives",
+        "Source of iron and fiber",
+        "Ready to consume"
+      ]
+    },
+    {
+      "id": "kikiriki_puter",
+      "productType": "puteri",
+      "imageSrc": "/images/kikiriki-puter.png",
+      "imageAlt": "Peanut butter 99.5% – 360g",
+      "title": "Peanut butter 99.5%",
+      "weight": "360g",
+      "description": "Perfect balance of flavor and nutrition – 99.5% pure peanuts and a pinch of sea salt. Creamy, tasty, and naturally rich in proteins. Excellent as a spread or addition to meals and desserts.",
+      "benefits": [
+        "Contains 25.6g protein per 100g product",
+        "Suitable for water fasting days",
+        "Low glycemic index",
+        "Cholesterol, casein, and lactose-free",
+        "No artificial additives",
+        "Source of iron and fiber",
+        "Ready to consume"
+      ]
+    },
+    {
+      "id": "tahini",
+      "productType": "puteri",
+      "imageSrc": "/images/tahini.png",
+      "imageAlt": "Tahini – sesame butter – 360g",
+      "title": "Tahini – sesame butter",
+      "weight": "360g",
+      "description": "Traditional tahini from roasted sesame, delicate texture and rich flavor. Base of many Middle Eastern dishes, perfect as a dressing or addition to savory and sweet recipes.",
+      "benefits": [
+        "Contains 18.1g protein per 100g product",
+        "Suitable for water fasting days",
+        "Cholesterol, casein, and lactose-free",
+        "No artificial additives",
+        "Source of calcium, iron, and fiber",
+        "Ready to consume"
+      ]
+    },
+    {
+      "id": "bundevin_puter",
+      "productType": "puteri",
+      "imageSrc": "/images/bundevin-puter.png",
+      "imageAlt": "Pumpkin seed butter – 330g",
+      "title": "Pumpkin seed butter",
+      "weight": "330g",
+      "description": "Made from 90% pumpkin seeds, this butter is a nutritional bomb. Full of proteins, minerals, and healthy fats, excellent as a spread or addition to savory and sweet dishes.",
+      "benefits": [
+        "Contains 28.7g protein per 100g product",
+        "Cholesterol, casein, and lactose-free",
+        "No artificial additives",
+        "Source of zinc, iron, and fiber",
+        "Ready to consume"
+      ]
+    },
+    {
+      "id": "lesnik_puter",
+      "productType": "puteri",
+      "imageSrc": "/images/lesnik-puter.png",
+      "imageAlt": "Hazelnut butter – 170g",
+      "title": "Hazelnut butter",
+      "weight": "170g",
+      "description": "Delicate and natural hazelnut flavor, without any additives. Perfect in desserts, smoothies, or as a tasty and healthy spread.",
+      "benefits": [
+        "Contains 14.6g protein per 100g product",
+        "Hazelnuts ground on stone",
+        "Suitable for water fasting days",
+        "Cholesterol, casein, and lactose-free",
+        "No artificial additives",
+        "Source of many micronutrients and fiber",
+        "Ready to consume"
+      ]
+    },
+    {
+      "id": "dimljena_pecenica",
+      "productType": "delikatesi",
+      "imageSrc": "/images/dimljena-pecenica.png",
+      "imageAlt": "Smoked roast – 250g",
+      "title": "Smoked roast",
+      "weight": "250g",
+      "description": "Perfect blend of tradition and plants! Our smoked roast is made from wheat protein and smoked on beech wood for an authentic aroma and taste. Juicy, aromatic, and rich in proteins — you can eat it cold with bread and salad, or add it to hot meals and sandwiches.",
+      "benefits": [
+        "Contains 33.2g protein per 100g product",
+        "Cholesterol, casein, and lactose-free",
+        "No artificial additives",
+        "Source of iron and fiber",
+        "Ready to consume"
+      ]
+    },
+    {
+      "id": "vege_burger",
+      "productType": "delikatesi",
+      "imageSrc": "/images/vege-burger.png",
+      "imageAlt": "Vege burger – 240g",
+      "title": "Vege burger",
+      "weight": "240g",
+      "description": "Gen!e Vege burger is a healthier alternative to the classic burger – juicy, full of protein and great taste. Made from carefully selected plant ingredients like pea and soy protein, without artificial additives. Perfect for a quick meal at home or on the grill.",
+      "benefits": [
+        "Contains 15.2g protein per 100g product",
+        "Good source of fiber",
+        "Cholesterol, casein, and lactose-free"
+      ]
+    },
+    {
+      "id": "soja_kobasice_classic",
+      "productType": "delikatesi",
+      "imageSrc": "/images/soja-kobasice-classic.png",
+      "imageAlt": "Soy sausages classic – 200g",
+      "title": "Soy sausages classic",
+      "weight": "200g",
+      "description": "Soy sausages classic are simple but perfectly tasty plant-based meals. They contain a carefully balanced blend of soy and wheat, with natural spices that give a full, homey taste. Ready to eat, and can also be heated, grilled, or added to vegetable dishes.",
+      "benefits": [
+        "Source of high-quality plant proteins (16.9g protein per 100g product)",
+        "Traditional taste in a healthier version",
+        "Cholesterol, casein, and lactose-free",
+        "Easily digestible and satisfying",
+        "Ready to consume"
+      ]
+    },
+    {
+      "id": "soja_kobasice_ljute",
+      "productType": "delikatesi",
+      "imageSrc": "/images/soja-kobasice-ljute.png",
+      "imageAlt": "Soy sausages spicy – 200g",
+      "title": "Soy sausages spicy",
+      "weight": "200g",
+      "description": "For those who love spicy flavors! Spicy soy sausages bring the perfect balance of soy, wheat, and spices, with a mild, pleasant spicy tone. Ideal as an addition to vegetable dishes, in tortillas, salads, or as a healthier replacement for classic sausages.",
+      "benefits": [
+        "Source of high-quality plant proteins (16.9g protein per 100g product)",
+        "Spicy",
+        "Traditional taste in a healthier version",
+        "Cholesterol, casein, and lactose-free",
+        "Easily digestible and satisfying",
+        "Ready to consume"
+      ]
+    },
+    {
+      "id": "soja_kobasice_posne",
+      "productType": "delikatesi",
+      "imageSrc": "/images/soja-kobasice-posne.png",
+      "imageAlt": "Soy sausages fasting on water – 200g",
+      "title": "Soy sausages fasting on water",
+      "weight": "200g",
+      "description": "Light, nutritious, and completely oil-free, our soy sausages fasting on water prove that even simple dishes can be rich in flavor. Made from a carefully selected combination of soy and wheat, they are ideal for fasting days or for anyone who wants a healthier, protein meal without additional fats. Ready to consume – just serve with your favorite vegetables, mustard, or fresh bread.",
+      "benefits": [
+        "Source of high-quality plant proteins (22.3g protein per 100g product)",
+        "Suitable for water fasting days",
+        "Traditional taste in a healthier version",
+        "Cholesterol, casein, and lactose-free",
+        "Easily digestible and satisfying",
+        "Ready to consume"
+      ]
+    },
+    {
+      "id": "hot_dog",
+      "productType": "delikatesi",
+      "imageSrc": "/images/hot-dog.png",
+      "imageAlt": "Hot-dog – 200g",
+      "title": "Hot-dog",
+      "weight": "200g",
+      "description": "Soy hot dog is a healthy alternative to classic sausages – equally juicy and tasty, but made exclusively from plant proteins and healthier ingredients. Perfectly fits into hot sandwiches, tortillas, or quick meals. Light, nutritious, and simple to prepare.",
+      "benefits": [
+        "Rich in fiber",
+        "Less saturated fatty acids compared to meat products",
+        "Cholesterol, casein, and lactose-free"
+      ]
+    },
+    {
+      "id": "grill_kobasice",
+      "productType": "delikatesi",
+      "imageSrc": "/images/grill-kobasice.png",
+      "imageAlt": "Grill sausages – 200g",
+      "title": "Grill sausages",
+      "weight": "200g",
+      "description": "Juicy, aromatic, and perfect for every grill! Our plant-based grill sausages are a rich source of pea protein, without artificial additives. Crispy on the outside, soft on the inside – ideal for everyone who loves a good grill but chooses plant-based food.",
+      "benefits": [
+        "Rich in fiber",
+        "Less saturated fatty acids compared to meat products",
+        "Cholesterol, casein, and lactose-free"
+      ]
+    },
+    {
+      "id": "salama_classic",
+      "productType": "delikatesi",
+      "imageSrc": "/images/salama-classic.png",
+      "imageAlt": "Salami Classic – 250g",
+      "title": "Salami Classic",
+      "weight": "250g",
+      "description": "Classic salami – in plant version! Full of flavor, rich in proteins and without additives, Gen!e Salami Classic is perfect for sandwiches, salads, or quick meals. Juicy, tasty, and always ready to replace meat products — without anything animal, but with everything we love in good salami.",
+      "benefits": [
+        "Less saturated fatty acids compared to meat products",
+        "Cholesterol, casein, and lactose-free",
+        "Ready to consume"
+      ]
+    },
+    {
+      "id": "tofu_namaz_natural",
+      "productType": "namazi",
+      "imageSrc": "/images/tofu-namaz-natural.png",
+      "imageAlt": "Tofu spread natural – 170g",
+      "title": "Tofu spread natural",
+      "weight": "170g",
+      "description": "Simple, natural, and versatile – tofu spread natural is an ideal choice for everyone who loves mild, creamy flavors. You can spread it on bread, use it as a salad dressing or as a base for sauces. It perfectly fits both savory and sweet dishes.",
+      "benefits": [
+        "High plant protein content",
+        "Can be used as a sauce, dressing, or meal addition",
+        "Cholesterol, casein, and lactose-free",
+        "Easily digestible product",
+        "Ready to consume"
+      ]
+    },
+    {
+      "id": "tofu_namaz_susam",
+      "productType": "namazi",
+      "imageSrc": "/images/tofu-namaz-susam.png",
+      "imageAlt": "Tofu spread with sesame – 170g",
+      "title": "Tofu spread with sesame",
+      "weight": "170g",
+      "description": "Tofu spread with sesame combines the delicate texture of tofu and the aroma of roasted sesame. Ideal as a base for sandwiches, salad dressing, or addition to hot meals. Loved by everyone who enjoys mild, nutty flavor and natural ingredients.",
+      "benefits": [
+        "High plant protein content",
+        "Can be used as a sauce, dressing, or meal addition",
+        "Cholesterol, casein, and lactose-free",
+        "Easily digestible product",
+        "Ready to consume"
+      ]
+    },
+    {
+      "id": "tofu_namaz_kikiriki",
+      "productType": "namazi",
+      "imageSrc": "/images/tofu-namaz-kikiriki.png",
+      "imageAlt": "Tofu spread with peanut butter – 170g",
+      "title": "Tofu spread with peanut butter",
+      "weight": "170g",
+      "description": "Irresistible combination of tofu and peanuts! This spread has a full, rich flavor and is perfect as a base for sandwiches or as a dip with fruit, vegetables, and crackers. The combination of creamy texture and nutritious ingredients makes it an ideal choice for a quick and healthy meal.",
+      "benefits": [
+        "High plant protein content",
+        "Can be used as a sauce, dressing, or meal addition",
+        "Cholesterol, casein, and lactose-free",
+        "Easily digestible product",
+        "Ready to consume"
+      ]
+    },
+    {
+      "id": "tofu_namaz_mirodija",
+      "productType": "namazi",
+      "imageSrc": "/images/tofu-namaz-mirodija.png",
+      "imageAlt": "Tofu spread with dill – 170g",
+      "title": "Tofu spread with dill",
+      "weight": "170g",
+      "description": "This refreshing plant spread combines the delicate creamy texture of tofu and the recognizable flavor of fresh dill. Lightly aromatic and full of protein – perfect for sandwiches, warm toasted bread, or as an addition to salads and vegetables. Enjoy the flavor that refreshes every piece of bread!",
+      "benefits": [
+        "High plant protein content",
+        "Can be used as a sauce, dressing, or meal addition",
+        "Cholesterol, casein, and lactose-free",
+        "Easily digestible product",
+        "Ready to consume"
+      ]
+    },
+    {
+      "id": "tofu_namaz_paprika",
+      "productType": "namazi",
+      "imageSrc": "/images/tofu-namaz-paprika.png",
+      "imageAlt": "Tofu spread with paprika – 170g",
+      "title": "Tofu spread with paprika",
+      "weight": "170g",
+      "description": "Creamy, light, and mildly spicy – tofu spread with paprika is a perfect addition to every meal. Excellent as a breakfast spread, addition to pasta, or as a dip with vegetables. It provides the perfect balance between flavor and nutrition.",
+      "benefits": [
+        "High plant protein content",
+        "Can be used as a sauce, dressing, or meal addition",
+        "Cholesterol, casein, and lactose-free",
+        "Easily digestible product",
+        "Ready to consume"
+      ]
+    },
+    {
+      "id": "tofu_namaz_posan",
+      "productType": "namazi",
+      "imageSrc": "/images/tofu-namaz-posan.png",
+      "imageAlt": "Tofu spread fasting on water – 170g",
+      "title": "Tofu spread fasting on water",
+      "weight": "170g",
+      "description": "For everyone who fasts or avoids oil, this tofu spread is a perfect solution. Light texture, full flavor, and without milk, oil, and nuts, it's excellent as an addition to bread, salads, or hot meals. Healthy, simple, and practical for every day.",
+      "benefits": [
+        "Suitable for water fasting days",
+        "High plant protein content",
+        "Can be used as a sauce, dressing, or meal addition",
+        "Cholesterol, casein, and lactose-free",
+        "Easily digestible product",
+        "Ready to consume"
+      ]
+    },
+    {
+      "id": "humus_u_crevu",
+      "productType": "namazi",
+      "imageSrc": "/images/humus-u-crevu.png",
+      "imageAlt": "Hummus in intestine – 200g",
+      "title": "Hummus in intestine",
+      "weight": "200g",
+      "description": "Hummus in practical packaging – ready for every occasion. Perfectly creamy and light, ideal for sandwiches, dressings, and meals on the go.",
+      "benefits": [
+        "High chickpea content",
+        "Can be used as a sauce, dressing, or meal addition",
+        "Cholesterol, casein, and lactose-free",
+        "Easily digestible product",
+        "Ready to consume"
+      ]
+    }
+  ]
+}

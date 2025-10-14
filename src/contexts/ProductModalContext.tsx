@@ -1,17 +1,5 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
-
-interface Product {
-  id: string;
-  filter: string;
-  imageSrc: string;
-  imageAlt: string;
-  title: string;
-  description: string;
-  position: {
-    left: string;
-    top: string;
-  };
-}
+import { Product } from '@/types/Product';
 
 interface ProductModalContextType {
   selectedProduct: Product | null;

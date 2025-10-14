@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { motion } from 'framer-motion';
 import useWindowWidth from '@/hooks/useWindowWidth';
+import { Product } from '@/types/Product';
 
 import ProductCard from './ProductCard';
 
@@ -9,19 +10,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
-
-interface Product {
-  id: string;
-  filter: string;
-  imageSrc: string;
-  imageAlt: string;
-  title: string;
-  description: string;
-  position: {
-    left: string;
-    top: string;
-  };
-}
 
 interface ProductCarouselProps {
   products: Product[];
@@ -48,7 +36,7 @@ const ProductCarousel = ({ products, activeFilter }: ProductCarouselProps) => {
   const windowWidth = useWindowWidth();
 
   const filteredProducts = activeFilter
-    ? products.filter((product) => product.filter === activeFilter)
+    ? products.filter((product) => product.productType === activeFilter)
     : products;
 
   const maxSlidesPerView = getSlidesPerView(windowWidth);

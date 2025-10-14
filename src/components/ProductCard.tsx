@@ -1,19 +1,9 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useProductModal } from '@/contexts/ProductModalContext';
+import { Product } from '@/types/Product';
 
-interface ProductCardProps {
-  id: string;
-  filter: string;
-  imageSrc: string;
-  imageAlt: string;
-  title: string;
-  description: string;
-  position: {
-    left: string;
-    top: string;
-  };
-}
+type ProductCardProps = Product;
 
 const DEFAULT_SCALE = 75;
 
@@ -42,25 +32,28 @@ const productScaleMap = {
 
 const ProductCard = ({
   id,
-  filter,
+  productType,
   imageSrc,
   imageAlt,
   title,
+  weight,
   description,
-  position,
+  benefits,
 }: ProductCardProps) => {
   const { openModal } = useProductModal();
 
   const handleProductClick = () => {
     const product = {
       id,
-      filter,
+      productType,
       imageSrc,
       imageAlt,
       title,
+      weight,
       description,
-      position,
+      benefits,
     };
+
     openModal(product);
   };
 
@@ -70,7 +63,7 @@ const ProductCard = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      data-filter={filter}
+      data-filter={productType}
       className='pt-4 relative'>
       <div className='text-lg text-secondary font-poppins font-semibold text-center absolute px-4 py-2 rounded-lg w-full -mt-4 mb-4'>
         {breakTitle(title)}
@@ -96,9 +89,6 @@ const ProductCard = ({
             />
           </span>
         </button>
-      </div>
-      <div className='p-4'>
-        <h6></h6>
       </div>
     </motion.li>
   );
