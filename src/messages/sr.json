@@ -36,6 +36,24 @@
       "delicatessen": "Delikates",
       "spreads": "Namazi",
       "butters": "Puteri"
+    },
+    "nutritionalData": {
+      "energy": "Energija",
+      "fats": "Masti",
+      "saturatedFats": "Zasićene masne kiseline",
+      "carbohydrates": "Ugljeni hidrati",
+      "sugars": "Šećeri",
+      "fiber": "Vlakna",
+      "proteins": "Proteini",
+      "salt": "So",
+      "vitaminB1": "Tiamin (B1)",
+      "vitaminB2": "Riboflavin (B2)",
+      "vitaminB3": "Niacin (B3)",
+      "vitaminB5": "Pantotenska kiselina (B5)",
+      "vitaminB6": "Piridoksin (B6)",
+      "vitaminB7": "Biotin (B7)",
+      "vitaminB9": "Folna kiselina (B9)",
+      "vitaminB12": "Kobalamin (B12)"
     }
   },
   "contact": {

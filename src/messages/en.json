@@ -36,6 +36,24 @@
       "delicatessen": "Delicatessen",
       "spreads": "Spreads",
       "butters": "Butters"
+    },
+    "nutritionalData": {
+      "energy": "Energy",
+      "fats": "Fats",
+      "saturatedFats": "Saturated Fats",
+      "carbohydrates": "Carbohydrates",
+      "sugars": "Sugars",
+      "fiber": "Fiber",
+      "proteins": "Proteins",
+      "salt": "Salt",
+      "vitaminB1": "Thiamin (B1)",
+      "vitaminB2": "Riboflavin (B2)",
+      "vitaminB3": "Niacin (B3)",
+      "vitaminB5": "Pantotenic acid (B5)",
+      "vitaminB6": "Pyridoxine (B6)",
+      "vitaminB7": "Biotin (B7)",
+      "vitaminB9": "Folic acid (B9)",
+      "vitaminB12": "Cobalamin (B12)"
     }
   },
   "contact": {

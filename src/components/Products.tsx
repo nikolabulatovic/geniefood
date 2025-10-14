@@ -11,7 +11,9 @@ import productsSr from '@/data/products-sr.json';
 import productsEn from '@/data/products-en.json';
 
 const getProductsData = (locale: string): Product[] => {
-  return locale === 'sr' ? productsSr.products : productsEn.products;
+  return locale === 'sr'
+    ? (productsSr.products as Product[])
+    : (productsEn.products as Product[]);
 };
 
 const Products = () => {

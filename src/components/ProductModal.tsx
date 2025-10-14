@@ -3,6 +3,11 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import GradientDot from '@/components/GradientDot';
 import { Product } from '@/types/Product';
+import { useTranslations } from 'next-intl';
+
+const isSubItem = (key: keyof Product['nutritionalData']) => {
+  return key === 'saturatedFats' || key === 'sugars';
+};
 
 interface ProductModalProps {
   product: Product | null;
@@ -10,58 +15,14 @@ interface ProductModalProps {
   onClose: () => void;
 }
 
-type NutritionalData = {
-  label: string;
-  value: string;
-  isSubItem?: boolean;
-};
-
-const getNutritionalData = (productId: string): NutritionalData[] => {
-  const nutritionalData = {
-    'tempeh-sirovi': [
-      { label: 'Energija', value: '607kcal (2536kJ)' },
-      { label: 'Masti', value: '' },
-      { label: 'Zasićene masne kiseline', value: '4,28g', isSubItem: true },
-      { label: 'Ugljeni hidrati', value: '16,68g' },
-      { label: 'Šećeri', value: '4,55g', isSubItem: true },
-      { label: 'Vlakna', value: '10,50g' },
-      { label: 'Proteini', value: '21,23g' },
-      { label: 'So', value: '0,05g' },
-    ],
-    'nutritivni-kvasac': [
-      { label: 'Energija', value: '350kcal (1464kJ)' },
-      { label: 'Masti', value: '4,2g' },
-      { label: 'Ugljeni hidrati', value: '28,5g' },
-      { label: 'Vlakna', value: '18,0g' },
-      { label: 'Proteini', value: '45,0g' },
-      { label: 'So', value: '0,1g' },
-      { label: 'Vitamin B12', value: '2,4μg' },
-      { label: 'Folna kiselina', value: '200μg' },
-    ],
-    default: [
-      { label: 'Energija', value: '450kcal (1883kJ)' },
-      { label: 'Masti', value: '12,5g' },
-      { label: 'Ugljeni hidrati', value: '35,2g' },
-      { label: 'Vlakna', value: '8,1g' },
-      { label: 'Proteini', value: '18,7g' },
-      { label: 'So', value: '0,3g' },
-    ],
-  };
-
-  return (
-    nutritionalData[productId as keyof typeof nutritionalData] ||
-    nutritionalData.default
-  );
-};
-
 const ProductModal: React.FC<ProductModalProps> = ({
   product,
   isOpen,
   onClose,
 }) => {
-  if (!product) return null;
+  const t = useTranslations('products');
 
-  const nutritionalData = getNutritionalData(product.id);
+  if (!product) return null;
 
   return (
     <AnimatePresence>
@@ -199,30 +160,36 @@ const ProductModal: React.FC<ProductModalProps> = ({
                         Nutritivne vrednosti
                       </h3>
                       <div className='space-y-3'>
-                        {nutritionalData.map((item, index) => (
-                          <motion.div
-                            key={index}
-                            initial={{ opacity: 0, x: 20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: index * 0.1 }}
-                            className={`flex justify-between items-center py-3 px-4 rounded-lg transition-colors hover:bg-blue-50 ${
-                              item.isSubItem
-                                ? 'ml-6 border-l-2 border-genie-green bg-green-50'
-                                : 'bg-blue-50'
-                            }`}>
-                            <span
-                              className={`text-gray-700 ${
-                                item.isSubItem
-                                  ? 'text-sm'
-                                  : 'font-semibold text-base'
+                        {Object.entries(product.nutritionalData ?? {}).map(
+                          ([key, value], index) => (
+                            <motion.div
+                              key={index}
+                              initial={{ opacity: 0, x: 20 }}
+                              animate={{ opacity: 1, x: 0 }}
+                              transition={{ delay: index * 0.1 }}
+                              className={`flex justify-between items-center py-2 px-4 rounded-lg transition-colors hover:bg-blue-50 ${
+                                isSubItem(
+                                  key as keyof Product['nutritionalData'],
+                                )
+                                  ? 'ml-6 border-l-2 border-genie-green bg-green-50'
+                                  : 'bg-blue-50'
                               }`}>
-                              {item.label}
-                            </span>
-                            <span className='text-gray-800 font-bold text-lg'>
-                              {item.value}
-                            </span>
-                          </motion.div>
-                        ))}
+                              <span
+                                className={`text-gray-700 ${
+                                  isSubItem(
+                                    key as keyof Product['nutritionalData'],
+                                  )
+                                    ? 'text-sm'
+                                    : 'font-semibold text-base'
+                                }`}>
+                                {t(`nutritionalData.${key}`)}
+                              </span>
+                              <span className='text-gray-800 font-bold text-lg'>
+                                {value}
+                              </span>
+                            </motion.div>
+                          ),
+                        )}
                       </div>
                     </div>
                   </div>

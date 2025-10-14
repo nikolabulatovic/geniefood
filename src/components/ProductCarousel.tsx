@@ -161,13 +161,13 @@ const ProductCarousel = ({
           color: var(--color-primary);
           font-size: 1.2rem;
           font-weight: bold;
-          width: 2rem;
-          height: 2rem;
+          width: 2.8rem;
+          height: 2.8rem;
           border-radius: 15%;
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
           transition: all 0.3s ease;
           position: absolute;
-          top: 95%;
+          top: 93%;
           z-index: 11;
         }
 
