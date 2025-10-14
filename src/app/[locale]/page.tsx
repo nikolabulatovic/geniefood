@@ -54,7 +54,7 @@ function HomeContent() {
             className='relative w-[20%] max-w-xs h-full md:w-3/4 aspect-[16/12.5]'>
             <Image
               src='/images/genie-cover-tekst-plavo.jpg'
-              alt={t('cover-text')}
+              alt={t('text-alt')}
               fill
               className='object-cover'
               sizes='(max-width: 768px) 100vw, 50vw'
@@ -68,7 +68,7 @@ function HomeContent() {
             className='relative ml-20 w-[20%] max-w-md h-full md:w-3/4 aspect-[9/13]'>
             <Image
               src='/images/genie-cover-lice-plavo.jpg'
-              alt={t('cover-title')}
+              alt={t('title-alt')}
               fill
               className='object-cover'
               sizes='(max-width: 768px) 100vw, 50vw'
