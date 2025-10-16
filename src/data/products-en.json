@@ -3,7 +3,7 @@
     {
       "id": "nutritivni_kvasac",
       "productType": "dodaci",
-      "imageSrc": "/images/nutritivni-kvasac.png",
+      "imageSrc": "/images/products/nutritivni-kvasac.png",
       "imageAlt": "Nutritional yeast flakes – 200g",
       "title": "Nutritional yeast flakes",
       "weight": "200g",
@@ -38,7 +38,7 @@
     {
       "id": "mileram",
       "productType": "dodaci",
-      "imageSrc": "/images/mileram.png",
+      "imageSrc": "/images/products/mileram.png",
       "imageAlt": "Mileram – 400g",
       "title": "Mileram",
       "weight": "400g",
@@ -53,7 +53,7 @@
     {
       "id": "tempeh",
       "productType": "makrobiotika",
-      "imageSrc": "/images/tempeh-sirovi.png",
+      "imageSrc": "/images/products/tempeh-sirovi.png",
       "imageAlt": "Tempeh – 200g",
       "title": "Tempeh",
       "weight": "200g",
@@ -79,7 +79,7 @@
     {
       "id": "tempeh_przeni",
       "productType": "makrobiotika",
-      "imageSrc": "/images/tempeh-przeni.png",
+      "imageSrc": "/images/products/tempeh-przeni.png",
       "imageAlt": "Fried tempeh – 200g",
       "title": "Fried tempeh",
       "weight": "200g",
@@ -105,7 +105,7 @@
     {
       "id": "seitan_przeni",
       "productType": "makrobiotika",
-      "imageSrc": "/images/seitan-przeni.png",
+      "imageSrc": "/images/products/seitan-przeni.png",
       "imageAlt": "Fried seitan – 180g",
       "title": "Fried seitan",
       "weight": "180g",
@@ -129,7 +129,7 @@
     {
       "id": "tofu_dimljeni",
       "productType": "makrobiotika",
-      "imageSrc": "/images/tofu-dimljeni.png",
+      "imageSrc": "/images/products/tofu-dimljeni.png",
       "imageAlt": "Smoked tofu - 200g",
       "title": "Smoked tofu",
       "weight": "200g",
@@ -154,7 +154,7 @@
     {
       "id": "tofu_przeni",
       "productType": "makrobiotika",
-      "imageSrc": "/images/tofu-przeni.png",
+      "imageSrc": "/images/products/tofu-przeni.png",
       "imageAlt": "Fried tofu – 170g",
       "title": "Fried tofu",
       "weight": "170g",
@@ -178,7 +178,7 @@
     {
       "id": "tofu_sirovi",
       "productType": "makrobiotika",
-      "imageSrc": "/images/tofu-sirovi.png",
+      "imageSrc": "/images/products/tofu-sirovi.png",
       "imageAlt": "Raw tofu – 200g",
       "title": "Raw tofu",
       "weight": "200g",
@@ -205,7 +205,7 @@
     {
       "id": "badem_puter",
       "productType": "puteri",
-      "imageSrc": "/images/badem-puter.png",
+      "imageSrc": "/images/products/badem-puter.png",
       "imageAlt": "Almond butter – 170g",
       "title": "Almond butter",
       "weight": "170g",
@@ -223,7 +223,7 @@
     {
       "id": "kikiriki_puter",
       "productType": "puteri",
-      "imageSrc": "/images/kikiriki-puter.png",
+      "imageSrc": "/images/products/kikiriki-puter.png",
       "imageAlt": "Peanut butter 99.5% – 360g",
       "title": "Peanut butter 99.5%",
       "weight": "360g",
@@ -251,7 +251,7 @@
     {
       "id": "tahini",
       "productType": "puteri",
-      "imageSrc": "/images/tahini.png",
+      "imageSrc": "/images/products/tahini.png",
       "imageAlt": "Tahini – sesame butter – 360g",
       "title": "Tahini – sesame butter",
       "weight": "360g",
@@ -278,7 +278,7 @@
     {
       "id": "bundevin_puter",
       "productType": "puteri",
-      "imageSrc": "/images/bundevin-puter.png",
+      "imageSrc": "/images/products/bundevin-puter.png",
       "imageAlt": "Pumpkin seed butter – 330g",
       "title": "Pumpkin seed butter",
       "weight": "330g",
@@ -304,7 +304,7 @@
     {
       "id": "lesnik_puter",
       "productType": "puteri",
-      "imageSrc": "/images/lesnik-puter.png",
+      "imageSrc": "/images/products/lesnik-puter.png",
       "imageAlt": "Hazelnut butter – 170g",
       "title": "Hazelnut butter",
       "weight": "170g",
@@ -332,7 +332,7 @@
     {
       "id": "dimljena_pecenica",
       "productType": "delikatesi",
-      "imageSrc": "/images/dimljena-pecenica.png",
+      "imageSrc": "/images/products/dimljena-pecenica.png",
       "imageAlt": "Smoked roast – 250g",
       "title": "Smoked roast",
       "weight": "250g",
@@ -348,7 +348,7 @@
     {
       "id": "vege_burger",
       "productType": "delikatesi",
-      "imageSrc": "/images/burger.png",
+      "imageSrc": "/images/products/burger.png",
       "imageAlt": "Vege burger – 240g",
       "title": "Vege burger",
       "weight": "240g",
@@ -372,7 +372,7 @@
     {
       "id": "soja_kobasice_classic",
       "productType": "delikatesi",
-      "imageSrc": "/images/soja-kobasice.png",
+      "imageSrc": "/images/products/soja-kobasice.png",
       "imageAlt": "Soy sausages classic – 200g",
       "title": "Soy sausages classic",
       "weight": "200g",
@@ -398,7 +398,7 @@
     {
       "id": "soja_kobasice_ljute",
       "productType": "delikatesi",
-      "imageSrc": "/images/soja-kobasice-ljute.png",
+      "imageSrc": "/images/products/soja-kobasice-ljute.png",
       "imageAlt": "Soy sausages spicy – 200g",
       "title": "Soy sausages spicy",
       "weight": "200g",
@@ -425,7 +425,7 @@
     {
       "id": "soja_kobasice_posne",
       "productType": "delikatesi",
-      "imageSrc": "/images/soja-kobasice-posne.png",
+      "imageSrc": "/images/products/soja-kobasice-posne.png",
       "imageAlt": "Soy sausages fasting on water – 200g",
       "title": "Soy sausages fasting on water",
       "weight": "200g",
@@ -442,7 +442,7 @@
     {
       "id": "hot_dog",
       "productType": "delikatesi",
-      "imageSrc": "/images/hot-dog.png",
+      "imageSrc": "/images/products/hot-dog.png",
       "imageAlt": "Hot-dog – 200g",
       "title": "Hot-dog",
       "weight": "200g",
@@ -466,7 +466,7 @@
     {
       "id": "grill_kobasice",
       "productType": "delikatesi",
-      "imageSrc": "/images/grill-kobasice.png",
+      "imageSrc": "/images/products/grill-kobasice.png",
       "imageAlt": "Grill sausages – 200g",
       "title": "Grill sausages",
       "weight": "200g",
@@ -480,7 +480,7 @@
     {
       "id": "salama_classic",
       "productType": "delikatesi",
-      "imageSrc": "/images/salama-classic.png",
+      "imageSrc": "/images/products/salama-classic.png",
       "imageAlt": "Salami Classic – 250g",
       "title": "Salami Classic",
       "weight": "250g",
@@ -494,7 +494,7 @@
     {
       "id": "tofu_namaz_natural",
       "productType": "namazi",
-      "imageSrc": "/images/tofu-namaz-natural.png",
+      "imageSrc": "/images/products/tofu-namaz-natural.png",
       "imageAlt": "Tofu spread natural – 170g",
       "title": "Tofu spread natural",
       "weight": "170g",
@@ -520,7 +520,7 @@
     {
       "id": "tofu_namaz_susam",
       "productType": "namazi",
-      "imageSrc": "/images/tofu-namaz-susam.png",
+      "imageSrc": "/images/products/tofu-namaz-susam.png",
       "imageAlt": "Tofu spread with sesame – 170g",
       "title": "Tofu spread with sesame",
       "weight": "170g",
@@ -546,7 +546,7 @@
     {
       "id": "tofu_namaz_kikiriki",
       "productType": "namazi",
-      "imageSrc": "/images/tofu-namaz-kikiriki.png",
+      "imageSrc": "/images/products/tofu-namaz-kikiriki.png",
       "imageAlt": "Tofu spread with peanut butter – 170g",
       "title": "Tofu spread with peanut butter",
       "weight": "170g",
@@ -572,7 +572,7 @@
     {
       "id": "tofu_namaz_mirodija",
       "productType": "namazi",
-      "imageSrc": "/images/tofu-namaz-mirodija.png",
+      "imageSrc": "/images/products/tofu-namaz-mirodija.png",
       "imageAlt": "Tofu spread with dill – 170g",
       "title": "Tofu spread with dill",
       "weight": "170g",
@@ -598,7 +598,7 @@
     {
       "id": "tofu_namaz_paprika",
       "productType": "namazi",
-      "imageSrc": "/images/tofu-namaz-paprika.png",
+      "imageSrc": "/images/products/tofu-namaz-paprika.png",
       "imageAlt": "Tofu spread with paprika – 170g",
       "title": "Tofu spread with paprika",
       "weight": "170g",
@@ -624,7 +624,7 @@
     {
       "id": "tofu_namaz_posan",
       "productType": "namazi",
-      "imageSrc": "/images/tofu-namaz-posan.png",
+      "imageSrc": "/images/products/tofu-namaz-posan.png",
       "imageAlt": "Tofu spread fasting on water – 170g",
       "title": "Tofu spread fasting on water",
       "weight": "170g",
@@ -651,7 +651,7 @@
     {
       "id": "humus_u_crevu",
       "productType": "namazi",
-      "imageSrc": "/images/humus-u-crevu.png",
+      "imageSrc": "/images/products/humus-u-crevu.png",
       "imageAlt": "Hummus in intestine – 200g",
       "title": "Hummus in intestine",
       "weight": "200g",
