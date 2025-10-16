@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { useTranslations } from 'next-intl';
+import { useTranslation } from '@/contexts/I18nContext';
 
 interface ProductViewModeProps {
   viewMode: 'grid' | 'list';
@@ -10,7 +10,7 @@ const ProductViewMode = ({
   viewMode,
   onViewModeChange,
 }: ProductViewModeProps) => {
-  const t = useTranslations('products');
+  const { t } = useTranslation('products');
 
   return (
     <motion.div

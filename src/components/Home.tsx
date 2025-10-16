@@ -1,21 +1,43 @@
 'use client';
 
 import Image from 'next/image';
+import { Montserrat, Poppins } from 'next/font/google';
+import localFont from 'next/font/local';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
+import { blugie } from '@/app/fonts';
 import About from '@/components/About';
 import Products from '@/components/Products';
 import Contact from '@/components/Contact';
-import { useTranslations } from 'next-intl';
+import { useTranslation } from '@/contexts/I18nContext';
 import ProductModal from '@/components/ProductModal';
 import {
   ProductModalProvider,
   useProductModal,
 } from '@/contexts/ProductModalContext';
+import Header from './Header';
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-montserrat',
+});
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-poppins',
+});
+
+const intro = localFont({
+  src: '../../public/fonts/Intro-Regular.ttf',
+  variable: '--font-intro',
+  display: 'swap',
+});
 
 function HomeContent() {
-  const t = useTranslations('cover');
+  const { t } = useTranslation('cover');
   const { selectedProduct, isModalOpen, closeModal } = useProductModal();
   const [showScrollButton, setShowScrollButton] = useState(true);
 
@@ -167,35 +189,22 @@ function HomeContent() {
         isOpen={isModalOpen}
         onClose={closeModal}
       />
-      {/* <style jsx>{`
-        .genie-green-diagonal::before,
-        .primary-diagonal::before {
-          content: '';
-          position: absolute;
-          inset: 0;
-          background: inherit;
-          z-index: 10;
-          clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%);
-          transform: translateY(-4px);
-        }
-        .genie-salmon-diagonal::before {
-          content: '';
-          position: absolute;
-          inset: 0;
-          background: inherit;
-          z-index: 10;
-          clip-path: polygon(0 100%, 0 0, 100% 100%);
-          transform: translateY(-4px);
-        }
-      `}</style> */}
     </>
   );
 }
 
 export default function Home() {
   return (
-    <ProductModalProvider>
-      <HomeContent />
-    </ProductModalProvider>
+    <>
+      <div
+        className={`${blugie.variable} ${montserrat.variable} ${poppins.variable} ${intro.variable} font-sans`}>
+        <Header />
+        <main className='min-h-screen bg-white'>
+          <ProductModalProvider>
+            <HomeContent />
+          </ProductModalProvider>
+        </main>
+      </div>
+    </>
   );
 }

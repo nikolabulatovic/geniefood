@@ -1,11 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useTranslations } from 'next-intl';
+import { useTranslation } from '@/contexts/I18nContext';
 import SectionHeading from './SectionHeading';
 
 const Contact = () => {
-  const t = useTranslations('contact');
+  const { t } = useTranslation('contact');
 
   const contactInfo = [
     {

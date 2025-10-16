@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import GradientDot from '@/components/GradientDot';
 import { Product } from '@/types/Product';
-import { useTranslations } from 'next-intl';
+import { useTranslation } from '@/contexts/I18nContext';
 
 const isSubItem = (key: keyof Product['nutritionalData']) => {
   return key === 'saturatedFats' || key === 'sugars';
@@ -20,7 +20,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
   isOpen,
   onClose,
 }) => {
-  const t = useTranslations('products');
+  const { t } = useTranslation('products');
 
   if (!product) return null;
 

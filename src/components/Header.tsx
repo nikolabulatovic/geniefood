@@ -3,18 +3,16 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useTranslations } from 'next-intl';
+import { useTranslation, useI18n } from '@/contexts/I18nContext';
 import NavLink from './NavLink';
 import LanguageLink from './LanguageLink';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const pathname = usePathname();
-  const currentLocale = pathname.split('/')[1];
-  const t = useTranslations('header');
+  const { t } = useTranslation('header');
+  const { locale } = useI18n();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,13 +64,13 @@ const Header = () => {
                 <LanguageLink
                   href='/sr'
                   label={t('languages.sr')}
-                  isActive={currentLocale === 'sr'}
+                  isActive={locale === 'sr'}
                 />
                 <span className='text-primary'>|</span>
                 <LanguageLink
                   href='/en'
                   label={t('languages.en')}
-                  isActive={currentLocale === 'en'}
+                  isActive={locale === 'en'}
                 />
               </div>
             </nav>
@@ -126,14 +124,14 @@ const Header = () => {
                     <LanguageLink
                       href='/sr'
                       label={t('languages.sr')}
-                      isActive={currentLocale === 'sr'}
+                      isActive={locale === 'sr'}
                       onClick={() => setIsMobileMenuOpen(false)}
                     />
                     <span className='text-primary'>|</span>
                     <LanguageLink
                       href='/en'
                       label={t('languages.en')}
-                      isActive={currentLocale === 'en'}
+                      isActive={locale === 'en'}
                       onClick={() => setIsMobileMenuOpen(false)}
                     />
                   </div>

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslation, useI18n } from '@/contexts/I18nContext';
 import { motion } from 'framer-motion';
 import ProductFilters from './ProductFilters';
 import ProductViewMode from './ProductViewMode';
@@ -17,8 +17,8 @@ const getProductsData = (locale: string): Product[] => {
 };
 
 const Products = () => {
-  const t = useTranslations('products');
-  const locale = useLocale();
+  const { t } = useTranslation('products');
+  const { locale } = useI18n();
   const [activeFilter, setActiveFilter] = useState('');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('list');
 

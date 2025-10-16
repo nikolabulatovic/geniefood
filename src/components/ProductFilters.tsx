@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl';
+import { useTranslation } from '@/contexts/I18nContext';
 import { motion } from 'framer-motion';
 
 import { ProductType } from '@/types/ProductType';
@@ -21,7 +21,7 @@ const ProductFilters = ({
   activeFilter,
   onFilterChange,
 }: ProductFiltersProps) => {
-  const t = useTranslations('products');
+  const { t } = useTranslation('products');
 
   return (
     <motion.div

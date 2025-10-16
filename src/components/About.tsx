@@ -2,11 +2,11 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { useTranslations } from 'next-intl';
+import { useTranslation } from '@/contexts/I18nContext';
 import SectionHeading from './SectionHeading';
 
 const About = () => {
-  const t = useTranslations('about');
+  const { t } = useTranslation('about');
 
   return (
     <section
