@@ -79,7 +79,7 @@ const Header = () => {
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className='md:hidden relative z-10 p-2 text-primary hover:text-white transition-colors'>
-              <div className='w-6 h-5 flex flex-col justify-between'>
+              <div className='w-6 h-4.5 flex flex-col justify-between'>
                 <span
                   className={`w-full h-0.5 bg-current transform transition-all duration-300 ${
                     isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''
@@ -109,8 +109,8 @@ const Header = () => {
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.2 }}
               className='md:hidden absolute top-0 left-0 right-0 bg-secondary/95 backdrop-blur-md shadow-lg'>
-              <div className='container mx-auto px-4 py-20'>
-                <nav className='flex flex-col space-y-6'>
+              <div className='container mx-auto px-4 pt-24 pb-6'>
+                <nav className='flex flex-col items-start space-y-6'>
                   {navItems.map((item) => (
                     <NavLink
                       key={item.href}
