@@ -51,7 +51,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
               {/* Close Button */}
               <button
                 onClick={onClose}
-                className='absolute top-6 right-6 z-10 bg-white/90 hover:bg-white rounded-full p-3 shadow-lg transition-all duration-200 hover:scale-110 group'>
+                className='absolute cursor-pointer top-6 right-6 z-10 bg-white/90 hover:bg-white rounded-full p-3 shadow-lg transition-all duration-200 hover:scale-110 group'>
                 <svg
                   className='w-6 h-6 text-gray-600 group-hover:text-gray-800 transition-colors'
                   fill='none'
@@ -72,16 +72,22 @@ const ProductModal: React.FC<ProductModalProps> = ({
                 <div className='relative pt-8 pb-6 px-8'>
                   <div className='flex flex-col lg:flex-row gap-8 items-center'>
                     {/* Product Image */}
-                    <div className='relative w-full lg:w-80 h-64 lg:h-80'>
-                      <div className='absolute inset-0 bg-blue-200 rounded-2xl blur-sm'></div>
-                      <div className='relative w-full h-full bg-white rounded-2xl shadow-xl p-6 flex items-center justify-center border border-blue-200'>
-                        <Image
-                          src={product.imageSrc}
-                          alt={product.imageAlt}
-                          width={200}
-                          height={200}
-                          className='object-contain max-w-full max-h-full'
-                        />
+                    <div className='relative flex items-center justify-center w-full lg:w-80 h-64 lg:h-80'>
+                      <div className='absolute inset-0 bg-primary/35 rounded-2xl blur-3xl'></div>
+                      <div className='relative flex items-center justify-center w-full h-full'>
+                        <div className='relative lg:absolute flex items-center justify-center lg:-left-1/4 lg:-right-1/4 lg:top-1/8 w-[150%] max-w-[500px]'>
+                          <Image
+                            src={product.imageSrc}
+                            alt={product.imageAlt}
+                            width={0}
+                            height={0}
+                            className={`object-contain max-w-full max-h-full h-auto ${
+                              product.imageRatio
+                                ? `w-${product.imageRatio}`
+                                : 'w-1/2'
+                            }`}
+                          />
+                        </div>
                       </div>
                     </div>
 
@@ -142,7 +148,12 @@ const ProductModal: React.FC<ProductModalProps> = ({
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: index * 0.1 }}
                             className='flex items-center text-gray-700 text-lg'>
-                            <span className='w-2 h-2 bg-genie-green rounded-full mr-4 flex-shrink-0'></span>
+                            <GradientDot
+                              fromColor='from-genie-salmon/80'
+                              toColor='to-genie-salmon/60'
+                              size='sm'
+                              className='ml-0.5 mr-3.5'
+                            />
                             {benefit}
                           </motion.li>
                         ))}
@@ -167,12 +178,12 @@ const ProductModal: React.FC<ProductModalProps> = ({
                               initial={{ opacity: 0, x: 20 }}
                               animate={{ opacity: 1, x: 0 }}
                               transition={{ delay: index * 0.1 }}
-                              className={`flex justify-between items-center py-2 px-4 rounded-lg transition-colors hover:bg-blue-50 ${
+                              className={`flex justify-between items-center py-2 px-4 rounded-lg transition-colors bg-blue-50 hover:bg-blue-100 ${
                                 isSubItem(
                                   key as keyof Product['nutritionalData'],
                                 )
-                                  ? 'ml-6 border-l-2 border-genie-green bg-green-50'
-                                  : 'bg-blue-50'
+                                  ? 'ml-6'
+                                  : ''
                               }`}>
                               <span
                                 className={`text-gray-700 ${
