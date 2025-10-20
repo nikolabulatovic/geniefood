@@ -72,8 +72,8 @@ const ProductCarousel = ({
           {filteredProducts.map((product) => (
             <motion.div
               key={product.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
               className='w-full max-w-[300px] transform transition-all duration-500 rounded-xl overflow-hidden list-none'>
@@ -112,8 +112,8 @@ const ProductCarousel = ({
               key={product.id}
               className='!flex items-center justify-center'>
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className='w-full h-full transform transition-all duration-500 rounded-xl overflow-hidden'>
@@ -128,8 +128,8 @@ const ProductCarousel = ({
           {filteredProducts.map((product, index) => (
             <motion.div
               key={product.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className='w-[300px] h-[400px] transform transition-all duration-500 rounded-xl overflow-hidden list-none'>
