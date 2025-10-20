@@ -40,6 +40,7 @@
       "productType": "dodaci",
       "imageSrc": "/images/products/mileram.png",
       "imageAlt": "Mileram – 400g",
+      "imageRatio": "3/7",
       "title": "Mileram",
       "weight": "400g",
       "description": "Plant-based mileram that makes no compromises — creamy, light, and perfectly neutral in taste. Fermented product made from plant fats, soy proteins, and pea fiber, excellent choice for both savory and sweet dishes. No lactose, no cholesterol, but full of flavor!",
@@ -48,7 +49,17 @@
         "Can be used for both savory and sweet dishes",
         "Cholesterol, casein, and lactose-free",
         "Ready to consume"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "257kcal (1079kJ)",
+        "fats": "24.5g",
+        "saturatedFats": "0.6g",
+        "carbohydrates": "1.2g",
+        "sugars": "0.2g",
+        "fiber": "3.5g",
+        "proteins": "8.0g",
+        "salt": "1.1g"
+      }
     },
     {
       "id": "tempeh",
@@ -334,6 +345,7 @@
       "productType": "delikatesi",
       "imageSrc": "/images/products/dimljena-pecenica.png",
       "imageAlt": "Smoked roast – 250g",
+      "imageRatio": "3/4",
       "title": "Smoked roast",
       "weight": "250g",
       "description": "Perfect blend of tradition and plants! Our smoked roast is made from wheat protein and smoked on beech wood for an authentic aroma and taste. Juicy, aromatic, and rich in proteins — you can eat it cold with bread and salad, or add it to hot meals and sandwiches.",
@@ -343,7 +355,17 @@
         "No artificial additives",
         "Source of iron and fiber",
         "Ready to consume"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "267kcal (1118kJ)",
+        "fats": "7.3g",
+        "saturatedFats": "0.8g",
+        "carbohydrates": "17.2g",
+        "sugars": "3.2g",
+        "fiber": "3.1g",
+        "proteins": "33.2g",
+        "salt": "1.5g"
+      }
     },
     {
       "id": "vege_burger",
@@ -468,6 +490,7 @@
       "productType": "delikatesi",
       "imageSrc": "/images/products/grill-kobasice.png",
       "imageAlt": "Grill sausages – 200g",
+      "imageRatio": "1/3",
       "title": "Grill sausages",
       "weight": "200g",
       "description": "Juicy, aromatic, and perfect for every grill! Our plant-based grill sausages are a rich source of pea protein, without artificial additives. Crispy on the outside, soft on the inside – ideal for everyone who loves a good grill but chooses plant-based food.",
@@ -475,13 +498,24 @@
         "Rich in fiber",
         "Less saturated fatty acids compared to meat products",
         "Cholesterol, casein, and lactose-free"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "225kcal (934kJ)",
+        "fats": "19.18g",
+        "saturatedFats": "2.27g",
+        "carbohydrates": "8.25g",
+        "sugars": "0.77g",
+        "fiber": "5.57g",
+        "proteins": "4.85g",
+        "salt": "1.3g"
+      }
     },
     {
       "id": "salama_classic",
       "productType": "delikatesi",
       "imageSrc": "/images/products/salama-classic.png",
       "imageAlt": "Salami Classic – 250g",
+      "imageRatio": "3/4",
       "title": "Salami Classic",
       "weight": "250g",
       "description": "Classic salami – in plant version! Full of flavor, rich in proteins and without additives, Gen!e Salami Classic is perfect for sandwiches, salads, or quick meals. Juicy, tasty, and always ready to replace meat products — without anything animal, but with everything we love in good salami.",
@@ -489,7 +523,17 @@
         "Less saturated fatty acids compared to meat products",
         "Cholesterol, casein, and lactose-free",
         "Ready to consume"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "155kcal (643kJ)",
+        "fats": "12.82g",
+        "saturatedFats": "1.42g",
+        "carbohydrates": "2.97g",
+        "sugars": "0.11g",
+        "fiber": "1.12g",
+        "proteins": "6.92g",
+        "salt": "1.3g"
+      }
     },
     {
       "id": "tofu_namaz_natural",

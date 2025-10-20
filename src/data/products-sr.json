@@ -40,6 +40,7 @@
       "productType": "dodaci",
       "imageSrc": "/images/products/mileram.png",
       "imageAlt": "Mileram – 400g",
+      "imageRatio": "3/7",
       "title": "Mileram",
       "weight": "400g",
       "description": "Biljni mileram koji ne pravi kompromise — kremast, lagan i savršeno neutralnog ukusa. Fermentisan proizvod napravljen od biljnih masti, sojinih proteina i vlakana graška, odličan je izbor i za slana i za slatka jela. Bez laktoze, bez holesterola, ali pun ukusa!",
@@ -48,7 +49,17 @@
         "Može se koristiti i za slana i za slatka jela",
         "Bez holesterola, kazeina i laktoze",
         "Spreman za konzumaciju"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "257kcal (1079kJ)",
+        "fats": "24,5g",
+        "saturatedFats": "0,6g",
+        "carbohydrates": "1,2g",
+        "sugars": "0,2g",
+        "fiber": "3,5g",
+        "proteins": "8,0g",
+        "salt": "1,1g"
+      }
     },
     {
       "id": "tempeh",
@@ -344,6 +355,7 @@
       "productType": "delikatesi",
       "imageSrc": "/images/products/dimljena-pecenica.png",
       "imageAlt": "Dimljena pečenica – 250g",
+      "imageRatio": "3/4",
       "title": "Dimljena pečenica",
       "weight": "250g",
       "description": "Savršen spoj tradicije i biljaka! Naša dimljena pečenica napravljena je od proteina pšenice, a dimljena je na bukovom drvetu za autentičan miris i ukus. Sočna, aromatična i bogata proteinima — možeš je jesti hladnu, uz hleb i salatu, ili dodati u tople obroke i sendviče.",
@@ -353,7 +365,17 @@
         "Bez veštačkih dodataka",
         "Izvor gvožđa i vlakana",
         "Spremna za konzumaciju"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "267kcal (1118kJ)",
+        "fats": "7,3g",
+        "saturatedFats": "0,8g",
+        "carbohydrates": "17,2g",
+        "sugars": "3,2g",
+        "fiber": "3,1g",
+        "proteins": "33,2g",
+        "salt": "1,5g"
+      }
     },
     {
       "id": "vege_burger",
@@ -478,6 +500,7 @@
       "productType": "delikatesi",
       "imageSrc": "/images/products/grill-kobasice.png",
       "imageAlt": "Grill kobasice – 200g",
+      "imageRatio": "1/3",
       "title": "Grill kobasice",
       "weight": "200g",
       "description": "Sočne, aromatične i savršene za svaki roštilj! Naše biljne grill kobasice su bogat izvor proteina iz graška, bez veštačkih dodataka. Zapečene spolja, mekane iznutra – idealne za sve koji vole dobar roštilj, ali biraju biljnu hranu.",
@@ -485,13 +508,24 @@
         "Bogate vlaknima",
         "Manje zasićenih masnih kiselina u poređenju s mesnim proizvodima",
         "Bez holesterola, kazeina i laktoze"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "225kcal (934kJ)",
+        "fats": "19,18g",
+        "saturatedFats": "2,27g",
+        "carbohydrates": "8,25g",
+        "sugars": "0,77g",
+        "fiber": "5,57g",
+        "proteins": "4,85g",
+        "salt": "1,3g"
+      }
     },
     {
       "id": "salama_classic",
       "productType": "delikatesi",
       "imageSrc": "/images/products/salama-classic.png",
       "imageAlt": "Salama Classic – 250g",
+      "imageRatio": "3/4",
       "title": "Salama Classic",
       "weight": "250g",
       "description": "Klasična salama – u biljnoj verziji! Punog ukusa, bogata proteinima i bez aditiva, Gen!e Salama Classic savršena je za sendviče, salate ili brze obroke. Sočna, ukusna i uvek spremna da zameni mesne proizvode — bez ičeg životinjskog, ali sa svim što volimo u dobroj salami.",
@@ -499,7 +533,17 @@
         "Manje zasićenih masnih kiselina u poređenju s mesnim proizvodima",
         "Bez holesterola, kazeina i laktoze",
         "Spremna za konzumaciju"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "155kcal (643kJ)",
+        "fats": "12,82g",
+        "saturatedFats": "1,42g",
+        "carbohydrates": "2,97g",
+        "sugars": "0,11g",
+        "fiber": "1,12g",
+        "proteins": "6,92g",
+        "salt": "1,3g"
+      }
     },
     {
       "id": "tofu_namaz_natural",

@@ -3,6 +3,7 @@ export interface Product {
   productType: string;
   imageSrc: string;
   imageAlt: string;
+  imageRatio?: string;
   title: string;
   weight: string;
   description: string;

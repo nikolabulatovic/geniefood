@@ -30,6 +30,10 @@ const productScaleMap = {
 {
   /* tailwind-class: group-hover:scale-75 */
   /* tailwind-class: group-hover:scale-125 */
+  /* tailwind-class: w-1/1 */
+  /* tailwind-class: w-1/3 */
+  /* tailwind-class: w-3/4 */
+  /* tailwind-class: w-3/7 */
 }
 
 const ProductCard = ({
@@ -37,6 +41,7 @@ const ProductCard = ({
   productType,
   imageSrc,
   imageAlt,
+  imageRatio,
   title,
   weight,
   description,
@@ -51,6 +56,7 @@ const ProductCard = ({
       productType,
       imageSrc,
       imageAlt,
+      imageRatio,
       title,
       weight,
       description,
@@ -82,21 +88,24 @@ const ProductCard = ({
         <button
           onClick={handleProductClick}
           className='absolute top-0 left-0 w-full h-full flex items-center justify-center cursor-pointer'>
-          <span className='relative h-1/2 w-1/2'>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className={`w-${imageRatio ?? '1/2'}`}>
             <Image
               src={imageSrc}
               alt={imageAlt}
-              fill
-              // className={`transform group-hover:translate-y-1/2 group-hover:scale-${
-              //   productScaleMap[id as keyof typeof productScaleMap] ??
-              //   DEFAULT_SCALE
-              // } transition-transform duration-500 mx-auto`}
+              width={0}
+              height={0}
+              style={{ width: '100%', height: 'auto' }}
               className={`transform group-hover:scale-${
                 productScaleMap[id as keyof typeof productScaleMap] ??
                 DEFAULT_SCALE
               } transition-transform duration-500 mx-auto`}
             />
-          </span>
+          </motion.div>
         </button>
       </div>
     </motion.li>
