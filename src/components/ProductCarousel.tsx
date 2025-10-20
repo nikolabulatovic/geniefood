@@ -115,7 +115,7 @@ const ProductCarousel = ({
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
                 className='w-full h-full transform transition-all duration-500 rounded-xl overflow-hidden'>
                 <ProductCard {...product} />
               </motion.div>
