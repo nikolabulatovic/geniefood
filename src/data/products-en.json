@@ -33,7 +33,8 @@
         "vitaminB7": "273.5mcg",
         "vitaminB9": "6.3mg",
         "vitaminB12": "36mcg"
-      }
+      },
+      "ingredients": "Nutritional yeast"
     },
     {
       "id": "mileram",
@@ -59,7 +60,8 @@
         "fiber": "3.5g",
         "proteins": "8.0g",
         "salt": "1.1g"
-      }
+      },
+      "ingredients": "Water, soy, soy protein, vegetable oil (palm), pea fiber, acidity regulator (glucono-delta-lactone), fermentation culture"
     },
     {
       "id": "tempeh",
@@ -85,7 +87,8 @@
         "fiber": "3.3g",
         "proteins": "18.4g",
         "salt": "0.1g"
-      }
+      },
+      "ingredients": "Soy 98%, starter culture (Rhizopus Oligosporus)"
     },
     {
       "id": "tempeh_przeni",
@@ -111,7 +114,8 @@
         "vlakna": "1,2g",
         "proteini": "19,7g",
         "so": "0,74g"
-      }
+      },
+      "ingredients": "Soy 98%, non-hydrogenated vegetable oil (sunflower), starter culture (Rhizopus Oligosporus), sea salt"
     },
     {
       "id": "seitan_przeni",
@@ -135,7 +139,8 @@
         "fiber": "0.9g",
         "proteins": "33.4g",
         "salt": "0.9g"
-      }
+      },
+      "ingredients": "Water, wheat gluten, wheat flour, sea salt, spice blend, non-hydrogenated vegetable oil (sunflower)"
     },
     {
       "id": "tofu_dimljeni",
@@ -160,7 +165,8 @@
         "fiber": "1g",
         "proteins": "30.9g",
         "salt": "2.65g"
-      }
+      },
+      "ingredients": "Soy 59%, water, magnesium chloride (nigari), sea salt"
     },
     {
       "id": "tofu_przeni",
@@ -184,7 +190,8 @@
         "fiber": "0.9g",
         "proteins": "16.6g",
         "salt": "1.64g"
-      }
+      },
+      "ingredients": "Soy 58%, water, non-hydrogenated vegetable oil (sunflower), magnesium chloride (nigari), sea salt"
     },
     {
       "id": "tofu_sirovi",
@@ -211,7 +218,8 @@
         "fiber": "0.6g",
         "proteins": "18.4g",
         "salt": "0.57g"
-      }
+      },
+      "ingredients": "Soy 60%, water, magnesium chloride (nigari), sea salt"
     },
     {
       "id": "badem_puter",
@@ -229,7 +237,8 @@
         "No artificial additives",
         "Source of iron and fiber",
         "Ready to consume"
-      ]
+      ],
+      "ingredients": "Almonds 100%"
     },
     {
       "id": "kikiriki_puter",
@@ -257,7 +266,8 @@
         "fiber": "8.6g",
         "proteins": "25.6g",
         "salt": "1.0g"
-      }
+      },
+      "ingredients": "Peanuts 99.5%, sea salt 0.5%"
     },
     {
       "id": "tahini",
@@ -284,7 +294,8 @@
         "fiber": "8.2g",
         "proteins": "18.1g",
         "salt": "0.1g"
-      }
+      },
+      "ingredients": "Sesame 100%"
     },
     {
       "id": "bundevin_puter",
@@ -310,7 +321,8 @@
         "fiber": "6.0g",
         "proteins": "28.7g",
         "salt": "0.2g"
-      }
+      },
+      "ingredients": "Roasted pumpkin seeds (pepitas) 90%, non-hydrogenated vegetable oil (sunflower), soy lecithin, sea salt"
     },
     {
       "id": "lesnik_puter",
@@ -338,7 +350,8 @@
         "fiber": "9.8g",
         "proteins": "14.6g",
         "salt": "0.1g"
-      }
+      },
+      "ingredients": "Hazelnuts 100%"
     },
     {
       "id": "dimljena_pecenica",
@@ -365,7 +378,8 @@
         "fiber": "3.1g",
         "proteins": "33.2g",
         "salt": "1.5g"
-      }
+      },
+      "ingredients": "Water, wheat protein, pea protein, pea fiber, non-hydrogenated vegetable oil (sunflower), corn starch, sea salt, yeast extract, ginger, paprika, garlic, tomato powder, spice blend, flavoring"
     },
     {
       "id": "vege_burger",
@@ -389,7 +403,8 @@
         "fiber": "12.5g",
         "proteins": "15.2g",
         "salt": "1.3g"
-      }
+      },
+      "ingredients": "Water, soy protein isolate, sunflower oil, pea protein, hydrolyzed soy protein, potato starch, sea salt, thickeners (methyl cellulose, microcrystalline cellulose), garlic powder, onion powder, dextrose, beet powder, yeast extract, paprika extract, tomato powder, spices, flavoring"
     },
     {
       "id": "soja_kobasice_classic",
@@ -415,7 +430,8 @@
         "fiber": "1.1g",
         "proteins": "16.9g",
         "salt": "2.25g"
-      }
+      },
+      "ingredients": "Water, soy 32%, wheat gluten, acidity regulator (glucono-delta-lactone), yeast extract, dried paprika, garlic, sea salt, spice blend"
     },
     {
       "id": "soja_kobasice_ljute",
@@ -442,7 +458,8 @@
         "fiber": "1.1g",
         "proteins": "16.9g",
         "salt": "2.25g"
-      }
+      },
+      "ingredients": "Water, soy 32%, wheat gluten, non-hydrogenated vegetable oil (sunflower), hot paprika, acidity regulator (glucono-delta-lactone), yeast extract, dried paprika, garlic, sea salt, spice blend"
     },
     {
       "id": "soja_kobasice_posne",
@@ -483,7 +500,8 @@
         "fiber": "7.0g",
         "proteins": "4.8g",
         "salt": "1.4g"
-      }
+      },
+      "ingredients": "Water, non-hydrogenated vegetable oil (sunflower), soy protein, potato starch, thickeners (Purified sea algae Eucheuma, konjac gum, xanthan gum) yeast extract, methyl cellulose, microcrystalline cellulose, sea salt, spice blend, flavoring, beet juice concentrate powder"
     },
     {
       "id": "grill_kobasice",
@@ -508,7 +526,8 @@
         "fiber": "5.57g",
         "proteins": "4.85g",
         "salt": "1.3g"
-      }
+      },
+      "ingredients": "Water, sunflower oil, pea protein, modified starch, plant fiber, sea salt, methyl cellulose, sea algae eusheuma extract, konjac gum, xanthan gum, maltodextrin, spices and spice extracts, enzymes, flavorings, citric acid, preservative (potassium sorbate)"
     },
     {
       "id": "salama_classic",
@@ -533,7 +552,8 @@
         "fiber": "1.12g",
         "proteins": "6.92g",
         "salt": "1.3g"
-      }
+      },
+      "ingredients": "Water, sunflower oil, pea protein, bean protein, modified starch, plant fiber, sea algae eusheuma extract, konjac gum, xanthan gum, sea salt, maltodextrin, spices and spice extracts, flavorings, citric acid, preservative (potassium sorbate)"
     },
     {
       "id": "tofu_namaz_natural",
@@ -559,7 +579,8 @@
         "fiber": "3.2g",
         "proteins": "7.8g",
         "salt": "1.1g"
-      }
+      },
+      "ingredients": "Tofu (soy, water, nigari) 60%, soy protein, sunflower oil, corn starch, apple vinegar, garlic, sea salt, mustard"
     },
     {
       "id": "tofu_namaz_susam",
@@ -585,7 +606,8 @@
         "fiber": "3.4g",
         "proteins": "7.9g",
         "salt": "1.1g"
-      }
+      },
+      "ingredients": "Tofu (soy, water, nigari) 60%, soy protein, sunflower oil, corn starch, apple vinegar, sesame 6%, garlic, sea salt, mustard"
     },
     {
       "id": "tofu_namaz_kikiriki",
@@ -611,7 +633,8 @@
         "fiber": "4.1g",
         "proteins": "10.5g",
         "salt": "1.1g"
-      }
+      },
+      "ingredients": "Tofu (soy, water, nigari) 60%, peanut butter, soy protein, sunflower oil, corn starch, apple vinegar, garlic, sea salt, mustard"
     },
     {
       "id": "tofu_namaz_mirodija",
@@ -637,7 +660,8 @@
         "fiber": "3.5g",
         "proteins": "8g",
         "salt": "1.1g"
-      }
+      },
+      "ingredients": "Tofu (soy, water, nigari) 60%, soy protein, sunflower oil, corn starch, apple vinegar, dill 4%, garlic, sea salt, mustard"
     },
     {
       "id": "tofu_namaz_paprika",
@@ -663,7 +687,8 @@
         "fiber": "3.3g",
         "proteins": "8g",
         "salt": "1.1g"
-      }
+      },
+      "ingredients": "Tofu (soy, water, nigari) 60%, soy protein, sunflower oil, corn starch, apple vinegar, paprika 5%, garlic, sea salt, mustard"
     },
     {
       "id": "tofu_namaz_posan",
@@ -690,7 +715,8 @@
         "fiber": "3.2g",
         "proteins": "11.4g",
         "salt": "1.1g"
-      }
+      },
+      "ingredients": "Tofu (soy, water, nigari) 65%, soy protein, corn starch, apple vinegar, sesame, garlic, sea salt, mustard"
     },
     {
       "id": "humus_u_crevu",
@@ -716,7 +742,8 @@
         "fiber": "3.6g",
         "proteins": "8.6g",
         "salt": "1.4g"
-      }
+      },
+      "ingredients": "Chickpeas (raw chickpeas) 70%, sesame butter, non-hydrogenated vegetable oil (sunflower), apple vinegar, sea salt, garlic, pepper"
     }
   ]
 }
