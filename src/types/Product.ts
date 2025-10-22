@@ -26,6 +26,7 @@ export interface Product {
     vitaminB9?: string;
     vitaminB12?: string;
   };
+  ingredients?: string;
 }
 
 export interface ProductsData {

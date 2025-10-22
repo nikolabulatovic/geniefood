@@ -47,6 +47,7 @@ const ProductCard = ({
   description,
   benefits,
   nutritionalData,
+  ingredients,
 }: ProductCardProps) => {
   const { openModal } = useProductModal();
 
@@ -62,6 +63,7 @@ const ProductCard = ({
       description,
       benefits,
       nutritionalData,
+      ingredients,
     };
 
     openModal(product);

@@ -129,8 +129,33 @@ const ProductModal: React.FC<ProductModalProps> = ({
 
                 {/* Content Grid */}
                 <div className='px-8 pb-8'>
+                  {/* Ingredients Section */}
+                  {product.ingredients && (
+                    <div className='mb-8'>
+                      <div className='bg-genie-green/60 rounded-2xl p-6 shadow-lg border border-blue-200'>
+                        <h3 className='text-2xl font-bold text-gray-800 mb-6 flex items-center'>
+                          <GradientDot
+                            fromColor='from-primary'
+                            toColor='to-tertiary'
+                            className='mr-3'
+                          />
+                          Sastojci
+                        </h3>
+                        <motion.div
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.3 }}
+                          className='bg-white/70 rounded-xl p-4 border border-blue-100'>
+                          <p className='text-gray-700 text-lg leading-relaxed'>
+                            {product.ingredients}
+                          </p>
+                        </motion.div>
+                      </div>
+                    </div>
+                  )}
+
                   <div className='grid lg:grid-cols-2 gap-8'>
-                    {/* Ingredients */}
+                    {/* Benefits */}
                     <div className='bg-genie-green/60 rounded-2xl p-6 shadow-lg border border-blue-200'>
                       <h3 className='text-2xl font-bold text-gray-800 mb-6 flex items-center'>
                         <GradientDot
