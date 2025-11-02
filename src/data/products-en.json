@@ -476,7 +476,18 @@
         "Cholesterol, casein, and lactose-free",
         "Easily digestible and satisfying",
         "Ready to consume"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "171kcal (718kJ)",
+        "fats": "0.8g",
+        "saturatedFats": "0.2g",
+        "carbohydrates": "18.7g",
+        "sugars": "2.1g",
+        "fiber": "3.4g",
+        "proteins": "22.3g",
+        "salt": "1.9g"
+      },
+      "ingredients": "Water, soy 32%, wheat gluten, acidity regulator (glucono-delta-lactone), yeast extract, dried paprika, garlic, sea salt, spice blend"
     },
     {
       "id": "hot_dog",

@@ -486,7 +486,18 @@
         "Bez holesterola, kazeina i laktoze",
         "Lako svarljive i zasitne",
         "Spremne za konzumaciju"
-      ]
+      ],
+      "nutritionalData": {
+        "energy": "171kcal (718kJ)",
+        "fats": "0,8g",
+        "saturatedFats": "0,2g",
+        "carbohydrates": "18,7g",
+        "sugars": "2,1g",
+        "fiber": "3,4g",
+        "proteins": "22,3g",
+        "salt": "1,9g"
+      },
+      "ingredients": "Voda, soja 32%, pšenični gluten, regulator kiselosti (glukono-delta-lakton), ekstrakt kvasca, sušena paprika, beli luk, morska so, mešavina začina"
     },
     {
       "id": "hot_dog",
