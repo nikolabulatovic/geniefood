@@ -73,7 +73,7 @@ function HomeContent() {
             initial={{ opacity: 0, scale: 0.5, x: 150, y: 100 }}
             whileInView={{ opacity: 1, scale: 1, x: 0, y: 0 }}
             transition={{ duration: 1.2, delay: 0.8, ease: 'easeOut' }}
-            className='relative w-[20%] max-w-xs h-full md:w-3/4 aspect-[16/12.5]'>
+            className='relative max-w-xs h-full w-3/4 aspect-[16/12.5]'>
             <Image
               src='/images/genie-cover-tekst-plavo.jpg'
               alt={t('text-alt')}
@@ -87,7 +87,7 @@ function HomeContent() {
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
-            className='relative ml-20 w-[20%] max-w-md h-full md:w-3/4 aspect-[9/13]'>
+            className='relative sm:ml-10 md:ml-20 max-w-md h-full w-3/4 aspect-[9/13]'>
             <Image
               src='/images/genie-cover-lice-plavo.jpg'
               alt={t('title-alt')}
