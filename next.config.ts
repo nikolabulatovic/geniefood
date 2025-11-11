@@ -1,12 +1,10 @@
 import { NextConfig } from 'next';
 
-const isProd = process.env.NODE_ENV === 'production';
-
 const config: NextConfig = {
   /* config options here */
   output: 'export',
-  basePath: isProd ? '/geniefood' : '',
-  assetPrefix: isProd ? '/geniefood/' : '',
+  basePath: '',
+  assetPrefix: '',
   images: {
     unoptimized: true,
     domains: ['geniefood.rs'],
