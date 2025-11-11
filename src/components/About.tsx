@@ -4,9 +4,10 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useTranslation } from '@/contexts/I18nContext';
 import SectionHeading from './SectionHeading';
+import ReactMarkdown from 'react-markdown';
 
 const About = () => {
-  const { t } = useTranslation('about');
+  const { t, tArr } = useTranslation('about');
 
   return (
     <section
@@ -38,10 +39,15 @@ const About = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}>
-              <p>{t('paragraph1')}</p>
-              <p>{t('paragraph2')}</p>
-              <p>{t('paragraph3')}</p>
-              <p>{t('paragraph4')}</p>
+              {tArr('paragraphs').map((paragraph, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}>
+                  <ReactMarkdown>{paragraph}</ReactMarkdown>
+                </motion.div>
+              ))}
             </motion.div>
           </motion.div>
         </div>

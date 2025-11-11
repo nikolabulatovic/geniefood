@@ -5,10 +5,12 @@
   },
   "about": {
     "title": "O nama",
-    "paragraph1": "GEN!E je novi brend kompanije Macrobiotic Prom koja na našem tržištu postoji više od 30 godina. Naša ideja je bila da ponudimo zdraviju alternativu proizvodima tradicionalne ishrane i pokažemo da je moguće hraniti se zdravo i istovremeno uživati u 100% biljnoj hrani.",
-    "paragraph2": "Verujemo da briga o planeti počinje na tanjiru zbog čega se u našoj \"kuhinji\" rađaju velike ideje, testiraju novi recepti, prikupljaju povratne informacije od kupaca i stvaraju sjajni, novi proizvodi. Kroz naše proizvode, želimo da unesemo raznolikost, inovacije i umetnost zdrave ishrane u našu ponudu.",
-    "paragraph3": "Svi naši proizvodi imaju prepoznatljiv ukus, napravljeni su po autentičnim receptima i tradicionalnim metodama. Želimo da pokažemo da raznovrsna i kvalitetna biljna ishrana nije samo stvar ukusa već i način na koji možemo da unapredimo svoje zdravlje.",
-    "paragraph4": "Naši proizvodi namenjeni su veganima, vegetarijancima, ljubiteljima mesa, ljubiteljima biljaka, skepticima i poklonicima biljne ishrane – svima koji žele da uživaju u zdravoj i ukusnoj hrani."
+    "paragraphs": [
+      "GEN!E je novi brend kompanije Macrobiotic Prom koja na našem tržištu postoji više od 30 godina. Naša ideja je bila da ponudimo zdraviju alternativu proizvodima tradicionalne ishrane i pokažemo da je moguće hraniti se zdravo i istovremeno uživati u 100% biljnoj hrani.",
+      "Verujemo da briga o planeti počinje na tanjiru zbog čega se u našoj \"kuhinji\" rađaju velike ideje, testiraju novi recepti, prikupljaju povratne informacije od kupaca i stvaraju sjajni, novi proizvodi. Kroz naše proizvode, želimo da unesemo raznolikost, inovacije i umetnost zdrave ishrane u našu ponudu.",
+      "Svi naši proizvodi imaju prepoznatljiv ukus, napravljeni su po autentičnim receptima i tradicionalnim metodama. Želimo da pokažemo da raznovrsna i kvalitetna biljna ishrana nije samo stvar ukusa već i način na koji možemo da unapredimo svoje zdravlje.",
+      "Naši proizvodi namenjeni su veganima, vegetarijancima, ljubiteljima mesa, ljubiteljima biljaka, skepticima i poklonicima biljne ishrane – svima koji žele da uživaju u zdravoj i ukusnoj hrani."
+    ]
   },
   "header": {
     "nav": {

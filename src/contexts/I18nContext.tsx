@@ -20,6 +20,7 @@ interface I18nContextType {
   setLocale: (locale: Locale) => void;
   translations: Translations;
   t: (key: string, namespace?: string) => string;
+  tArr: (key: string, namespace?: string) => string[];
 }
 
 // Create the context
@@ -100,11 +101,49 @@ export function I18nProvider({
     }
   };
 
+  // Translation array function
+  const tArr = (key: string, namespace?: string): string[] => {
+    try {
+      const target = namespace ? translations[namespace] : translations;
+      if (!target) return [];
+
+      // Handle nested keys like 'about.paragraphs'
+      const keys = key.split('.');
+      let result: unknown = target;
+
+      for (const k of keys) {
+        if (
+          result &&
+          typeof result === 'object' &&
+          result !== null &&
+          k in result
+        ) {
+          result = (result as Record<string, unknown>)[k];
+        } else {
+          return []; // Return empty array if translation not found
+        }
+      }
+
+      // Check if result is an array of strings
+      if (Array.isArray(result)) {
+        return result.filter(
+          (item): item is string => typeof item === 'string',
+        );
+      }
+
+      return [];
+    } catch (error) {
+      console.error('Translation array error:', error);
+      return [];
+    }
+  };
+
   const value: I18nContextType = {
     locale,
     setLocale,
     translations,
     t,
+    tArr,
   };
 
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
@@ -121,10 +160,11 @@ export function useI18n(): I18nContextType {
 
 // Convenience hook for translations only
 export function useTranslation(namespace?: string) {
-  const { t, locale } = useI18n();
+  const { t, tArr, locale } = useI18n();
 
   return {
     t: (key: string) => t(key, namespace),
+    tArr: (key: string) => tArr(key, namespace),
     locale,
   };
 }
