@@ -117,7 +117,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
                             toColor='to-tertiary'
                             className='mr-3'
                           />
-                          Opis
+                          {t('generalInfo.description')}
                         </h3>
                         <p className='text-gray-700 leading-relaxed text-lg'>
                           {product.description}
@@ -139,7 +139,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
                             toColor='to-tertiary'
                             className='mr-3'
                           />
-                          Sastojci
+                          {t('generalInfo.ingredients')}
                         </h3>
                         <motion.div
                           initial={{ opacity: 0, y: 20 }}
@@ -163,7 +163,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
                           toColor='to-tertiary'
                           className='mr-3'
                         />
-                        Nutritivni benefiti
+                        {t('generalInfo.benefits')}
                       </h3>
                       <ul className='space-y-3'>
                         {product.benefits?.map((benefit, index) => (
@@ -193,7 +193,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
                           toColor='to-tertiary'
                           className='mr-3'
                         />
-                        Nutritivne vrednosti
+                        {t('generalInfo.nutritionalData')}
                       </h3>
                       <div className='space-y-3'>
                         {Object.entries(product.nutritionalData ?? {}).map(
