@@ -5,12 +5,6 @@ interface SectionHeadingProps {
   className?: string;
 }
 
-const titleColorMap = {
-  'O nama': 'text-[#be9a36]',
-  Proizvodi: 'text-[#398311]',
-  Kontakt: 'text-[#be4438]',
-};
-
 {
   /* tailwind-class: before:content-["O_nama"] before:content-["Proizvodi"]  before:content-["Kontakt"] */
   /* tailwind-class: before:text-[#be9a36] before:text-[#398311] before:text-[#be4438] */
@@ -39,12 +33,7 @@ const SectionHeading = ({ title, className = '' }: SectionHeadingProps) => {
           className={`relative py-2 z-10 transition-all duration-300  before:content-["${title.replace(
             / /g,
             '_',
-          )}"] before:${
-            titleColorMap[title as keyof typeof titleColorMap]
-          } before:absolute before:top-[0.5rem] before:left-0 before:w-0 before:overflow-hidden before:transition-all before:duration-500 before:ease-in-out before:whitespace-nowrap hover:before:w-full`}
-          whileHover={{
-            textShadow: '0 3px 3px rgba(0, 0, 0, 0.15)',
-          }}
+          )}"] before:absolute before:top-[0.5rem] before:left-0 before:w-0 before:overflow-hidden before:transition-all before:duration-500 before:ease-in-out before:whitespace-nowrap hover:before:w-full`}
           transition={{
             type: 'linear',
             stiffness: 400,
