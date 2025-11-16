@@ -79,8 +79,9 @@ const ProductModal: React.FC<ProductModalProps> = ({
                           <Image
                             src={product.imageSrc}
                             alt={product.imageAlt}
-                            width={0}
-                            height={0}
+                            width={500}
+                            height={500}
+                            priority
                             className={`object-contain max-w-full max-h-full h-auto ${
                               product.imageRatio
                                 ? `w-${product.imageRatio}`
