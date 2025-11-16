@@ -163,13 +163,13 @@ function HomeContent() {
       <div className='relative -mt-12'>
         <div className='absolute -mt-4 h-20 w-full bg-secondary' />
         <div
-          className='h-16 absolute bg-primary relative'
+          className='h-16 absolute bg-tertiary relative'
           style={{
             clipPath: 'polygon(0 101%, 0 0, 101% 101%)',
           }}></div>
         <About />
         <div
-          className='h-16 absolute bg-primary relative z-1 top-[-1px]'
+          className='h-16 absolute bg-tertiary relative z-1 top-[-1px]'
           style={{
             clipPath: 'polygon(100% 0, 0 100%, 0 0)',
           }}></div>

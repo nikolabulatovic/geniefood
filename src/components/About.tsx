@@ -12,14 +12,15 @@ const About = () => {
   return (
     <section
       id='about'
-      className='flex flex-col md:flex-row items-center gap-20 bg-primary pt-2 pb-32 px-10'>
+      className='flex flex-col md:flex-row items-center gap-20 bg-tertiary pt-2 pb-32 px-10'>
+      {/* Desktop/Tablet image - slides in from left */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.2, delay: 0.8, ease: 'easeOut' }}
-        className='w-full aspect-[7/3]'>
+        className='w-full aspect-[7/3] hidden md:block'>
         <Image
-          src='/images/covek-o-nama.jpg'
+          src='/images/genie-maskota-pokazuje-desno.svg'
           alt='O nama'
           width={1000}
           height={1000}
@@ -51,6 +52,20 @@ const About = () => {
             </motion.div>
           </motion.div>
         </div>
+        {/* Mobile-only image - slides in from bottom */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, delay: 0.8, ease: 'easeOut' }}
+          className='block w-full aspect-[7/3] mt-16 md:hidden'>
+          <Image
+            src='/images/genie-maskota-pokazuje-gore.svg'
+            alt='O nama'
+            width={300}
+            height={300}
+            className='object-cover mx-auto'
+          />
+        </motion.div>
       </div>
     </section>
   );
