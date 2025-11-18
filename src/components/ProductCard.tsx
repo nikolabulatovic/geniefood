@@ -105,7 +105,6 @@ const ProductCard = ({
               width={400}
               height={400}
               sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-              loading={priority ? undefined : 'lazy'}
               priority={priority}
               style={{ width: '100%', height: 'auto' }}
               className={`transform group-hover:scale-${
