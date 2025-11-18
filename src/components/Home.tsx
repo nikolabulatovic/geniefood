@@ -36,10 +36,10 @@ const intro = localFont({
 });
 
 function HomeContent() {
-  const { t } = useTranslation('cover');
+  const { t, locale } = useTranslation('cover');
   const { selectedProduct, isModalOpen, closeModal } = useProductModal();
   const [showScrollButton, setShowScrollButton] = useState(true);
-  const heroSpeechText = 'Ćao ja sam Gen!e, a ovo su naši genialni proizvodi!';
+  const heroSpeechText = t('text');
 
   const scrollToProducts = () => {
     const productsSection = document.getElementById('products');
@@ -64,6 +64,11 @@ function HomeContent() {
     // Cleanup
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const heroSpeechTextClassesByLocale =
+    locale === 'sr'
+      ? 'lg:max-w-[420px]'
+      : 'min-[1024px]:max-w-[440px] min-[1024px]:left-[7%]';
 
   return (
     <>
@@ -110,7 +115,7 @@ function HomeContent() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className='absolute hidden lg:block text-secondary font-intro font-semibold lg:text-5xl xl:text-5xl 2xl:text-6xl leading-tight tracking-wide text-center px-6 py-6 rounded-3xl lg:max-w-[420px] xl:max-w-[420px] 2xl:max-w-[540px] top-[29%] max-[1300px]:[@media(min-height:630px)]:top-[28%] max-[1300px]:[@media(min-height:880px)]:top-[33%] min-[1024px]:left-[12%] min-[1050px]:left-[12%] min-[1100px]:left-[12%] min-[1150px]:left-[13%] min-[1200px]:left-[14%] min-[1240px]:left-[14%] min-[1280px]:left-[16%] min-[1440px]:left-[18%] min-[1535px]:left-[16%] min-[1760px]:left-[18%] min-[1920px]:left-[20%] min-[2100px]:left-[22%]'>
+          className={`absolute hidden lg:block text-secondary font-intro font-semibold lg:text-5xl xl:text-5xl 2xl:text-6xl leading-tight tracking-wide text-center px-6 py-6 rounded-3xl 2xl:max-w-[540px] top-[29%] max-[1300px]:[@media(min-height:630px)]:top-[28%] max-[1300px]:[@media(min-height:880px)]:top-[33%] min-[1024px]:left-[9%] min-[1050px]:left-[10%] min-[1100px]:left-[12%] min-[1150px]:left-[13%] min-[1200px]:left-[14%] min-[1240px]:left-[14%] min-[1280px]:left-[16%] min-[1440px]:left-[18%] min-[1535px]:left-[16%] min-[1760px]:left-[18%] min-[1920px]:left-[20%] min-[2100px]:left-[22%] ${heroSpeechTextClassesByLocale}`}>
           {heroSpeechText}
         </motion.p>
 
