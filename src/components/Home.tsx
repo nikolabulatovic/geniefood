@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { Montserrat, Poppins } from 'next/font/google';
 import localFont from 'next/font/local';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -40,6 +39,7 @@ function HomeContent() {
   const { t } = useTranslation('cover');
   const { selectedProduct, isModalOpen, closeModal } = useProductModal();
   const [showScrollButton, setShowScrollButton] = useState(true);
+  const heroSpeechText = 'Ćao ja sam Gen!e, a ovo su naši genialni proizvodi!';
 
   const scrollToProducts = () => {
     const productsSection = document.getElementById('products');
@@ -67,37 +67,52 @@ function HomeContent() {
 
   return (
     <>
-      <div className='flex items-center bg-genie-light-blue relative min-h-screen'>
-        <div className='flex justify-center items-center relative overflow-hidden p-10 w-full'>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.5, x: 150, y: 100 }}
-            whileInView={{ opacity: 1, scale: 1, x: 0, y: 0 }}
-            transition={{ duration: 1.2, delay: 0.8, ease: 'easeOut' }}
-            className='relative max-w-xs h-full w-3/4 aspect-[16/12.5]'>
-            <Image
-              src='/images/genie-cover-tekst-plavo.jpg'
-              alt={t('text-alt')}
-              fill
-              className='object-cover'
-              sizes='(max-width: 768px) 100vw, 50vw'
-              priority
-            />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
-            className='relative sm:ml-10 md:ml-20 max-w-md h-full w-3/4 aspect-[9/13]'>
-            <Image
-              src='/images/genie-cover-lice-plavo.jpg'
-              alt={t('title-alt')}
-              fill
-              className='object-cover'
-              sizes='(max-width: 768px) 100vw, 50vw'
-              priority
-            />
-          </motion.div>
-        </div>
+      <div
+        className='flex items-center bg-tertiary relative w-full overflow-hidden min-h-[500px] min-[320px]:min-h-[700px] min-[450px]:min-h-[900px] min-[580px]:min-h-[1000px] min-[640px]:min-h-[800px] min-[768px]:min-h-[900px] min-[870px]:min-h-[1050px] min-[1024px]:min-h-[1200px] lg:min-h-screen'
+        style={{ aspectRatio: '16/9' }}>
+        <picture className='absolute inset-0 block'>
+          <source
+            media='(min-width: 1024px)'
+            srcSet='/images/cover-desktop.png'
+          />
+          <source
+            media='(min-width: 640px)'
+            srcSet='/images/cover-tablet.png'
+          />
+          <img
+            src='/images/cover-mobile.png'
+            alt={t('text-alt')}
+            className='w-full h-full object-cover'
+            loading='eager'
+            decoding='async'
+            fetchPriority='high'
+          />
+        </picture>
+
+        {/* Speech bubble text overlays */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className='absolute md:hidden text-[#2c1a0f] font-intro font-semibold text-md min-[300px]:text-lg min-[320px]:text-xl min-[450px]:text-2xl leading-tight tracking-wide text-center px-6 py-4 rounded-3xl max-w-[160px] min-[300px]:max-w-[200px] min-[450px]:max-w-[240px] min-[300px]:bottom-8 min-[320px]:bottom-22 min-[400px]:bottom-20 min-[420px]:bottom-18 min-[450px]:bottom-28 min-[640px]:bottom-32 min-[700px]:bottom-28 min-[300px]:left-[5%] min-[320px]:left-[3%] min-[340px]:left-[6%] min-[360px]:left-[8%] min-[400px]:left-[12%] min-[420px]:left-[12%] min-[450px]:left-[8%] min-[480px]:left-[12%] min-[520px]:left-[14%] min-[550px]:left-[16%] min-[620px]:left-[18%] min-[640px]:left-[12%]'>
+          {heroSpeechText}
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className='absolute hidden md:block lg:hidden text-secondary font-intro font-semibold text-3xl leading-tight tracking-wide text-center px-8 py-6 rounded-3xl max-w-[320px] bottom-32 min-[870px]:bottom-40 min-[940px]:bottom-36 left-20 min-[870px]:left-24 min-[940px]:left-28'>
+          {heroSpeechText}
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className='absolute hidden lg:block text-secondary font-intro font-semibold lg:text-5xl xl:text-5xl 2xl:text-6xl leading-tight tracking-wide text-center px-6 py-6 rounded-3xl lg:max-w-[420px] xl:max-w-[420px] 2xl:max-w-[540px] top-[29%] max-[1300px]:[@media(min-height:630px)]:top-[28%] max-[1300px]:[@media(min-height:880px)]:top-[33%] min-[1024px]:left-[12%] min-[1050px]:left-[12%] min-[1100px]:left-[12%] min-[1150px]:left-[13%] min-[1200px]:left-[14%] min-[1240px]:left-[14%] min-[1280px]:left-[16%] min-[1440px]:left-[18%] min-[1535px]:left-[16%] min-[1760px]:left-[18%] min-[1920px]:left-[20%] min-[2100px]:left-[22%]'>
+          {heroSpeechText}
+        </motion.p>
 
         {/* Scroll to Products Button */}
         <AnimatePresence>
@@ -107,12 +122,12 @@ function HomeContent() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: 1 }}
-              className='absolute bottom-32 left-1/2 transform -translate-x-1/2'>
+              className='absolute bottom-24 right-4'>
               <motion.button
                 onClick={scrollToProducts}
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className='cursor-pointer bg-primary/90 backdrop-blur-sm text-secondary px-5 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 font-intro font-bold text-lg border-2 border-genie-green/20 hover:border-genie-green/40'>
+                className='cursor-pointer bg-genie-light-blue/90 backdrop-blur-sm text-secondary px-5 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 font-intro font-bold text-lg border-2 border-genie-green/20 hover:border-genie-green/40'>
                 <div className='flex flex-col text-xl text-secondary text-center -mt-4'>
                   <motion.div
                     animate={{ y: [0, 4, 0] }}
@@ -142,7 +157,7 @@ function HomeContent() {
         </AnimatePresence>
       </div>
       <div
-        className='h-16 absolute bg-genie-light-blue relative z-1 top-[-1px]'
+        className='h-16 absolute bg-tertiary relative z-1 top-[-1px]'
         style={{
           clipPath: 'polygon(100% 0, 0 100%, 0 0)',
         }}></div>

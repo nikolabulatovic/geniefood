@@ -2,7 +2,7 @@
 
 @theme {
   --color-primary: #f1dbaa;
-  --color-secondary: #412303;
+  --color-secondary: #3f2610;
   --color-tertiary: #ffd367;
   --color-genie-green: #a7c499;
   --color-genie-light-blue: #adc9d5;
@@ -15,7 +15,7 @@
 }
 
 :root {
-  --background: #ffffff;
+  --background: #3f2610;
   --foreground: #171717;
 }
 

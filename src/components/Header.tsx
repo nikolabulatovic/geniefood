@@ -141,7 +141,7 @@ const Header = () => {
           )}
         </AnimatePresence>
       </header>
-      <div className='h-20 bg-genie-light-blue'></div>
+      <div className='h-20 bg-secondary'></div>
     </>
   );
 };
