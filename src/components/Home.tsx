@@ -16,6 +16,7 @@ import {
   useProductModal,
 } from '@/contexts/ProductModalContext';
 import Header from './Header';
+import { AnimatedText } from './AnimatedText';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -67,8 +68,8 @@ function HomeContent() {
 
   const heroSpeechTextClassesByLocale =
     locale === 'sr'
-      ? 'lg:max-w-[420px]'
-      : 'min-[1024px]:max-w-[440px] min-[1024px]:left-[7%]';
+      ? 'lg:max-w-[360px] xl:max-w-[420px]'
+      : 'min-[1024px]:max-w-[360px] min-[1280px]:max-w-[440px]  min-[1024px]:left-[7%]';
 
   return (
     <>
@@ -95,29 +96,26 @@ function HomeContent() {
         </picture>
 
         {/* Speech bubble text overlays */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className='absolute md:hidden text-[#2c1a0f] font-intro font-semibold text-md min-[300px]:text-lg min-[320px]:text-xl min-[450px]:text-2xl leading-tight tracking-wide text-center px-6 py-4 rounded-3xl max-w-[160px] min-[300px]:max-w-[200px] min-[450px]:max-w-[240px] min-[300px]:bottom-8 min-[320px]:bottom-22 min-[400px]:bottom-20 min-[420px]:bottom-18 min-[450px]:bottom-28 min-[640px]:bottom-32 min-[700px]:bottom-28 min-[300px]:left-[5%] min-[320px]:left-[3%] min-[340px]:left-[6%] min-[360px]:left-[8%] min-[400px]:left-[12%] min-[420px]:left-[12%] min-[450px]:left-[8%] min-[480px]:left-[12%] min-[520px]:left-[14%] min-[550px]:left-[16%] min-[620px]:left-[18%] min-[640px]:left-[12%]'>
-          {heroSpeechText}
-        </motion.p>
+        <AnimatedText
+          text={heroSpeechText}
+          delay={0.6}
+          staggerDelay={0.15}
+          className='absolute md:hidden text-[#2c1a0f] font-intro font-semibold text-md min-[300px]:text-lg min-[320px]:text-xl min-[450px]:text-2xl leading-tight tracking-wide text-center px-6 py-4 rounded-3xl max-w-[160px] min-[300px]:max-w-[200px] min-[450px]:max-w-[240px] min-[300px]:bottom-8 min-[320px]:bottom-22 min-[400px]:bottom-20 min-[420px]:bottom-18 min-[450px]:bottom-28 min-[640px]:bottom-32 min-[700px]:bottom-28 min-[300px]:left-[5%] min-[320px]:left-[3%] min-[340px]:left-[6%] min-[360px]:left-[8%] min-[400px]:left-[12%] min-[420px]:left-[12%] min-[450px]:left-[8%] min-[480px]:left-[12%] min-[520px]:left-[14%] min-[550px]:left-[16%] min-[620px]:left-[18%] min-[640px]:left-[12%]'
+        />
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className='absolute hidden md:block lg:hidden text-secondary font-intro font-semibold text-3xl leading-tight tracking-wide text-center px-8 py-6 rounded-3xl max-w-[320px] bottom-32 min-[870px]:bottom-40 min-[940px]:bottom-36 left-20 min-[870px]:left-24 min-[940px]:left-28'>
-          {heroSpeechText}
-        </motion.p>
+        <AnimatedText
+          text={heroSpeechText}
+          delay={0.6}
+          staggerDelay={0.15}
+          className='absolute hidden md:block lg:hidden text-secondary font-intro font-semibold text-3xl leading-tight tracking-wide text-center px-8 py-6 rounded-3xl max-w-[320px] bottom-32 min-[870px]:bottom-40 min-[940px]:bottom-36 left-20 min-[870px]:left-24 min-[940px]:left-28'
+        />
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className={`absolute hidden lg:block text-secondary font-intro font-semibold lg:text-5xl xl:text-5xl 2xl:text-6xl leading-tight tracking-wide text-center px-6 py-6 rounded-3xl 2xl:max-w-[540px] top-[29%] max-[1300px]:[@media(min-height:630px)]:top-[28%] max-[1300px]:[@media(min-height:880px)]:top-[33%] min-[1024px]:left-[9%] min-[1050px]:left-[10%] min-[1100px]:left-[12%] min-[1150px]:left-[13%] min-[1200px]:left-[14%] min-[1240px]:left-[14%] min-[1280px]:left-[16%] min-[1440px]:left-[18%] min-[1535px]:left-[16%] min-[1760px]:left-[18%] min-[1920px]:left-[20%] min-[2100px]:left-[22%] ${heroSpeechTextClassesByLocale}`}>
-          {heroSpeechText}
-        </motion.p>
+        <AnimatedText
+          text={heroSpeechText}
+          delay={0.6}
+          staggerDelay={0.15}
+          className={`absolute hidden lg:block text-secondary font-intro font-semibold lg:text-4xl xl:text-5xl 2xl:text-6xl leading-tight tracking-wide text-center px-6 py-6 rounded-3xl 2xl:max-w-[540px] top-[29%] max-[1300px]:[@media(min-height:630px)]:top-[30%] max-[1300px]:[@media(min-height:880px)]:top-[33%] min-[1024px]:left-[13%] min-[1050px]:left-[14%] min-[1100px]:left-[15%] min-[1150px]:left-[16%] min-[1200px]:left-[16%] min-[1240px]:left-[17%] min-[1280px]:left-[16%] min-[1300px]:left-[16%] min-[1440px]:left-[18%] min-[1535px]:left-[16%] min-[1760px]:left-[18%] min-[1920px]:left-[20%] min-[2100px]:left-[22%] ${heroSpeechTextClassesByLocale}`}
+        />
 
         {/* Scroll to Products Button */}
         <AnimatePresence>
