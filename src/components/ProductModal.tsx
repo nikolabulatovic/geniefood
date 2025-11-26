@@ -73,7 +73,6 @@ const ProductModal: React.FC<ProductModalProps> = ({
                   <div className='flex flex-col lg:flex-row gap-8 items-center'>
                     {/* Product Image */}
                     <div className='relative flex items-center justify-center w-full lg:w-80 h-64 lg:h-80'>
-                      <div className='absolute inset-0 bg-primary/35 rounded-2xl blur-3xl'></div>
                       <div className='relative flex items-center justify-center w-full h-full'>
                         <div className='relative lg:absolute flex items-center justify-center lg:-left-1/4 lg:-right-1/4 lg:top-1/8 w-[150%] max-w-[500px]'>
                           <Image
