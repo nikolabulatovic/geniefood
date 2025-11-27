@@ -1,7 +1,5 @@
 'use client';
 
-import Link from 'next/link';
-
 interface LanguageLinkProps {
   href: string;
   label: string;
@@ -16,7 +14,7 @@ const LanguageLink = ({
   onClick,
 }: LanguageLinkProps) => {
   return (
-    <Link
+    <a
       href={href}
       onClick={onClick}
       className={`px-2 py-1 rounded-md transition-colors duration-300 ${
@@ -25,7 +23,7 @@ const LanguageLink = ({
           : 'text-primary hover:text-tertiary hover:bg-primary/20'
       }`}>
       {label}
-    </Link>
+    </a>
   );
 };
 
