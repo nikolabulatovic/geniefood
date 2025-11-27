@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "build:zip": "next build && rm -f geniefood.zip && cd out && zip -r ../geniefood.zip .",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d out",
     "lint": "next lint"
