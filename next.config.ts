@@ -5,6 +5,7 @@ const config: NextConfig = {
   output: 'export',
   basePath: '',
   assetPrefix: '',
+  trailingSlash: false,
   images: {
     unoptimized: true,
     domains: ['geniefood.rs'],
