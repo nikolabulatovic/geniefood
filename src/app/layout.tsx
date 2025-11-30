@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
+    <html style={{ colorScheme: 'light' }}>
       <body>{children}</body>
     </html>
   );
