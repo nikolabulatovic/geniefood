@@ -93,12 +93,7 @@ const ProductCard = ({
         <button
           onClick={handleProductClick}
           className='absolute top-0 left-0 w-full h-full flex items-center justify-center cursor-pointer'>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className={`w-${imageRatio ?? '1/2'}`}>
+          <div className={`w-${imageRatio ?? '1/2'}`}>
             <Image
               src={imageSrc}
               alt={imageAlt}
@@ -112,7 +107,7 @@ const ProductCard = ({
                 DEFAULT_SCALE
               } transition-transform duration-500 mx-auto`}
             />
-          </motion.div>
+          </div>
         </button>
       </div>
     </motion.li>
