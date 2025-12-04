@@ -41,7 +41,7 @@ const Products = () => {
           className='flex flex-col justify-center items-center section-head text-black mb-16'>
           <SectionHeading title={t('title')} />
           <motion.div
-            className='bg-primary mx-auto mb-8'
+            className='bg-primary mx-auto sm:mb-8'
             initial={{ width: 0 }}
             whileInView={{ width: '100px' }}
             viewport={{ once: true }}

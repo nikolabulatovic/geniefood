@@ -8,7 +8,7 @@ interface SectionHeadingProps {
 const SectionHeading = ({ title, className = '' }: SectionHeadingProps) => {
   return (
     <motion.h2
-      className={`relative pt-24 -top-12 text-6xl text-secondary uppercase my-6 flex items-center group font-intro font-bold ${className}`}
+      className={`relative pt-24 -top-12 text-4xl min-[300px]:text-5xl sm:text-6xl text-secondary uppercase sm:my-6 flex items-center group font-intro font-bold ${className}`}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
