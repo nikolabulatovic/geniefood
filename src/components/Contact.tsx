@@ -1,8 +1,40 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useRef } from 'react';
 import { useTranslation } from '@/contexts/I18nContext';
 import SectionHeading from './SectionHeading';
+
+interface ContactCardProps {
+  icon: React.ReactNode;
+  title: string;
+  value: string;
+  index: number;
+}
+
+const ContactCard = ({ icon, title, value, index }: ContactCardProps) => {
+  // Using motion.div causes flickering, so this is the workaround.
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  return (
+    <motion.div
+      ref={cardRef}
+      initial={{ y: 20 }}
+      whileInView={{ y: 0 }}
+      onViewportEnter={() => {
+        cardRef.current?.classList.add('in-viewport');
+      }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
+      className='contact-card-fade-in flex items-start space-x-4 p-4 bg-secondary/60 backdrop-blur-sm rounded-lg hover:bg-secondary/80 transition-all duration-300'>
+      <div className='flex-shrink-0 text-primary'>{icon}</div>
+      <div className='flex-1'>
+        <h6 className='text-lg font-semibold text-white mb-1'>{title}</h6>
+        <span className='text-white/90 text-sm'>{value}</span>
+      </div>
+    </motion.div>
+  );
+};
 
 const Contact = () => {
   const { t } = useTranslation('contact');
@@ -83,20 +115,13 @@ const Contact = () => {
         <div className='max-w-6xl mt-8 mx-auto'>
           <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 items-center'>
             {contactInfo.map((item, index) => (
-              <motion.div
+              <ContactCard
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
-                className='flex items-start space-x-4 p-4 bg-secondary/60 backdrop-blur-sm rounded-lg hover:bg-secondary/80 transition-all duration-300'>
-                <div className='flex-shrink-0 text-primary'>{item.icon}</div>
-                <div className='flex-1'>
-                  <h6 className='text-lg font-semibold text-white mb-1'>
-                    {item.title}
-                  </h6>
-                  <span className='text-white/90 text-sm'>{item.value}</span>
-                </div>
-              </motion.div>
+                icon={item.icon}
+                title={item.title}
+                value={item.value}
+                index={index}
+              />
             ))}
           </div>
         </div>

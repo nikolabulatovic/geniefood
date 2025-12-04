@@ -47,3 +47,33 @@ body {
 .our-heading:hover::before {
   width: 100%;
 }
+
+/* Contact card fade-in animation - only plays when in-viewport class is added */
+.contact-card-fade-in {
+  opacity: 0;
+}
+
+.contact-card-fade-in.in-viewport {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.contact-card-fade-in.in-viewport:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.contact-card-fade-in.in-viewport:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.contact-card-fade-in.in-viewport:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
