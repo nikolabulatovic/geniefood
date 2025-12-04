@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-primary: #f1dbaa;
   --color-secondary: #3f2610;
@@ -16,8 +18,8 @@
 }
 
 :root {
-  color-scheme: light;
-  forced-color-adjust: none;
+  color-scheme: light !important;
+  forced-color-adjust: none !important;
 
   --background: #3f2610;
   --foreground: #f1dbaa;
