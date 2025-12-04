@@ -107,14 +107,14 @@ function HomeContent() {
           text={heroSpeechText}
           delay={0.6}
           staggerDelay={0.15}
-          className='absolute hidden md:block lg:hidden text-secondary font-intro font-semibold text-3xl leading-tight tracking-wide text-center px-8 py-6 rounded-3xl max-w-[320px] bottom-32 min-[870px]:bottom-40 min-[940px]:bottom-36 left-20 min-[870px]:left-24 min-[940px]:left-28'
+          className='absolute hidden md:block lg:hidden text-[#2c1a0f] font-intro font-semibold text-3xl leading-tight tracking-wide text-center px-8 py-6 rounded-3xl max-w-[320px] bottom-32 min-[870px]:bottom-40 min-[940px]:bottom-36 left-20 min-[870px]:left-24 min-[940px]:left-28'
         />
 
         <AnimatedText
           text={heroSpeechText}
           delay={0.6}
           staggerDelay={0.15}
-          className={`absolute hidden lg:block text-secondary font-intro font-semibold lg:text-4xl xl:text-5xl 2xl:text-6xl leading-tight tracking-wide text-center px-6 py-6 rounded-3xl 2xl:max-w-[540px] top-[29%] max-[1300px]:[@media(min-height:630px)]:top-[30%] max-[1300px]:[@media(min-height:880px)]:top-[33%] min-[1024px]:left-[13%] min-[1050px]:left-[14%] min-[1100px]:left-[15%] min-[1150px]:left-[16%] min-[1200px]:left-[16%] min-[1240px]:left-[17%] min-[1280px]:left-[16%] min-[1300px]:left-[16%] min-[1440px]:left-[18%] min-[1535px]:left-[16%] min-[1760px]:left-[18%] min-[1920px]:left-[20%] min-[2100px]:left-[22%] ${heroSpeechTextClassesByLocale}`}
+          className={`absolute hidden lg:block text-[#2c1a0f] font-intro font-semibold lg:text-4xl xl:text-5xl 2xl:text-6xl leading-tight tracking-wide text-center px-6 py-6 rounded-3xl 2xl:max-w-[540px] top-[29%] max-[1300px]:[@media(min-height:630px)]:top-[30%] max-[1300px]:[@media(min-height:880px)]:top-[33%] min-[1024px]:left-[13%] min-[1050px]:left-[14%] min-[1100px]:left-[15%] min-[1150px]:left-[16%] min-[1200px]:left-[16%] min-[1240px]:left-[17%] min-[1280px]:left-[16%] min-[1300px]:left-[16%] min-[1440px]:left-[18%] min-[1535px]:left-[16%] min-[1760px]:left-[18%] min-[1920px]:left-[20%] min-[2100px]:left-[22%] ${heroSpeechTextClassesByLocale}`}
         />
 
         {/* Scroll to Products Button */}
@@ -167,7 +167,7 @@ function HomeContent() {
       <div className='relative -mt-12'>
         <div className='absolute -mt-4 h-20 w-full bg-secondary' />
         <div
-          className='h-16 absolute bg-[#93b184] relative'
+          className='h-16 absolute bg-genie-green relative'
           style={{
             clipPath: 'polygon(100% 0, 0 101%, 101% 101%)',
           }}></div>

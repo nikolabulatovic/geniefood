@@ -19,7 +19,9 @@ const ProductViewMode = ({
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
       className='flex justify-center items-center gap-4 mb-12'>
-      <span className='text-lg text-gray-700 font-bold'>{t('viewMode')}:</span>
+      <span className='text-lg text-text-description font-bold'>
+        {t('viewMode')}:
+      </span>
       <button
         onClick={() => onViewModeChange('list')}
         className={`cursor-pointer px-3 py-2 font-intro text-lg font-bold transition-all duration-300 transform rounded-md hover:shadow-[0_0_7px_2px_rgba(0,0,0,0.1)] hover:-translate-y-1 hover:scale-105 focus:outline-none active:scale-95 ${

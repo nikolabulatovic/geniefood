@@ -80,7 +80,7 @@ const ProductCard = ({
       transition={{ duration: 0.5 }}
       data-filter={productType}
       className='pt-4 relative'>
-      <div className='text-lg text-secondary font-poppins font-semibold text-center absolute px-4 py-2 rounded-lg w-full -mt-4 mb-4'>
+      <div className='text-lg text-secondary dark:text-primary font-poppins font-semibold text-center absolute px-4 py-2 rounded-lg w-full -mt-4 mb-4'>
         {breakTitle(title)}
       </div>
       <div className='w-full h-full relative aspect-[4/4] px-8 group'>

@@ -57,7 +57,7 @@ const ProductFilters = ({
       <div ref={dropdownRef} className='md:hidden relative max-w-xs mx-auto'>
         <motion.button
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-          className='cursor-pointer w-full bg-primary/90 backdrop-blur-sm text-secondary px-4 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-between font-intro font-bold text-lg border-2 border-genie-green/20 hover:border-genie-green/40'
+          className='cursor-pointer w-full bg-primary/90 backdrop-blur-sm text-secondary dark:text-tertiary px-4 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-between font-intro font-bold text-lg border-2 border-genie-green/20 hover:border-genie-green/40'
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}>
           <span>{t(activeCategory.label)}</span>
@@ -77,7 +77,7 @@ const ProductFilters = ({
             y: isDropdownOpen ? 0 : -10,
           }}
           transition={{ duration: 0.3 }}
-          className='absolute top-full left-0 right-0 mt-2 bg-white/95 backdrop-blur-sm rounded-lg shadow-xl border border-genie-green/20 overflow-hidden z-50'>
+          className='absolute top-full left-0 right-0 mt-2 bg-white/95 dark:bg-tertiary/95 backdrop-blur-sm rounded-lg shadow-xl border border-genie-green/20 overflow-hidden z-50'>
           {categories.map((category, index) => (
             <motion.button
               key={category.id}
@@ -85,10 +85,10 @@ const ProductFilters = ({
                 onFilterChange(category.id);
                 setIsDropdownOpen(false);
               }}
-              className={`cursor-pointer w-full text-left px-4 py-3 font-intro font-bold text-lg transition-all duration-300 hover:bg-genie-green/20 ${
+              className={`cursor-pointer w-full text-left px-4 py-3 font-intro font-bold text-lg transition-all duration-300 hover:bg-genie-green/20 dark:hover:bg-primary/40 ${
                 activeFilter === category.id
-                  ? 'bg-primary text-secondary'
-                  : 'text-gray-700'
+                  ? 'bg-primary text-secondary dark:text-tertiary'
+                  : 'text-text-description dark:text-secondary'
               }`}
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -117,7 +117,7 @@ const ProductFilters = ({
               onClick={() => onFilterChange(category.id)}
               className={`relative cursor-pointer block sm:px-2 md:px-4 lg:px-6 py-2 md:py-3 font-intro text-lg lg:text-xl font-bold hover:shadow-[0_0_7px_2px_rgba(0,0,0,0.1)] transition-all duration-300 transform rounded-md hover:-translate-y-1 hover:scale-105 focus:outline-none active:scale-95 overflow-hidden ${
                 activeFilter === category.id
-                  ? 'bg-primary text-secondary'
+                  ? 'bg-primary text-secondary dark:text-tertiary'
                   : 'text-white'
               }`}
               whileHover={{ scale: 1.12, rotate: -3 }}

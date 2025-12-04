@@ -42,11 +42,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.7, y: 100 }}
               transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
-              className='relative rounded-md shadow-2xl max-w-5xl w-full max-h-[95vh] overflow-hidden border border-blue-300'
-              style={{
-                background:
-                  'linear-gradient(to right, #adc9d5, #b8d1dc, #c3d9e3, #adc9d5)',
-              }}
+              className='relative rounded-md shadow-2xl max-w-5xl w-full max-h-[95vh] overflow-hidden bg-genie-light-blue border border-blue-300 dark:border-blue-300/40'
               onClick={(e) => e.stopPropagation()}>
               {/* Close Button */}
               <button
@@ -113,7 +109,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
                           />
                           {t('generalInfo.description')}
                         </h3>
-                        <p className='text-gray-700 leading-relaxed text-lg'>
+                        <p className='text-text-description leading-relaxed text-lg'>
                           {product.description}
                         </p>
                       </div>
@@ -126,7 +122,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
                   {/* Ingredients Section */}
                   {product.ingredients && (
                     <div className='mb-8'>
-                      <div className='bg-genie-green/60 rounded-md p-6 border border-blue-200'>
+                      <div className='bg-genie-green/60 rounded-md p-6 border border-blue-200 dark:border-blue-200/40'>
                         <h3 className='text-2xl font-bold text-gray-800 mb-6 flex items-center'>
                           <GradientDot
                             fromColor='from-primary'
@@ -150,7 +146,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
 
                   <div className='grid lg:grid-cols-2 gap-8'>
                     {/* Benefits */}
-                    <div className='bg-genie-green/60 rounded-md p-6 border border-blue-200'>
+                    <div className='bg-genie-green/60 rounded-md p-6 border border-blue-200 dark:border-blue-200/40'>
                       <h3 className='text-2xl font-bold text-gray-800 mb-6 flex items-center'>
                         <GradientDot
                           fromColor='from-primary'
@@ -166,7 +162,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: index * 0.1 }}
-                            className='flex items-center text-gray-700 text-lg'>
+                            className='flex items-center text-text-description text-lg'>
                             <GradientDot
                               fromColor='from-genie-salmon/80'
                               toColor='to-genie-salmon/60'
@@ -180,7 +176,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
                     </div>
 
                     {/* Nutritional Table */}
-                    <div className='bg-genie-green/60 rounded-md p-6 border border-blue-200'>
+                    <div className='bg-genie-green/60 rounded-md p-6 border border-blue-200 dark:border-blue-200/40'>
                       <h3 className='text-2xl font-bold text-gray-800 mb-6 flex items-center'>
                         <GradientDot
                           fromColor='from-primary'

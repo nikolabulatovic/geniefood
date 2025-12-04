@@ -35,7 +35,7 @@ const Gallery = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}>
-            <p className='text-2xl text-gray-700 leading-relaxed text-shadow-[0_0.1px_0.1px_#2a2a2ac2]'>
+            <p className='text-2xl text-text-description leading-relaxed text-shadow-[0_0.1px_0.1px_#2a2a2ac2]'>
               Pogledajte naše fantastične proizvode i ukusne inovacije na bazi
               biljaka! Od različitih opcija za doručak, ručak ili večeru na
               biljnoj bazi, tu smo da vam pomognemo da pripremanje i

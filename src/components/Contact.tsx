@@ -26,7 +26,7 @@ const ContactCard = ({ icon, title, value, index }: ContactCardProps) => {
       }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
-      className='contact-card-fade-in flex items-start space-x-4 p-4 bg-secondary/60 backdrop-blur-sm rounded-lg hover:bg-secondary/80 transition-all duration-300'>
+      className='contact-card-fade-in flex items-start space-x-4 p-4 bg-secondary/60 dark:bg-secondary/40 backdrop-blur-sm rounded-lg hover:bg-secondary/80 dark:hover:bg-secondary/60 transition-all duration-300'>
       <div className='flex-shrink-0 text-primary'>{icon}</div>
       <div className='flex-1'>
         <h6 className='text-lg font-semibold text-white mb-1'>{title}</h6>

@@ -108,7 +108,7 @@ const Header = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.2 }}
-              className='md:hidden absolute top-0 left-0 right-0 bg-secondary/95 backdrop-blur-md shadow-lg'>
+              className='mobile-header md:hidden absolute top-0 left-0 right-0 bg-secondary/95 backdrop-blur-md shadow-lg'>
               <div className='container mx-auto px-4 pt-24 pb-6'>
                 <nav className='flex flex-col items-start space-y-6'>
                   {navItems.map((item) => (
@@ -141,7 +141,7 @@ const Header = () => {
           )}
         </AnimatePresence>
       </header>
-      <div className='h-20 bg-secondary'></div>
+      <div className='h-20 bg-secondary dark:bg-tertiary'></div>
     </>
   );
 };

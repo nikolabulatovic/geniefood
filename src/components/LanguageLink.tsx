@@ -19,8 +19,8 @@ const LanguageLink = ({
       onClick={onClick}
       className={`px-2 py-1 rounded-md transition-colors duration-300 ${
         isActive
-          ? 'bg-primary text-secondary'
-          : 'text-primary hover:text-tertiary hover:bg-primary/20'
+          ? 'bg-primary text-secondary dark:text-tertiary'
+          : 'text-primary hover:text-tertiary hover:bg-primary/20 dark:hover:text-secondary'
       }`}>
       {label}
     </a>

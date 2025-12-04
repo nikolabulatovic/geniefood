@@ -27,11 +27,7 @@ const Products = () => {
   return (
     <section
       className='section-full content-inner bg-genie-green'
-      id='products'
-      style={{
-        background:
-          'linear-gradient(180deg, #93b184 0%, var(--color-genie-green) 100%)',
-      }}>
+      id='products'>
       <div className='container-fluid pt-2 pb-32'>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -53,7 +49,7 @@ const Products = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 }}>
-            <p className='text-2xl text-gray-700 px-8 text-center leading-relaxed text-shadow-[0_0.1px_0.1px_#2a2a2ac2]'>
+            <p className='text-2xl text-text-description px-8 text-center leading-relaxed text-shadow-[0_0.1px_0.1px_#2a2a2ac2]'>
               {t('description')}
             </p>
           </motion.div>
