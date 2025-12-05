@@ -42,7 +42,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.7, y: 100 }}
               transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
-              className='relative rounded-3xl shadow-2xl max-w-5xl w-full max-h-[95vh] overflow-hidden border border-blue-300'
+              className='relative rounded-md shadow-2xl max-w-5xl w-full max-h-[95vh] overflow-hidden border border-blue-300'
               style={{
                 background:
                   'linear-gradient(to right, #adc9d5, #b8d1dc, #c3d9e3, #adc9d5)',
@@ -51,7 +51,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
               {/* Close Button */}
               <button
                 onClick={onClose}
-                className='absolute cursor-pointer top-6 right-6 z-10 bg-white/90 hover:bg-white rounded-full p-3 shadow-lg transition-all duration-200 hover:scale-110 group'>
+                className='absolute cursor-pointer top-6 right-6 z-10 bg-white/90 hover:bg-white rounded-full p-3 transition-all duration-200 hover:scale-110 group'>
                 <svg
                   className='w-6 h-6 text-gray-600 group-hover:text-gray-800 transition-colors'
                   fill='none'
@@ -94,14 +94,8 @@ const ProductModal: React.FC<ProductModalProps> = ({
                     {/* Product Info */}
                     <div className='flex-1 text-center lg:text-left'>
                       <h2
-                        className='text-4xl lg:text-5xl font-bold pb-4'
+                        className='text-4xl lg:text-5xl font-bold pb-8'
                         style={{
-                          // background:
-                          //   'linear-gradient(to right, #f1dbaa,rgb(242, 216, 167),rgb(243, 219, 168), #f1dbaa)',
-                          // WebkitBackgroundClip: 'text',
-                          // WebkitTextFillColor: 'transparent',
-                          // backgroundClip: 'text',
-                          // filter: 'drop-shadow(1.5px 1.5px 1px #000000)',
                           color: 'var(--color-secondary)',
                           fontFamily: 'var(--font-poppins)',
                           fontWeight: '600',
@@ -111,7 +105,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
 
                       {/* Description */}
                       <div className='mb-6'>
-                        <h3 className='text-xl font-semibold text-gray-800 mb-3 flex items-center'>
+                        <h3 className='text-xl font-semibold text-gray-800 mb-6 flex items-center'>
                           <GradientDot
                             fromColor='from-primary'
                             toColor='to-tertiary'
@@ -132,7 +126,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
                   {/* Ingredients Section */}
                   {product.ingredients && (
                     <div className='mb-8'>
-                      <div className='bg-genie-green/60 rounded-2xl p-6 shadow-lg border border-blue-200'>
+                      <div className='bg-genie-green/60 rounded-md p-6 border border-blue-200'>
                         <h3 className='text-2xl font-bold text-gray-800 mb-6 flex items-center'>
                           <GradientDot
                             fromColor='from-primary'
@@ -145,7 +139,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
                           initial={{ opacity: 0, y: 20 }}
                           animate={{ opacity: 1, y: 0 }}
                           transition={{ delay: 0.3 }}
-                          className='bg-white/70 rounded-xl p-4 border border-blue-100'>
+                          className='bg-white/70 rounded-sm p-4 border border-blue-100'>
                           <p className='text-gray-700 text-lg leading-relaxed'>
                             {product.ingredients}
                           </p>
@@ -156,7 +150,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
 
                   <div className='grid lg:grid-cols-2 gap-8'>
                     {/* Benefits */}
-                    <div className='bg-genie-green/60 rounded-2xl p-6 shadow-lg border border-blue-200'>
+                    <div className='bg-genie-green/60 rounded-md p-6 border border-blue-200'>
                       <h3 className='text-2xl font-bold text-gray-800 mb-6 flex items-center'>
                         <GradientDot
                           fromColor='from-primary'
@@ -186,7 +180,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
                     </div>
 
                     {/* Nutritional Table */}
-                    <div className='bg-genie-green/60 rounded-2xl p-6 shadow-lg border border-blue-200'>
+                    <div className='bg-genie-green/60 rounded-md p-6 border border-blue-200'>
                       <h3 className='text-2xl font-bold text-gray-800 mb-6 flex items-center'>
                         <GradientDot
                           fromColor='from-primary'
@@ -203,7 +197,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
                               initial={{ opacity: 0, x: 20 }}
                               animate={{ opacity: 1, x: 0 }}
                               transition={{ delay: index * 0.1 }}
-                              className={`flex justify-between items-center py-2 px-4 rounded-lg transition-colors bg-blue-50 hover:bg-blue-100 ${
+                              className={`flex justify-between items-center py-2 px-4 rounded-sm transition-colors bg-blue-50 hover:bg-blue-100 ${
                                 isSubItem(
                                   key as keyof Product['nutritionalData'],
                                 )
