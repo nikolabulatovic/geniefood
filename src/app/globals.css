@@ -16,34 +16,38 @@
 }
 
 :root {
+  color-scheme: light;
+  forced-color-adjust: none;
+
   --background: #3f2610;
+  --foreground: #f1dbaa;
+  --text-primary: #f1dbaa;
+  --text-secondary: #3f2610;
+  --section-bg-primary: #2a1a0a;
+  --section-bg-secondary: #1a1005;
+}
+
+/* Dark mode color overrides - applied when .dark class is present */
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark :root {
+  --background: #1a1005;
   --foreground: #f1dbaa;
   --text-primary: #f1dbaa;
   --text-secondary: #ffd367;
   --section-bg-primary: #2a1a0a;
   --section-bg-secondary: #1a1005;
-}
 
-/* Dark mode color overrides */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1a1005;
-    --foreground: #f1dbaa;
-    --text-primary: #f1dbaa;
-    --text-secondary: #ffd367;
-    --section-bg-primary: #2a1a0a;
-    --section-bg-secondary: #1a1005;
-  }
-
-  @theme {
-    --color-primary: #f1dbaa;
-    --color-secondary: #e2d1aa;
-    --color-tertiary: #6d4f15;
-    --color-text-description: #d8d8d8;
-    --color-genie-green: #496f33;
-    --color-genie-light-blue: #31637a;
-    --color-genie-salmon: #752d27;
-  }
+  /* Tailwind theme colors for dark mode */
+  --color-primary: #f1dbaa;
+  --color-secondary: #e2d1aa;
+  --color-tertiary: #6d4f15;
+  --color-text-description: #d8d8d8;
+  --color-genie-green: #496f33;
+  --color-genie-light-blue: #31637a;
+  --color-genie-salmon: #752d27;
 }
 
 @theme inline {
@@ -54,7 +58,8 @@
 }
 
 html {
-  color-scheme: light dark;
+  color-scheme: light;
+  forced-color-adjust: none;
 }
 
 body {
@@ -64,16 +69,13 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Dark mode specific adjustments */
-@media (prefers-color-scheme: dark) {
-  /* Header adjustments */
-  header {
-    background-color: var(--section-bg-primary) !important;
-  }
+/* Dark mode specific adjustments - applied when .dark class is present */
+html.dark header {
+  background-color: var(--section-bg-primary) !important;
+}
 
-  .mobile-header {
-    background-color: var(--section-bg-primary) !important;
-  }
+html.dark .mobile-header {
+  background-color: var(--section-bg-primary) !important;
 }
 
 .our-heading::before {

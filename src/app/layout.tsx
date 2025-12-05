@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
+import { ThemeProvider } from '@/contexts/ThemeContext';
 
 export const metadata: Metadata = {
   title: 'Genie Food',
@@ -16,8 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
-      <body>{children}</body>
+    <html className='light' suppressHydrationWarning>
+      <body>
+        <ThemeProvider initialTheme='light'>{children}</ThemeProvider>
+      </body>
     </html>
   );
 }
