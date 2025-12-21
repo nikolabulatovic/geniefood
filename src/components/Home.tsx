@@ -125,7 +125,7 @@ function HomeContent() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: 1 }}
-              className='absolute bottom-24 right-4'>
+              className='hidden lg:block absolute bottom-24 right-4'>
               <motion.button
                 onClick={scrollToProducts}
                 whileHover={{ scale: 1.05, y: -2 }}
