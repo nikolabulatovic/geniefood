@@ -135,8 +135,8 @@ const ProductModal: React.FC<ProductModalProps> = ({
                           initial={{ opacity: 0, y: 20 }}
                           animate={{ opacity: 1, y: 0 }}
                           transition={{ delay: 0.3 }}
-                          className='bg-white/70 rounded-sm p-4 border border-blue-100'>
-                          <p className='text-gray-700 text-lg leading-relaxed'>
+                          className='bg-blue-50 rounded-sm p-4 border border-blue-100'>
+                          <p className='text-lg text-gray-700 leading-relaxed'>
                             {product.ingredients}
                           </p>
                         </motion.div>
