@@ -9,14 +9,15 @@ interface ContactCardProps {
   icon: React.ReactNode;
   title: string;
   value: string;
+  href?: string;
   index: number;
 }
 
-const ContactCard = ({ icon, title, value, index }: ContactCardProps) => {
+const ContactCard = ({ icon, title, value, href, index }: ContactCardProps) => {
   // Using motion.div causes flickering, so this is the workaround.
   const cardRef = useRef<HTMLDivElement>(null);
 
-  return (
+  const content = (
     <motion.div
       ref={cardRef}
       initial={{ y: 20 }}
@@ -26,18 +27,60 @@ const ContactCard = ({ icon, title, value, index }: ContactCardProps) => {
       }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
-      className='contact-card-fade-in flex items-start space-x-4 p-4 bg-secondary/60 dark:bg-secondary/40 backdrop-blur-sm rounded-lg hover:bg-secondary/80 dark:hover:bg-secondary/60 transition-all duration-300'>
+      className='contact-card-fade-in flex items-start space-x-3 p-4 bg-secondary/60 dark:bg-secondary/40 backdrop-blur-sm rounded-lg hover:bg-secondary/80 dark:hover:bg-secondary/60 transition-all duration-300 cursor-pointer'>
       <div className='flex-shrink-0 text-primary'>{icon}</div>
-      <div className='flex-1'>
+      <div className='flex-1 min-w-0'>
         <h6 className='text-lg font-semibold text-white mb-1'>{title}</h6>
-        <span className='text-white/90 text-sm'>{value}</span>
+        <div className='flex items-center gap-2 min-w-0'>
+          <span className='text-white/90 text-xs sm:text-sm underline decoration-white/50 underline-offset-2 hover:decoration-white/80 transition-colors whitespace-nowrap overflow-hidden text-ellipsis'>
+            {value}
+          </span>
+          {href && (
+            <svg
+              className='w-4 h-4 text-white/70 flex-shrink-0'
+              fill='none'
+              stroke='currentColor'
+              viewBox='0 0 24 24'
+              xmlns='http://www.w3.org/2000/svg'>
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth={2}
+                d='M9 5l7 7-7 7'
+              />
+            </svg>
+          )}
+        </div>
       </div>
     </motion.div>
   );
+
+  if (href) {
+    return (
+      <a
+        href={href}
+        target={href.startsWith('http') ? '_blank' : undefined}
+        rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+        className='block'>
+        {content}
+      </a>
+    );
+  }
+
+  return content;
 };
 
 const Contact = () => {
   const { t } = useTranslation('contact');
+
+  const addressValue = t('addressValue');
+  const emailValue = t('emailValue');
+  const phoneValue = t('phoneValue');
+
+  // Normalize phone number for tel: link (remove spaces, parentheses, slashes, dashes)
+  const normalizePhone = (phone: string) => {
+    return phone.replace(/[\s()/\-]/g, '');
+  };
 
   const contactInfo = [
     {
@@ -63,7 +106,10 @@ const Contact = () => {
         </svg>
       ),
       title: t('address'),
-      value: t('addressValue'),
+      value: addressValue,
+      href: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+        addressValue,
+      )}`,
     },
     {
       icon: (
@@ -82,7 +128,8 @@ const Contact = () => {
         </svg>
       ),
       title: t('email'),
-      value: t('emailValue'),
+      value: emailValue,
+      href: `mailto:${emailValue}`,
     },
     {
       icon: (
@@ -101,7 +148,8 @@ const Contact = () => {
         </svg>
       ),
       title: t('phone'),
-      value: t('phoneValue'),
+      value: phoneValue,
+      href: `tel:${normalizePhone(phoneValue)}`,
     },
   ];
 
@@ -120,6 +168,7 @@ const Contact = () => {
                 icon={item.icon}
                 title={item.title}
                 value={item.value}
+                href={item.href}
                 index={index}
               />
             ))}
