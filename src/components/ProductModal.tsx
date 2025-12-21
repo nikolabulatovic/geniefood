@@ -118,7 +118,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
                 </div>
 
                 {/* Content Grid */}
-                <div className='px-8 pb-8'>
+                <div className='px-2 md:px-4 lg:px-8 pb-8'>
                   {/* Ingredients Section */}
                   {product.ingredients && (
                     <div className='mb-8'>
