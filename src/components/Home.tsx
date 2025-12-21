@@ -159,7 +159,46 @@ function HomeContent() {
           )}
         </AnimatePresence>
       </div>
+      <div className='h-16 absolute relative z-1 top-[-1px] w-full overflow-hidden'>
+        <picture className='absolute inset-0 block w-full h-full'>
+          <source
+            media='(min-width: 1024px)'
+            srcSet='/images/cover-extension.jpg'
+          />
+          <source
+            media='(min-width: 640px)'
+            srcSet='/images/cover-extension.jpg'
+          />
+          <img
+            src='/images/cover-extension.jpg'
+            alt=''
+            className='w-full h-full object-cover'
+            style={{ objectPosition: 'center bottom' }}
+            loading='lazy'
+          />
+        </picture>
+      </div>
       <div className='relative -mt-12'>
+        <div className='absolute -mt-4 h-20 w-full bg-secondary' />
+        <div className='h-16 absolute relative w-full overflow-hidden'>
+          <picture className='absolute inset-0 block w-full h-full'>
+            <source
+              media='(min-width: 1024px)'
+              srcSet='/images/cover-extension.jpg'
+            />
+            <source
+              media='(min-width: 640px)'
+              srcSet='/images/cover-extension.jpg'
+            />
+            <img
+              src='/images/cover-extension.jpg'
+              alt=''
+              className='w-full h-full object-cover'
+              style={{ objectPosition: 'center bottom' }}
+              loading='lazy'
+            />
+          </picture>
+        </div>
         <div className='absolute h-4 w-full bg-secondary' />
         <Products />
         <div
