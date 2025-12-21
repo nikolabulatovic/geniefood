@@ -79,14 +79,14 @@ function HomeContent() {
         <picture className='absolute inset-0 block'>
           <source
             media='(min-width: 1024px)'
-            srcSet='/images/cover-desktop.png'
+            srcSet='/images/cover-with-color-desktop.png'
           />
           <source
             media='(min-width: 640px)'
-            srcSet='/images/cover-tablet.png'
+            srcSet='/images/cover-with-color-tablet.png'
           />
           <img
-            src='/images/cover-mobile.png'
+            src='/images/cover-with-color-mobile.png'
             alt={t('text-alt')}
             className='w-full h-full object-cover'
             loading='eager'
@@ -159,18 +159,8 @@ function HomeContent() {
           )}
         </AnimatePresence>
       </div>
-      <div
-        className='h-16 absolute bg-tertiary relative z-1 top-[-1px]'
-        style={{
-          clipPath: 'polygon(100% 0, 0 100%, 0 0)',
-        }}></div>
       <div className='relative -mt-12'>
-        <div className='absolute -mt-4 h-20 w-full bg-secondary' />
-        <div
-          className='h-16 absolute bg-genie-green relative'
-          style={{
-            clipPath: 'polygon(100% 0, 0 101%, 101% 101%)',
-          }}></div>
+        <div className='absolute h-4 w-full bg-secondary' />
         <Products />
         <div
           className='h-16 absolute bg-genie-green relative z-1 top-[-1px]'
