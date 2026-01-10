@@ -5,7 +5,7 @@ import { ThemeProvider } from '@/contexts/ThemeContext';
 export const metadata: Metadata = {
   title: 'Genie Food',
   description:
-    '**Gen!e** je brend kompanije **Macrobiotic Prom**, koja već više od 37 godina pravi zdraviju hranu na biljnoj bazi. Naša misija je jednostavna: učiniti biljne obroke neverovatno ukusnim, zdravijim, jednostavnim za korišćenje i dobrim za planetu.',
+    'Gen!e je brend kompanije Macrobiotic Prom, koja već više od 37 godina pravi zdraviju hranu na biljnoj bazi. Naša misija je jednostavna: učiniti biljne obroke neverovatno ukusnim, zdravijim, jednostavnim za korišćenje i dobrim za planetu.',
 };
 
 export const viewport: Viewport = {
