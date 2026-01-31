@@ -69,7 +69,7 @@ function HomeContent() {
   const heroSpeechTextClassesByLocale =
     locale === 'sr'
       ? 'lg:max-w-[360px] xl:max-w-[420px]'
-      : 'min-[1024px]:max-w-[360px] min-[1280px]:max-w-[440px]  min-[1024px]:left-[7%]';
+      : 'min-[1024px]:max-w-[360px] min-[1280px]:max-w-[440px]';
 
   return (
     <>
@@ -79,14 +79,14 @@ function HomeContent() {
         <picture className='absolute inset-0 block'>
           <source
             media='(min-width: 1024px)'
-            srcSet='/images/cover-with-color-desktop.png'
+            srcSet='/images/cover-alt-with-color-desktop.png'
           />
           <source
             media='(min-width: 640px)'
-            srcSet='/images/cover-with-color-tablet.png'
+            srcSet='/images/cover-alt-with-color-tablet.png'
           />
           <img
-            src='/images/cover-with-color-mobile.png'
+            src='/images/cover-alt-with-color-mobile.png'
             alt={t('text-alt')}
             className='w-full h-full object-cover'
             loading='eager'
@@ -96,26 +96,32 @@ function HomeContent() {
         </picture>
 
         {/* Speech bubble text overlays */}
-        <AnimatedText
-          text={heroSpeechText}
-          delay={0.6}
-          staggerDelay={0.15}
-          className='absolute md:hidden text-amber-950 font-intro font-semibold text-md min-[300px]:text-lg min-[320px]:text-xl min-[450px]:text-2xl leading-tight tracking-wide text-center px-6 py-4 rounded-3xl max-w-[160px] min-[300px]:max-w-[200px] min-[450px]:max-w-[240px] min-[300px]:bottom-8 min-[320px]:bottom-22 min-[400px]:bottom-20 min-[420px]:bottom-18 min-[450px]:bottom-28 min-[640px]:bottom-32 min-[700px]:bottom-28 min-[300px]:left-[5%] min-[320px]:left-[3%] min-[340px]:left-[6%] min-[360px]:left-[8%] min-[400px]:left-[12%] min-[420px]:left-[12%] min-[450px]:left-[8%] min-[480px]:left-[12%] min-[520px]:left-[14%] min-[550px]:left-[16%] min-[620px]:left-[18%] min-[640px]:left-[12%]'
-        />
+        <div className='bubble-background-mobile absolute flex items-center justify-center pointer-events-none aspect-square w-[220px] min-[300px]:w-[250px] min-[450px]:w-[300px] md:hidden bottom-[-30px] left-[-10px] min-[320px]:bottom-[20px] min-[400px]:bottom-[20px] min-[400px]:left-[-10px] min-[450px]:bottom-[70px] min-[450px]:left-[20px] min-[540px]:bottom-[50px] min-[540px]:left-[50px] min-[580px]:bottom-[100px] min-[580px]:left-[80px] min-[640px]:bottom-[50px] min-[640px]:left-[100px]'>
+          <AnimatedText
+            text={heroSpeechText}
+            delay={0.6}
+            staggerDelay={0.15}
+            className='inset-0 text-amber-950 font-intro font-semibold text-md min-[300px]:text-lg min-[320px]:text-xl min-[450px]:text-2xl leading-tight tracking-wide text-center px-12 py-8'
+          />
+        </div>
 
-        <AnimatedText
-          text={heroSpeechText}
-          delay={0.6}
-          staggerDelay={0.15}
-          className='absolute hidden md:block lg:hidden text-amber-950 font-intro font-semibold text-3xl leading-tight tracking-wide text-center px-8 py-6 rounded-3xl max-w-[320px] bottom-32 min-[870px]:bottom-40 min-[940px]:bottom-36 left-20 min-[870px]:left-24 min-[940px]:left-28'
-        />
+        <div className='bubble-background-tablet absolute items-center justify-center pointer-events-none hidden md:flex lg:hidden w-[400px] h-[330px] min-[768px]:bottom-[30px] min-[768px]:left-[100px] min-[870px]:bottom-[80px] min-[870px]:left-[200px]'>
+          <AnimatedText
+            text={heroSpeechText}
+            delay={0.6}
+            staggerDelay={0.15}
+            className='text-amber-950 font-intro font-semibold text-3xl leading-tight tracking-wide text-center px-8 py-6 rounded-3xl max-w-[320px] bottom-32 min-[870px]:bottom-40 min-[940px]:bottom-36 left-20 min-[870px]:left-24 min-[940px]:left-28'
+          />
+        </div>
 
-        <AnimatedText
-          text={heroSpeechText}
-          delay={0.6}
-          staggerDelay={0.15}
-          className={`absolute hidden lg:block text-amber-950 font-intro font-semibold lg:text-4xl xl:text-5xl 2xl:text-6xl leading-tight tracking-wide text-center px-6 py-6 rounded-3xl 2xl:max-w-[540px] top-[29%] max-[1300px]:[@media(min-height:630px)]:top-[30%] max-[1300px]:[@media(min-height:880px)]:top-[33%] min-[1024px]:left-[13%] min-[1050px]:left-[14%] min-[1100px]:left-[15%] min-[1150px]:left-[16%] min-[1200px]:left-[16%] min-[1240px]:left-[17%] min-[1280px]:left-[16%] min-[1300px]:left-[16%] min-[1440px]:left-[18%] min-[1535px]:left-[16%] min-[1760px]:left-[18%] min-[1920px]:left-[20%] min-[2100px]:left-[22%] ${heroSpeechTextClassesByLocale}`}
-        />
+        <div className='bubble-background-desktop absolute items-center justify-center pointer-events-none hidden lg:flex min-[1024px]:left-[8%] min-[1024px]:top-[30%] min-h-[1100px]:top-[34%] min-[1100px]:left-[12%] min-[1200px]:left-[15%] min-[1350px]:left-[18%] min-[1024px]:w-[500px] min-[1024px]:h-[400px] min-[1530px]:w-[620px] min-[1530px]:h-[500px] min-[1700px]:w-[35%] min-[1700px]:h-[29vw]'>
+          <AnimatedText
+            text={heroSpeechText}
+            delay={0.6}
+            staggerDelay={0.15}
+            className={`absolute text-amber-950 font-intro font-semibold lg:text-4xl xl:text-5xl 2xl:text-6xl leading-tight tracking-wide text-center px-6 py-6 2xl:max-w-[540px] ${heroSpeechTextClassesByLocale}`}
+          />
+        </div>
 
         {/* Scroll to Products Button */}
         <AnimatePresence>
@@ -180,25 +186,13 @@ function HomeContent() {
       </div>
       <div className='relative -mt-12'>
         <div className='absolute -mt-4 h-20 w-full bg-secondary' />
-        <div className='h-16 absolute relative w-full overflow-hidden'>
-          <picture className='absolute inset-0 block w-full h-full'>
-            <source
-              media='(min-width: 1024px)'
-              srcSet='/images/cover-extension.jpg'
-            />
-            <source
-              media='(min-width: 640px)'
-              srcSet='/images/cover-extension.jpg'
-            />
-            <img
-              src='/images/cover-extension.jpg'
-              alt=''
-              className='w-full h-full object-cover'
-              style={{ objectPosition: 'center bottom' }}
-              loading='lazy'
-            />
-          </picture>
-        </div>
+        <div
+          className='h-16 absolute relative w-full overflow-hidden bg-cover bg-center bg-no-repeat'
+          style={{
+            backgroundImage: 'url(/images/cover-extension.jpg)',
+            backgroundPosition: 'center bottom',
+          }}
+        />
         <div className='absolute h-4 w-full bg-secondary' />
         <Products />
         <div

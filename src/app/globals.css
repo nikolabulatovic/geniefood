@@ -125,3 +125,25 @@ html.dark .mobile-header {
     opacity: 1;
   }
 }
+
+/* Bubble backgrounds for speech text overlays */
+.bubble-background-mobile {
+  background-image: url(/images/cover-bubble-mobile.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bubble-background-tablet {
+  background-image: url(/images/cover-bubble-tablet.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bubble-background-desktop {
+  background-image: url(/images/cover-bubble-desktop.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
