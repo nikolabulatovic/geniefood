@@ -45,7 +45,8 @@
       "description": "Opis",
       "benefits": "Benefiti",
       "ingredients": "Sastojci",
-      "nutritionalData": "Nutritivne vrednosti"
+      "nutritionalData": "Nutritivne vrednosti",
+      "per100g": "na 100g"
     },
     "nutritionalData": {
       "energy": "Energija",

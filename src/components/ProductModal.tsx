@@ -68,7 +68,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
                 <div className='relative pt-8 pb-6 px-8'>
                   <div className='flex flex-col lg:flex-row gap-8 items-center'>
                     {/* Product Image */}
-                    <div className='relative flex items-center justify-center w-full lg:w-80 h-64 lg:h-80'>
+                    <div className='relative flex flex-col items-center justify-center w-full lg:w-80 h-64 lg:h-80'>
                       <div className='relative flex items-center justify-center w-full h-full'>
                         <div className='relative lg:absolute flex items-center justify-center lg:-left-1/4 lg:-right-1/4 lg:top-1/8 w-[150%] max-w-[500px]'>
                           <Image
@@ -77,11 +77,10 @@ const ProductModal: React.FC<ProductModalProps> = ({
                             width={500}
                             height={500}
                             priority
-                            className={`object-contain max-w-full max-h-full h-auto ${
-                              product.imageRatio
-                                ? `w-${product.imageRatio}`
-                                : 'w-1/2'
-                            }`}
+                            className={`object-contain max-w-full max-h-full h-auto ${product.imageRatio
+                              ? `w-${product.imageRatio}`
+                              : 'w-1/2'
+                              }`}
                           />
                         </div>
                       </div>
@@ -97,11 +96,16 @@ const ProductModal: React.FC<ProductModalProps> = ({
                           fontWeight: '600',
                         }}>
                         {product.title}
+                        {product.weight && (
+                          <span className='inline-block text-lg ml-2 font-normal text-gray-600'>
+                            {product.weight}
+                          </span>
+                        )}
                       </h2>
 
                       {/* Description */}
                       <div className='mb-6'>
-                        <h3 className='text-xl font-semibold text-gray-800 mb-6 flex items-center'>
+                        <h3 className='text-xl font-semibold text-gray-800 mb-2 flex items-center'>
                           <GradientDot
                             fromColor='from-primary'
                             toColor='to-tertiary'
@@ -177,13 +181,16 @@ const ProductModal: React.FC<ProductModalProps> = ({
 
                     {/* Nutritional Table */}
                     <div className='bg-genie-green/60 rounded-md p-6 border border-blue-200 dark:border-blue-200/40'>
-                      <h3 className='text-2xl font-bold text-gray-800 mb-6 flex items-center'>
+                      <h3 className='text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3'>
                         <GradientDot
                           fromColor='from-primary'
                           toColor='to-tertiary'
                           className='mr-3'
                         />
-                        {t('generalInfo.nutritionalData')}
+                        <div className='flex items-end'>
+                          {t('generalInfo.nutritionalData')}                     <span className='inline-block ml-2 text-lg font-normal text-gray-600'>
+                            {t('generalInfo.per100g')}
+                          </span></div>
                       </h3>
                       <div className='space-y-3'>
                         {Object.entries(product.nutritionalData ?? {}).map(
@@ -193,21 +200,19 @@ const ProductModal: React.FC<ProductModalProps> = ({
                               initial={{ opacity: 0, x: 20 }}
                               animate={{ opacity: 1, x: 0 }}
                               transition={{ delay: index * 0.1 }}
-                              className={`flex justify-between items-center py-2 px-4 rounded-sm transition-colors bg-blue-50 hover:bg-blue-100 ${
-                                isSubItem(
+                              className={`flex justify-between items-center py-2 px-4 rounded-sm transition-colors bg-blue-50 hover:bg-blue-100 ${isSubItem(
+                                key as keyof Product['nutritionalData'],
+                              )
+                                ? 'ml-6'
+                                : ''
+                                }`}>
+                              <span
+                                className={`text-gray-700 ${isSubItem(
                                   key as keyof Product['nutritionalData'],
                                 )
-                                  ? 'ml-6'
-                                  : ''
-                              }`}>
-                              <span
-                                className={`text-gray-700 ${
-                                  isSubItem(
-                                    key as keyof Product['nutritionalData'],
-                                  )
-                                    ? 'text-sm'
-                                    : 'font-semibold text-base'
-                                }`}>
+                                  ? 'text-sm'
+                                  : 'font-semibold text-base'
+                                  }`}>
                                 {t(`nutritionalData.${key}`)}
                               </span>
                               <span className='text-gray-800 font-bold text-lg'>

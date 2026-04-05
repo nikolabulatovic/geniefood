@@ -44,7 +44,8 @@
       "description": "Description",
       "benefits": "Benefits",
       "ingredients": "Ingredients",
-      "nutritionalData": "Nutritional Data"
+      "nutritionalData": "Nutritional Data",
+      "per100g": "per 100g"
     },
     "nutritionalData": {
       "energy": "Energy",
