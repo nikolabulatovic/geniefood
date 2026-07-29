@@ -106,14 +106,14 @@
         "Provides long-lasting satiety"
       ],
       "nutritionalData": {
-        "energija": "185kcal (774kJ)",
-        "masti": "8,0g",
-        "zasiceneMasneKiseline": "0,9g",
-        "ugljeniHidrati": "25,7g",
-        "seceri": "<0,5g",
-        "vlakna": "1,2g",
-        "proteini": "19,7g",
-        "so": "0,74g"
+        "energy": "185kcal (774kJ)",
+        "fats": "8.0g",
+        "saturatedFats": "0.9g",
+        "carbohydrates": "25.7g",
+        "sugars": "<0.5g",
+        "fiber": "1.2g",
+        "proteins": "19.7g",
+        "salt": "0.74g"
       },
       "ingredients": "Soy 98%, non-hydrogenated vegetable oil (sunflower), starter culture (Rhizopus Oligosporus), sea salt"
     },
