@@ -166,7 +166,7 @@
         "proteins": "30.9g",
         "salt": "2.65g"
       },
-      "ingredients": "Soy 59%, water, magnesium chloride (nigari), sea salt"
+      "ingredients": "Soy, water, magnesium chloride (nigari), sea salt"
     },
     {
       "id": "tofu_przeni",
@@ -191,7 +191,7 @@
         "proteins": "16.6g",
         "salt": "1.64g"
       },
-      "ingredients": "Soy 58%, water, non-hydrogenated vegetable oil (sunflower), magnesium chloride (nigari), sea salt"
+      "ingredients": "Soy, water, non-hydrogenated vegetable oil (sunflower), magnesium chloride (nigari), sea salt"
     },
     {
       "id": "tofu_sirovi",
@@ -219,7 +219,7 @@
         "proteins": "18.4g",
         "salt": "0.57g"
       },
-      "ingredients": "Soy 60%, water, magnesium chloride (nigari), sea salt"
+      "ingredients": "Soy, water, magnesium chloride (nigari), sea salt"
     },
     {
       "id": "badem_puter",
