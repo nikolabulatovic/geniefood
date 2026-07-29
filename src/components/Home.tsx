@@ -68,8 +68,8 @@ function HomeContent() {
 
   const heroSpeechTextClassesByLocale =
     locale === 'sr'
-      ? 'lg:max-w-[360px] xl:max-w-[420px]'
-      : 'min-[1024px]:max-w-[360px] min-[1280px]:max-w-[440px]';
+      ? 'xl:text-5xl 2xl:text-6xl xl:max-w-[420px] 2xl:max-w-[540px]'
+      : 'xl:text-4xl 2xl:text-5xl xl:max-w-[400px] 2xl:max-w-[480px]';
 
   return (
     <>
@@ -119,7 +119,7 @@ function HomeContent() {
             text={heroSpeechText}
             delay={0.6}
             staggerDelay={0.15}
-            className={`absolute text-amber-950 font-intro font-semibold lg:text-4xl xl:text-5xl 2xl:text-6xl leading-tight tracking-wide text-center px-6 py-6 2xl:max-w-[540px] ${heroSpeechTextClassesByLocale}`}
+            className={`absolute text-amber-950 font-intro font-semibold lg:text-4xl lg:max-w-[360px] leading-tight tracking-wide text-center px-6 py-6 ${heroSpeechTextClassesByLocale}`}
           />
         </div>
 
