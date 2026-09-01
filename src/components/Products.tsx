@@ -5,16 +5,7 @@ import ProductFilters from './ProductFilters';
 import ProductViewMode from './ProductViewMode';
 import SectionHeading from './SectionHeading';
 import ProductCarousel from './ProductCarousel';
-import { Product } from '@/types/Product';
-
-import productsSr from '@/data/products-sr.json';
-import productsEn from '@/data/products-en.json';
-
-const getProductsData = (locale: string): Product[] => {
-  return locale === 'sr'
-    ? (productsSr.products as Product[])
-    : (productsEn.products as Product[]);
-};
+import { getProductsData } from '@/lib/products';
 
 const Products = () => {
   const { t } = useTranslation('products');
